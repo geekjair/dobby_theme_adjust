@@ -1,0 +1,402 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Dobby\n"
+"POT-Creation-Date: 2017-12-29 08:59+0800\n"
+"PO-Revision-Date: 2017-12-29 09:12+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.2\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: inc/core.php:38 inc/core.php:39
+#: inc/options/includes/class-options-framework-admin.php:91
+#: inc/options/includes/class-options-framework-admin.php:92
+msgid "Theme Options"
+msgstr "主题设置"
+
+#: inc/core.php:97
+msgid "Last login time"
+msgstr "最后登录"
+
+#: inc/core.php:107
+msgid "No record"
+msgstr "没有记录"
+
+#: inc/options/includes/class-options-framework-admin.php:203
+msgid "Save Options"
+msgstr "保存设置"
+
+#: inc/options/includes/class-options-framework-admin.php:204
+msgid "Restore Defaults"
+msgstr "恢复默认"
+
+#: inc/options/includes/class-options-framework-admin.php:204
+msgid "Click OK to reset. Any theme settings will be lost!"
+msgstr "是否恢复默认设置（任何设置数据都将会丢失）？"
+
+#: inc/options/includes/class-options-framework-admin.php:235
+msgid "Default options restored."
+msgstr "恢复成功"
+
+#: inc/options/includes/class-options-framework-admin.php:289
+msgid "Options saved."
+msgstr "保持成功"
+
+#: inc/options/includes/class-options-media-uploader.php:62
+msgid "No file chosen"
+msgstr " "
+
+#: inc/options/includes/class-options-media-uploader.php:65
+#: inc/options/includes/class-options-media-uploader.php:118
+msgid "Upload"
+msgstr "上传文件"
+
+#: inc/options/includes/class-options-media-uploader.php:67
+#: inc/options/includes/class-options-media-uploader.php:119
+msgid "Remove"
+msgstr "删除文件"
+
+#: inc/options/includes/class-options-media-uploader.php:70
+msgid "Upgrade your version of WordPress for full media support."
+msgstr ""
+
+#: inc/options/includes/class-options-media-uploader.php:94
+msgid "View File"
+msgstr ""
+
+#: inc/options/includes/class-options-sanitization.php:316
+msgid "No Repeat"
+msgstr ""
+
+#: inc/options/includes/class-options-sanitization.php:317
+msgid "Repeat Horizontally"
+msgstr ""
+
+#: inc/options/includes/class-options-sanitization.php:318
+msgid "Repeat Vertically"
+msgstr ""
+
+#: inc/options/includes/class-options-sanitization.php:319
+msgid "Repeat All"
+msgstr ""
+
+#: inc/options/includes/class-options-sanitization.php:331
+msgid "Top Left"
+msgstr ""
+
+#: inc/options/includes/class-options-sanitization.php:332
+msgid "Top Center"
+msgstr ""
+
+#: inc/options/includes/class-options-sanitization.php:333
+msgid "Top Right"
+msgstr ""
+
+#: inc/options/includes/class-options-sanitization.php:334
+msgid "Middle Left"
+msgstr ""
+
+#: inc/options/includes/class-options-sanitization.php:335
+msgid "Middle Center"
+msgstr ""
+
+#: inc/options/includes/class-options-sanitization.php:336
+msgid "Middle Right"
+msgstr ""
+
+#: inc/options/includes/class-options-sanitization.php:337
+msgid "Bottom Left"
+msgstr ""
+
+#: inc/options/includes/class-options-sanitization.php:338
+msgid "Bottom Center"
+msgstr ""
+
+#: inc/options/includes/class-options-sanitization.php:339
+msgid "Bottom Right"
+msgstr ""
+
+#: inc/options/includes/class-options-sanitization.php:351
+msgid "Scroll Normally"
+msgstr ""
+
+#: inc/options/includes/class-options-sanitization.php:352
+msgid "Fixed in Place"
+msgstr ""
+
+#: inc/options/includes/class-options-sanitization.php:424
+msgid "Normal"
+msgstr ""
+
+#: inc/options/includes/class-options-sanitization.php:425
+msgid "Italic"
+msgstr ""
+
+#: inc/options/includes/class-options-sanitization.php:426
+msgid "Bold"
+msgstr ""
+
+#: inc/options/includes/class-options-sanitization.php:427
+msgid "Bold Italic"
+msgstr ""
+
+#: options.php:23
+msgid "One"
+msgstr ""
+
+#: options.php:24
+msgid "Two"
+msgstr ""
+
+#: options.php:25
+msgid "Three"
+msgstr ""
+
+#: options.php:26
+msgid "Four"
+msgstr ""
+
+#: options.php:27
+msgid "Five"
+msgstr ""
+
+#: options.php:32
+msgid "French Toast"
+msgstr ""
+
+#: options.php:33
+msgid "Pancake"
+msgstr ""
+
+#: options.php:34
+msgid "Omelette"
+msgstr ""
+
+#: options.php:35
+msgid "Crepe"
+msgstr ""
+
+#: options.php:36
+msgid "Waffle"
+msgstr ""
+
+#: options.php:97
+msgid "Basic Settings"
+msgstr ""
+
+#: options.php:102
+msgid "Input Text Mini"
+msgstr ""
+
+#: options.php:103
+msgid "A mini text input field."
+msgstr ""
+
+#: options.php:111
+msgid "Input Text"
+msgstr ""
+
+#: options.php:112
+msgid "A text input field."
+msgstr ""
+
+#: options.php:119
+msgid "Input with Placeholder"
+msgstr ""
+
+#: options.php:120
+msgid "A text input field with an HTML5 placeholder."
+msgstr ""
+
+#: options.php:127
+msgid "Textarea"
+msgstr ""
+
+#: options.php:128
+msgid "Textarea description."
+msgstr ""
+
+#: options.php:135
+msgid "Input Select Small"
+msgstr ""
+
+#: options.php:136
+msgid "Small Select Box."
+msgstr ""
+
+#: options.php:145
+msgid "Input Select Wide"
+msgstr ""
+
+#: options.php:146
+msgid "A wider select box."
+msgstr ""
+
+#: options.php:155
+msgid "Select a Category"
+msgstr ""
+
+#: options.php:156
+msgid "Passed an array of categories with cat_ID and cat_name"
+msgstr ""
+
+#: options.php:165
+msgid "Select a Tag"
+msgstr ""
+
+#: options.php:166
+msgid "Passed an array of tags with term_id and term_name"
+msgstr ""
+
+#: options.php:174
+msgid "Select a Page"
+msgstr ""
+
+#: options.php:175
+msgid "Passed an pages with ID and post_title"
+msgstr ""
+
+#: options.php:182
+msgid "Input Radio (one)"
+msgstr ""
+
+#: options.php:183
+msgid "Radio select with default options \"one\"."
+msgstr ""
+
+#: options.php:191
+msgid "Example Info"
+msgstr ""
+
+#: options.php:192
+msgid "This is just some example information you can put in the panel."
+msgstr ""
+
+#: options.php:197
+msgid "Input Checkbox"
+msgstr ""
+
+#: options.php:198
+msgid "Example checkbox, defaults to true."
+msgstr ""
+
+#: options.php:205
+msgid "Advanced Settings"
+msgstr ""
+
+#: options.php:210
+msgid "Check to Show a Hidden Text Input"
+msgstr ""
+
+#: options.php:211
+msgid "Click here and see what happens."
+msgstr ""
+
+#: options.php:217
+msgid "Hidden Text Input"
+msgstr ""
+
+#: options.php:218
+msgid "This option is hidden unless activated by a checkbox click."
+msgstr ""
+
+#: options.php:226
+msgid "Uploader Test"
+msgstr ""
+
+#: options.php:227
+msgid "This creates a full size uploader that previews the image."
+msgstr ""
+
+#: options.php:246
+msgid "Example Background"
+msgstr ""
+
+#: options.php:247
+msgid "Change the background CSS."
+msgstr ""
+
+#: options.php:254
+msgid "Multicheck"
+msgstr ""
+
+#: options.php:255
+msgid "Multicheck description."
+msgstr ""
+
+#: options.php:263
+msgid "Colorpicker"
+msgstr ""
+
+#: options.php:264
+msgid "No color selected by default."
+msgstr ""
+
+#: options.php:270
+msgid "Typography"
+msgstr ""
+
+#: options.php:271
+msgid "Example typography."
+msgstr ""
+
+#: options.php:278
+msgid "Custom Typography"
+msgstr ""
+
+#: options.php:279
+msgid "Custom typography options."
+msgstr ""
+
+#: options.php:287
+msgid "Text Editor"
+msgstr ""
+
+#: options.php:306
+msgid "Default Text Editor"
+msgstr ""
+
+#: options.php:307
+#, php-format
+msgid ""
+"You can also pass settings to the editor.  Read more about wp_editor in <a "
+"href=\"%1$s\" target=\"_blank\">the WordPress codex</a>"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Dobby"
+msgstr "Dobby"
+
+#. Theme URI of the plugin/theme
+msgid "https://github.com/Vtrois/Dobby"
+msgstr "https://github.com/Vtrois/Dobby"
+
+#. Description of the plugin/theme
+msgid ""
+"Dobby is given a perfectionist craftsman spirit, and Dobby use the "
+"minimalist style with elegance and sentiment to create a user experience "
+"first responsive theme which meets the  ultimate quest for single page."
+msgstr ""
+"Dobby 被赋予了完美主义的工匠精神，使用充满优雅与情怀的简约风格，打造出的一"
+"款用户体验优先的响应式主题，满足人们对每一张页面的极致追求。"
+
+#. Author of the plugin/theme
+msgid "Vtrois"
+msgstr "Vtrois"
+
+#. Author URI of the plugin/theme
+msgid "https://www.vtrois.com/"
+msgstr "https://www.vtrois.com/"
