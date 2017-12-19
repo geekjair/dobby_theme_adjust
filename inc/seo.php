@@ -8,10 +8,13 @@
 * @since 0.1.2
 */
 add_filter( 'comments_popup_link_attributes', 'nofollow_comments_link' );
+
 function nofollow_comments_link() {
 	return' rel="nofollow"';
 }
+
 add_filter( 'the_content', 'nofollow_images_link' );
+
 function nofollow_images_link( $content ) {
     $regexp = "<a\s[^>]*href=(\"??)([^\" >]*?)\\1[^>]*>";
     if(preg_match_all("/$regexp/siU", $content, $matches, PREG_SET_ORDER)) {

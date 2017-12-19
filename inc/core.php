@@ -78,6 +78,8 @@ function dobby_theme_languages(){
   load_theme_textdomain('dobby', get_template_directory() . '/languages');
   //theme option languages(inc/options)
   load_theme_textdomain('theme-textdomain', get_template_directory() . '/languages');
+  //plugin option languages(inc/plugins)
+  load_theme_textdomain('tgmpa', get_template_directory() . '/languages');
 }
 
 /**
@@ -308,11 +310,3 @@ function dobby_gravatar ($avatar_defaults) {
     $avatar_defaults[$myavatar] = "Dobby Gravatar";  
     return $avatar_defaults;  
 }
-
-/**
-* Add the default avatar image
-*
-* @author Vtrois <seaton@vtrois.com>
-* @license GPL-3.0
-* @since 0.1.2
-*/
