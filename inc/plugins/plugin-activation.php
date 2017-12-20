@@ -133,7 +133,7 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 		 *
 		 * @var string
 		 */
-		public $id = 'tgmpa';
+		public $id = 'dobby';
 
 		/**
 		 * Name of the query-string argument for the admin page.
@@ -142,7 +142,7 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 		 *
 		 * @var string
 		 */
-		protected $menu = 'tgmpa-install-plugins';
+		protected $menu = 'dobby-install-plugins';
 
 		/**
 		 * Parent menu file slug.

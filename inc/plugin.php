@@ -29,7 +29,7 @@ function dobby_register_required_plugins() {
 	$config = array(
 		'id'           => 'dobby',
 		'default_path' => '',
-		'menu'         => 'tgmpa-install-plugins',
+		'menu'         => 'dobby-plugins',
 		'parent_slug'  => 'themes.php',
 		'capability'   => 'edit_theme_options',
 		'has_notices'  => false,

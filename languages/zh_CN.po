@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Dobby\n"
-"POT-Creation-Date: 2017-12-29 08:59+0800\n"
-"PO-Revision-Date: 2017-12-29 09:12+0800\n"
+"POT-Creation-Date: 2017-12-20 16:34+0800\n"
+"PO-Revision-Date: 2017-12-20 16:39+0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: zh_CN\n"
@@ -16,8 +16,8 @@ msgstr ""
 "X-Poedit-WPHeader: style.css\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
-"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
@@ -27,11 +27,11 @@ msgstr ""
 msgid "Theme Options"
 msgstr "主题设置"
 
-#: inc/core.php:97
+#: inc/core.php:104
 msgid "Last login time"
 msgstr "最后登录"
 
-#: inc/core.php:107
+#: inc/core.php:115
 msgid "No record"
 msgstr "没有记录"
 
@@ -71,305 +71,735 @@ msgstr "删除文件"
 
 #: inc/options/includes/class-options-media-uploader.php:70
 msgid "Upgrade your version of WordPress for full media support."
-msgstr ""
+msgstr "升级你的 WordPress 版本以获得完整的媒体支持"
 
 #: inc/options/includes/class-options-media-uploader.php:94
 msgid "View File"
-msgstr ""
+msgstr "查看文件"
 
 #: inc/options/includes/class-options-sanitization.php:316
 msgid "No Repeat"
-msgstr ""
+msgstr "No Repeat"
 
 #: inc/options/includes/class-options-sanitization.php:317
 msgid "Repeat Horizontally"
-msgstr ""
+msgstr "Repeat Horizontally"
 
 #: inc/options/includes/class-options-sanitization.php:318
 msgid "Repeat Vertically"
-msgstr ""
+msgstr "Repeat Vertically"
 
 #: inc/options/includes/class-options-sanitization.php:319
 msgid "Repeat All"
-msgstr ""
+msgstr "Repeat All"
 
 #: inc/options/includes/class-options-sanitization.php:331
 msgid "Top Left"
-msgstr ""
+msgstr "Top Left"
 
 #: inc/options/includes/class-options-sanitization.php:332
 msgid "Top Center"
-msgstr ""
+msgstr "Top Center"
 
 #: inc/options/includes/class-options-sanitization.php:333
 msgid "Top Right"
-msgstr ""
+msgstr "Top Right"
 
 #: inc/options/includes/class-options-sanitization.php:334
 msgid "Middle Left"
-msgstr ""
+msgstr "Middle Left"
 
 #: inc/options/includes/class-options-sanitization.php:335
 msgid "Middle Center"
-msgstr ""
+msgstr "Middle Center"
 
 #: inc/options/includes/class-options-sanitization.php:336
 msgid "Middle Right"
-msgstr ""
+msgstr "Middle Right"
 
 #: inc/options/includes/class-options-sanitization.php:337
 msgid "Bottom Left"
-msgstr ""
+msgstr "Bottom Left"
 
 #: inc/options/includes/class-options-sanitization.php:338
 msgid "Bottom Center"
-msgstr ""
+msgstr "Bottom Center"
 
 #: inc/options/includes/class-options-sanitization.php:339
 msgid "Bottom Right"
-msgstr ""
+msgstr "Bottom Right"
 
 #: inc/options/includes/class-options-sanitization.php:351
 msgid "Scroll Normally"
-msgstr ""
+msgstr "Scroll Normally"
 
 #: inc/options/includes/class-options-sanitization.php:352
 msgid "Fixed in Place"
-msgstr ""
+msgstr "Fixed in Place"
 
 #: inc/options/includes/class-options-sanitization.php:424
 msgid "Normal"
-msgstr ""
+msgstr "Normal"
 
 #: inc/options/includes/class-options-sanitization.php:425
 msgid "Italic"
-msgstr ""
+msgstr "Italic"
 
 #: inc/options/includes/class-options-sanitization.php:426
 msgid "Bold"
-msgstr ""
+msgstr "Bold"
 
 #: inc/options/includes/class-options-sanitization.php:427
 msgid "Bold Italic"
-msgstr ""
+msgstr "Bold Italic"
 
-#: options.php:23
+#: inc/plugin.php:19
+msgid "Dobby - Html Compress"
+msgstr "HTML页面压缩"
+
+#: inc/plugins/plugin-activation.php:339
+msgid "Install Required Plugins"
+msgstr "插件列表"
+
+#: inc/plugins/plugin-activation.php:340
+msgid "Install Plugins"
+msgstr "预装插件"
+
+#. translators: %s: plugin name.
+#: inc/plugins/plugin-activation.php:342
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr "正在安装插件：%s"
+
+#. translators: %s: plugin name.
+#: inc/plugins/plugin-activation.php:344
+#, php-format
+msgid "Updating Plugin: %s"
+msgstr "正在升级插件：%s"
+
+#: inc/plugins/plugin-activation.php:345
+msgid "Something went wrong with the plugin API."
+msgstr "插件API出现了一些问题。"
+
+#: inc/plugins/plugin-activation.php:348
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] "这个主题需要安装的插件：%1$s"
+
+#: inc/plugins/plugin-activation.php:354
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] "Dobby 推荐安装插件：%1$s"
+
+#: inc/plugins/plugin-activation.php:360
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgid_plural ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr[0] "插件需要更新到最新版本，从而确保与主题的最大兼容性：%1$s"
+
+#: inc/plugins/plugin-activation.php:366
+#, php-format
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] "插件有可用更新：%1$s"
+
+#: inc/plugins/plugin-activation.php:372
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] "需要的插件目前没有启用：%1$s"
+
+#: inc/plugins/plugin-activation.php:378
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] "推荐的插件目前没有启用：%1$s"
+
+#: inc/plugins/plugin-activation.php:383
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] "开始安装插件"
+
+#: inc/plugins/plugin-activation.php:388
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] "开始升级插件"
+
+#: inc/plugins/plugin-activation.php:393
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] "开始启用插件"
+
+#: inc/plugins/plugin-activation.php:397
+msgid "Return to Required Plugins Installer"
+msgstr "返回预装插件"
+
+#: inc/plugins/plugin-activation.php:398
+msgid "Return to the Dashboard"
+msgstr "返回仪表板"
+
+#: inc/plugins/plugin-activation.php:399 inc/plugins/plugin-activation.php:3294
+msgid "Plugin activated successfully."
+msgstr "插件启用成功"
+
+#: inc/plugins/plugin-activation.php:400 inc/plugins/plugin-activation.php:3087
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] "成功启用的插件："
+
+#. translators: 1: plugin name.
+#: inc/plugins/plugin-activation.php:402
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr "插件 %1$s 运行中"
+
+#. translators: 1: plugin name.
+#: inc/plugins/plugin-activation.php:404
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr "启用失败，需要更高版本的% s，请更新插件"
+
+#. translators: 1: dashboard link.
+#: inc/plugins/plugin-activation.php:406
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr "所有插件已被成功安装并激活 %1$s"
+
+#: inc/plugins/plugin-activation.php:407
+msgid "Dismiss this notice"
+msgstr "Dismiss this notice"
+
+#: inc/plugins/plugin-activation.php:408
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr "有一个或多个必须的插件或推荐的插件需要安装、更新或激活"
+
+#: inc/plugins/plugin-activation.php:409
+msgid "Please contact the administrator of this site for help."
+msgstr "请联系网站管理员寻求帮助"
+
+#: inc/plugins/plugin-activation.php:615
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr "这个插件需要更新才能与你的主题相兼容"
+
+#: inc/plugins/plugin-activation.php:616
+msgid "Update Required"
+msgstr "需要更新"
+
+#: inc/plugins/plugin-activation.php:731
+msgid "Set the parent_slug config variable instead."
+msgstr "设置 parent_slug 配置变量"
+
+#: inc/plugins/plugin-activation.php:1038
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr "远程插件包中没有包含所需的文件"
+
+#: inc/plugins/plugin-activation.php:1038
+#: inc/plugins/plugin-activation.php:1048
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr "请联系插件提供商，并要求他们按照WordPress的指南来打包插件"
+
+#: inc/plugins/plugin-activation.php:1048
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr "远程插件包由多个文件组成，但是文件并没有打包在一个文件夹中"
+
+#: inc/plugins/plugin-activation.php:1237
+#: inc/plugins/plugin-activation.php:3083
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr "和"
+
+#: inc/plugins/plugin-activation.php:2405
+msgid "Required"
+msgstr "要求"
+
+#: inc/plugins/plugin-activation.php:2408
+msgid "Recommended"
+msgstr "推荐"
+
+#: inc/plugins/plugin-activation.php:2424
+msgid "WordPress Repository"
+msgstr "官方资源"
+
+#: inc/plugins/plugin-activation.php:2427
+msgid "External Source"
+msgstr "外部资源"
+
+#: inc/plugins/plugin-activation.php:2430
+msgid "Pre-Packaged"
+msgstr "预装包"
+
+#: inc/plugins/plugin-activation.php:2447
+msgid "Not Installed"
+msgstr "未安装"
+
+#: inc/plugins/plugin-activation.php:2451
+msgid "Installed But Not Activated"
+msgstr "未启用"
+
+#: inc/plugins/plugin-activation.php:2453
+msgid "Active"
+msgstr "启用"
+
+#: inc/plugins/plugin-activation.php:2459
+msgid "Required Update not Available"
+msgstr "更新不可用"
+
+#: inc/plugins/plugin-activation.php:2462
+msgid "Requires Update"
+msgstr "需要更新"
+
+#: inc/plugins/plugin-activation.php:2465
+msgid "Update recommended"
+msgstr "建议更新"
+
+#. translators: 1: install status, 2: update status
+#: inc/plugins/plugin-activation.php:2474
+#, php-format
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr "%1$s, %2$s"
+
+#. translators: 1: number of plugins.
+#: inc/plugins/plugin-activation.php:2520
+#, php-format
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] "全部 <span class=\"count\">(%s)</span>"
+
+#. translators: 1: number of plugins.
+#: inc/plugins/plugin-activation.php:2524
+#, php-format
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] "待安装 <span class=\"count\">(%s)</span>"
+
+#. translators: 1: number of plugins.
+#: inc/plugins/plugin-activation.php:2528
+#, php-format
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] "待更新 <span class=\"count\">(%s)</span>"
+
+#. translators: 1: number of plugins.
+#: inc/plugins/plugin-activation.php:2532
+#, php-format
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] "未启用 <span class=\"count\">(%s)</span>"
+
+#: inc/plugins/plugin-activation.php:2614
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr "unknown"
+
+#: inc/plugins/plugin-activation.php:2622
+msgid "Installed version:"
+msgstr "已经安装的版本："
+
+#: inc/plugins/plugin-activation.php:2630
+msgid "Minimum required version:"
+msgstr "所需的最低版本："
+
+#: inc/plugins/plugin-activation.php:2642
+msgid "Available version:"
+msgstr "当前的可用版本："
+
+#: inc/plugins/plugin-activation.php:2665
+msgid "No plugins to install, update or activate."
+msgstr "没有插件需要安装、更新或启用"
+
+#: inc/plugins/plugin-activation.php:2679
+msgid "Plugin"
+msgstr "插件"
+
+#: inc/plugins/plugin-activation.php:2680
+msgid "Source"
+msgstr "资源"
+
+#: inc/plugins/plugin-activation.php:2681
+msgid "Type"
+msgstr "类型"
+
+#: inc/plugins/plugin-activation.php:2685
+msgid "Version"
+msgstr "版本"
+
+#: inc/plugins/plugin-activation.php:2686
+msgid "Status"
+msgstr "状态"
+
+#. translators: %2$s: plugin name in screen reader markup
+#: inc/plugins/plugin-activation.php:2735
+#, php-format
+msgid "Install %2$s"
+msgstr "安装 %2$s"
+
+#. translators: %2$s: plugin name in screen reader markup
+#: inc/plugins/plugin-activation.php:2740
+#, php-format
+msgid "Update %2$s"
+msgstr "更新 %2$s"
+
+#. translators: %2$s: plugin name in screen reader markup
+#: inc/plugins/plugin-activation.php:2746
+#, php-format
+msgid "Activate %2$s"
+msgstr "启用 %2$s"
+
+#: inc/plugins/plugin-activation.php:2818
+msgid "Upgrade message from the plugin author:"
+msgstr "插件作者的升级信息："
+
+#: inc/plugins/plugin-activation.php:2851
+msgid "Install"
+msgstr "安装"
+
+#: inc/plugins/plugin-activation.php:2857
+msgid "Update"
+msgstr "更新"
+
+#: inc/plugins/plugin-activation.php:2860
+msgid "Activate"
+msgstr "启用"
+
+#: inc/plugins/plugin-activation.php:2891
+msgid "No plugins were selected to be installed. No action taken."
+msgstr "没有选择需要安装的插件"
+
+#: inc/plugins/plugin-activation.php:2893
+msgid "No plugins were selected to be updated. No action taken."
+msgstr "没有选择需要更新的插件"
+
+#: inc/plugins/plugin-activation.php:2934
+msgid "No plugins are available to be installed at this time."
+msgstr "目前还没有安装插件"
+
+#: inc/plugins/plugin-activation.php:2936
+msgid "No plugins are available to be updated at this time."
+msgstr "所选插件暂时没有新的版本"
+
+#: inc/plugins/plugin-activation.php:3043
+msgid "No plugins were selected to be activated. No action taken."
+msgstr "没有选择需要启用的插件"
+
+#: inc/plugins/plugin-activation.php:3069
+msgid "No plugins are available to be activated at this time."
+msgstr "没有可启用的插件"
+
+#: inc/plugins/plugin-activation.php:3293
+msgid "Plugin activation failed."
+msgstr "插件启用失败"
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: inc/plugins/plugin-activation.php:3637
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr "正在升级插件 %1$s (%2$d/%3$d)"
+
+#. translators: 1: plugin name, 2: error message.
+#: inc/plugins/plugin-activation.php:3640
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr "安装 %1$s 时发生错误： <strong>%2$s</strong>"
+
+#. translators: 1: plugin name.
+#: inc/plugins/plugin-activation.php:3642
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr "安装 %1$s 失败"
+
+#: inc/plugins/plugin-activation.php:3646
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr "安装已经开始了，这个过程可能要花上一段时间，所以请耐心等待"
+
+#. translators: 1: plugin name.
+#: inc/plugins/plugin-activation.php:3648
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr "成功安装和激活 %1$s"
+
+#: inc/plugins/plugin-activation.php:3649
+msgid "All installations and activations have been completed."
+msgstr "所有的装置和激活都已完成"
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: inc/plugins/plugin-activation.php:3651
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr "安装和激活插件 %1$s (%2$d/%3$d)"
+
+#: inc/plugins/plugin-activation.php:3654
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr "安装已经开始了，这个过程可能要花上一段时间，所以请耐心等待"
+
+#. translators: 1: plugin name.
+#: inc/plugins/plugin-activation.php:3656
+#, php-format
+msgid "%1$s installed successfully."
+msgstr "%1$s 安装完成"
+
+#: inc/plugins/plugin-activation.php:3657
+msgid "All installations have been completed."
+msgstr "所有的插件均已安装完成"
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: inc/plugins/plugin-activation.php:3659
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr "正在安装插件 %1$s (%2$d/%3$d)"
+
+#: inc/plugins/plugin-activation.php:3664
+msgid "Show Details"
+msgstr "显示详细信息"
+
+#: inc/plugins/plugin-activation.php:3664
+msgid "Hide Details"
+msgstr "隐藏详细信息"
+
+#: options.php:15
 msgid "One"
 msgstr ""
 
-#: options.php:24
+#: options.php:16
 msgid "Two"
 msgstr ""
 
-#: options.php:25
+#: options.php:17
 msgid "Three"
 msgstr ""
 
-#: options.php:26
+#: options.php:18
 msgid "Four"
 msgstr ""
 
-#: options.php:27
+#: options.php:19
 msgid "Five"
 msgstr ""
 
-#: options.php:32
+#: options.php:24
 msgid "French Toast"
 msgstr ""
 
-#: options.php:33
+#: options.php:25
 msgid "Pancake"
 msgstr ""
 
-#: options.php:34
+#: options.php:26
 msgid "Omelette"
 msgstr ""
 
-#: options.php:35
+#: options.php:27
 msgid "Crepe"
 msgstr ""
 
-#: options.php:36
+#: options.php:28
 msgid "Waffle"
 msgstr ""
 
-#: options.php:97
+#: options.php:89
+msgid "welcome"
+msgstr ""
+
+#: options.php:94
 msgid "Basic Settings"
 msgstr ""
 
-#: options.php:102
+#: options.php:99
 msgid "Input Text Mini"
 msgstr ""
 
-#: options.php:103
+#: options.php:100
 msgid "A mini text input field."
 msgstr ""
 
-#: options.php:111
+#: options.php:108
 msgid "Input Text"
 msgstr ""
 
-#: options.php:112
+#: options.php:109
 msgid "A text input field."
 msgstr ""
 
-#: options.php:119
+#: options.php:116
 msgid "Input with Placeholder"
 msgstr ""
 
-#: options.php:120
+#: options.php:117
 msgid "A text input field with an HTML5 placeholder."
 msgstr ""
 
-#: options.php:127
+#: options.php:124
 msgid "Textarea"
 msgstr ""
 
-#: options.php:128
+#: options.php:125
 msgid "Textarea description."
 msgstr ""
 
-#: options.php:135
+#: options.php:132
 msgid "Input Select Small"
 msgstr ""
 
-#: options.php:136
+#: options.php:133
 msgid "Small Select Box."
 msgstr ""
 
-#: options.php:145
+#: options.php:142
 msgid "Input Select Wide"
 msgstr ""
 
-#: options.php:146
+#: options.php:143
 msgid "A wider select box."
 msgstr ""
 
-#: options.php:155
+#: options.php:152
 msgid "Select a Category"
 msgstr ""
 
-#: options.php:156
+#: options.php:153
 msgid "Passed an array of categories with cat_ID and cat_name"
 msgstr ""
 
-#: options.php:165
+#: options.php:162
 msgid "Select a Tag"
 msgstr ""
 
-#: options.php:166
+#: options.php:163
 msgid "Passed an array of tags with term_id and term_name"
 msgstr ""
 
-#: options.php:174
+#: options.php:171
 msgid "Select a Page"
 msgstr ""
 
-#: options.php:175
+#: options.php:172
 msgid "Passed an pages with ID and post_title"
 msgstr ""
 
-#: options.php:182
+#: options.php:179
 msgid "Input Radio (one)"
 msgstr ""
 
-#: options.php:183
+#: options.php:180
 msgid "Radio select with default options \"one\"."
 msgstr ""
 
-#: options.php:191
+#: options.php:188
 msgid "Example Info"
 msgstr ""
 
-#: options.php:192
+#: options.php:189
 msgid "This is just some example information you can put in the panel."
 msgstr ""
 
-#: options.php:197
+#: options.php:194
 msgid "Input Checkbox"
 msgstr ""
 
-#: options.php:198
+#: options.php:195
 msgid "Example checkbox, defaults to true."
 msgstr ""
 
-#: options.php:205
+#: options.php:202
 msgid "Advanced Settings"
 msgstr ""
 
-#: options.php:210
+#: options.php:207
 msgid "Check to Show a Hidden Text Input"
 msgstr ""
 
-#: options.php:211
+#: options.php:208
 msgid "Click here and see what happens."
 msgstr ""
 
-#: options.php:217
+#: options.php:214
 msgid "Hidden Text Input"
 msgstr ""
 
-#: options.php:218
+#: options.php:215
 msgid "This option is hidden unless activated by a checkbox click."
 msgstr ""
 
-#: options.php:226
+#: options.php:223
+#, fuzzy
+#| msgid "Upload"
 msgid "Uploader Test"
-msgstr ""
+msgstr "上传文件"
 
-#: options.php:227
+#: options.php:224
 msgid "This creates a full size uploader that previews the image."
 msgstr ""
 
-#: options.php:246
+#: options.php:243
 msgid "Example Background"
 msgstr ""
 
-#: options.php:247
+#: options.php:244
 msgid "Change the background CSS."
 msgstr ""
 
-#: options.php:254
+#: options.php:251
 msgid "Multicheck"
 msgstr ""
 
-#: options.php:255
+#: options.php:252
 msgid "Multicheck description."
 msgstr ""
 
-#: options.php:263
+#: options.php:260
 msgid "Colorpicker"
 msgstr ""
 
-#: options.php:264
+#: options.php:261
 msgid "No color selected by default."
 msgstr ""
 
-#: options.php:270
+#: options.php:267
 msgid "Typography"
 msgstr ""
 
-#: options.php:271
+#: options.php:268
 msgid "Example typography."
 msgstr ""
 
-#: options.php:278
+#: options.php:275
 msgid "Custom Typography"
 msgstr ""
 
-#: options.php:279
+#: options.php:276
 msgid "Custom typography options."
 msgstr ""
 
-#: options.php:287
+#: options.php:284
 msgid "Text Editor"
 msgstr ""
 
-#: options.php:306
+#: options.php:303
 msgid "Default Text Editor"
 msgstr ""
 
-#: options.php:307
+#: options.php:304
 #, php-format
 msgid ""
 "You can also pass settings to the editor.  Read more about wp_editor in <a "
@@ -390,8 +820,8 @@ msgid ""
 "minimalist style with elegance and sentiment to create a user experience "
 "first responsive theme which meets the  ultimate quest for single page."
 msgstr ""
-"Dobby 被赋予了完美主义的工匠精神，使用充满优雅与情怀的简约风格，打造出的一"
-"款用户体验优先的响应式主题，满足人们对每一张页面的极致追求。"
+"Dobby 被赋予了完美主义的工匠精神，使用充满优雅与情怀的简约风格，打造出的一款"
+"用户体验优先的响应式主题，满足人们对每一张页面的极致追求。"
 
 #. Author of the plugin/theme
 msgid "Vtrois"

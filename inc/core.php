@@ -12,7 +12,7 @@ add_action( 'load-themes.php', 'dobby_init_theme' );
 function dobby_init_theme(){
   global $pagenow;
   if ( 'themes.php' == $pagenow && isset( $_GET['activated'] ) ) {
-    wp_redirect( admin_url( 'themes.php?page=Dobby' ) );
+    wp_redirect( admin_url( 'themes.php?page=dobby-theme' ) );
     exit;
   }
 }
@@ -37,7 +37,7 @@ function dobby_options_menu_filter( $menu ) {
   $menu['mode'] = 'menu';
   $menu['page_title'] = __( 'Theme Options', 'dobby' );
   $menu['menu_title'] = __( 'Theme Options', 'dobby' );
-  $menu['menu_slug'] = 'Dobby';
+  $menu['menu_slug'] = 'dobby-theme';
   return $menu;
 }
 
