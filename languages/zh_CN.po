@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Dobby\n"
-"POT-Creation-Date: 2017-12-29 16:52+0800\n"
-"PO-Revision-Date: 2017-12-22 17:08+0800\n"
+"POT-Creation-Date: 2017-12-23 17:36+0800\n"
+"PO-Revision-Date: 2017-12-23 17:36+0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: zh_CN\n"
@@ -27,13 +27,26 @@ msgstr ""
 msgid "Theme Options"
 msgstr "主题设置"
 
-#: inc/core.php:104
+#: inc/core.php:82
+msgid "Dobby - Html Compress"
+msgstr "页面压缩"
+
+#: inc/core.php:91
+msgid "Dobby - Page Permalink"
+msgstr "页面伪静态"
+
+#: inc/core.php:155
 msgid "Last login time"
 msgstr "最后登录"
 
-#: inc/core.php:115
+#: inc/core.php:166
 msgid "No record"
 msgstr "没有记录"
+
+#: inc/global.php:86
+#, php-format
+msgid "Page %s"
+msgstr ""
 
 #: inc/options/includes/class-options-framework-admin.php:203
 msgid "Save Options"
@@ -153,10 +166,6 @@ msgstr "Bold"
 msgid "Bold Italic"
 msgstr "Bold Italic"
 
-#: inc/plugin.php:19
-msgid "Dobby - Html Compress"
-msgstr "HTML页面压缩"
-
 #: inc/plugins/plugin-activation.php:339
 msgid "Install Required Plugins"
 msgstr "预装插件列表"
@@ -251,7 +260,7 @@ msgstr "插件启用成功"
 #: inc/plugins/plugin-activation.php:400 inc/plugins/plugin-activation.php:3087
 msgid "The following plugin was activated successfully:"
 msgid_plural "The following plugins were activated successfully:"
-msgstr[0] "成功启用的插件："
+msgstr[0] "成功启用插件："
 
 #. translators: 1: plugin name.
 #: inc/plugins/plugin-activation.php:402

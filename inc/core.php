@@ -64,6 +64,57 @@ function dobby_custom_sanitize_textarea($input) {
 }
 
 /**
+* Initialization Plugins
+*
+* @author Vtrois <seaton@vtrois.com>
+* @license GPL-3.0
+* @since 0.1.2
+*/
+require_once( get_template_directory() . '/inc/plugins/plugin-activation.php');
+
+add_action( 'tgmpa_register', 'dobby_register_required_plugins' );
+
+function dobby_register_required_plugins() {
+
+  $plugins = array(
+
+    array(
+      'name'               => __('Dobby - Html Compress' , 'dobby'),
+      'slug'               => 'dobby-htmlcompress',
+      'source'             => get_template_directory() . '/inc/plugins/dobby-htmlcompress.zip',
+      'required'           => false,
+      'version'            => '1.0',
+      'external_url'       => 'https://www.vtrois.com/theme-dobby.html',
+    ),
+    
+    array(
+      'name'               => __('Dobby - Page Permalink' , 'dobby'),
+      'slug'               => 'dobby-pagepermalink',
+      'source'             => get_template_directory() . '/inc/plugins/dobby-pagepermalink.zip',
+      'required'           => false,
+      'version'            => '1.0',
+      'external_url'       => 'https://www.vtrois.com/theme-dobby.html',
+    ),
+
+  );
+
+  $config = array(
+    'id'           => 'dobby',
+    'default_path' => '',
+    'menu'         => 'dobby-plugins',
+    'parent_slug'  => 'themes.php',
+    'capability'   => 'edit_theme_options',
+    'has_notices'  => false,
+    'dismissable'  => true,
+    'dismiss_msg'  => '',
+    'is_automatic' => false,
+    'message'      => '',
+  );
+
+  tgmpa( $plugins, $config );
+}
+
+/**
 * i18n theme languages
 *
 * @author Vtrois <seaton@vtrois.com>
@@ -117,7 +168,7 @@ function dobby_add_last_login_column_value( $value, $column_name, $user_id ) {
 }
 
 /**
-* Show the id for all thing
+* Show id for all thing
 *
 * @author Vtrois <seaton@vtrois.com>
 * @license GPL-3.0
@@ -233,6 +284,15 @@ function dobby_enqueue_scripts() {
 }
 
 /**
+* Enable links
+*
+* @author Vtrois <seaton@vtrois.com>
+* @license GPL-3.0
+* @since 0.1.2
+*/
+add_filter( 'pre_option_link_manager_enabled', '__return_true' );
+
+/**
 * Optimized built-in functions
 *
 * @author Vtrois <seaton@vtrois.com>
@@ -295,18 +355,15 @@ function dobby_get_avatar( $avatar ) {
 }
 
 /**
-* Add the default avatar image
+* Support webP file upload
 *
 * @author Vtrois <seaton@vtrois.com>
 * @license GPL-3.0
 * @since 0.1.2
-* @global dobby_option('tool_avatar')
 */
-add_filter( 'avatar_defaults', 'dobby_gravatar' );
+add_filter('upload_mimes','dobby_upload_webp');
 
-function dobby_gravatar ($avatar_defaults) {
-    $azavatar = dobby_option('tool_avatar');
-    $myavatar = ($azavatar) ? $azavatar : get_template_directory_uri() . '/images/avatar.png' ;  
-    $avatar_defaults[$myavatar] = "Dobby Gravatar";  
-    return $avatar_defaults;  
+function dobby_upload_webp ( $existing_mimes=array() ) {
+  $existing_mimes['webp']='image/webp';
+  return $existing_mimes;
 }
