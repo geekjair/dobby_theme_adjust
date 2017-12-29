@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Dobby\n"
-"POT-Creation-Date: 2017-12-23 17:36+0800\n"
-"PO-Revision-Date: 2017-12-23 17:36+0800\n"
+"POT-Creation-Date: 2017-12-29 21:53+0800\n"
+"PO-Revision-Date: 2017-12-29 21:55+0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: zh_CN\n"
@@ -46,7 +46,7 @@ msgstr "没有记录"
 #: inc/global.php:86
 #, php-format
 msgid "Page %s"
-msgstr ""
+msgstr "第 %s 页"
 
 #: inc/options/includes/class-options-framework-admin.php:203
 msgid "Save Options"
@@ -586,234 +586,37 @@ msgstr "显示详细信息"
 msgid "Hide Details"
 msgstr "隐藏详细信息"
 
-#: options.php:15
-msgid "One"
-msgstr ""
-
-#: options.php:16
-msgid "Two"
-msgstr ""
-
-#: options.php:17
-msgid "Three"
-msgstr ""
-
-#: options.php:18
-msgid "Four"
-msgstr ""
-
-#: options.php:19
-msgid "Five"
-msgstr ""
-
-#: options.php:24
-msgid "French Toast"
-msgstr ""
-
 #: options.php:25
-msgid "Pancake"
-msgstr ""
+msgid "Global config"
+msgstr "全局配置"
 
-#: options.php:26
-msgid "Omelette"
-msgstr ""
-
-#: options.php:27
-msgid "Crepe"
-msgstr ""
-
-#: options.php:28
-msgid "Waffle"
-msgstr ""
-
-#: options.php:89
-msgid "welcome"
-msgstr ""
-
-#: options.php:94
-msgid "Basic Settings"
-msgstr ""
-
-#: options.php:99
-msgid "Input Text Mini"
-msgstr ""
-
-#: options.php:100
-msgid "A mini text input field."
-msgstr ""
-
-#: options.php:108
-msgid "Input Text"
-msgstr ""
-
-#: options.php:109
-msgid "A text input field."
-msgstr ""
-
-#: options.php:116
-msgid "Input with Placeholder"
-msgstr ""
-
-#: options.php:117
-msgid "A text input field with an HTML5 placeholder."
-msgstr ""
-
-#: options.php:124
-msgid "Textarea"
-msgstr ""
-
-#: options.php:125
-msgid "Textarea description."
-msgstr ""
-
-#: options.php:132
-msgid "Input Select Small"
-msgstr ""
-
-#: options.php:133
-msgid "Small Select Box."
-msgstr ""
-
-#: options.php:142
-msgid "Input Select Wide"
-msgstr ""
-
-#: options.php:143
-msgid "A wider select box."
-msgstr ""
-
-#: options.php:152
-msgid "Select a Category"
-msgstr ""
-
-#: options.php:153
-msgid "Passed an array of categories with cat_ID and cat_name"
-msgstr ""
-
-#: options.php:162
-msgid "Select a Tag"
-msgstr ""
-
-#: options.php:163
-msgid "Passed an array of tags with term_id and term_name"
-msgstr ""
-
-#: options.php:171
-msgid "Select a Page"
-msgstr ""
-
-#: options.php:172
-msgid "Passed an pages with ID and post_title"
-msgstr ""
-
-#: options.php:179
-msgid "Input Radio (one)"
-msgstr ""
-
-#: options.php:180
-msgid "Radio select with default options \"one\"."
-msgstr ""
-
-#: options.php:188
-msgid "Example Info"
-msgstr ""
-
-#: options.php:189
-msgid "This is just some example information you can put in the panel."
-msgstr ""
-
-#: options.php:194
-msgid "Input Checkbox"
-msgstr ""
-
-#: options.php:195
-msgid "Example checkbox, defaults to true."
-msgstr ""
-
-#: options.php:202
-msgid "Advanced Settings"
-msgstr ""
-
-#: options.php:207
-msgid "Check to Show a Hidden Text Input"
-msgstr ""
-
-#: options.php:208
-msgid "Click here and see what happens."
-msgstr ""
-
-#: options.php:214
-msgid "Hidden Text Input"
-msgstr ""
-
-#: options.php:215
-msgid "This option is hidden unless activated by a checkbox click."
-msgstr ""
-
-#: options.php:223
-#, fuzzy
-#| msgid "Upload"
-msgid "Uploader Test"
-msgstr "上传文件"
-
-#: options.php:224
-msgid "This creates a full size uploader that previews the image."
-msgstr ""
-
-#: options.php:243
+#: options.php:29
 msgid "Example Background"
 msgstr ""
 
-#: options.php:244
+#: options.php:30
 msgid "Change the background CSS."
 msgstr ""
 
-#: options.php:251
-msgid "Multicheck"
-msgstr ""
+#: options.php:37
+msgid "Single config"
+msgstr "文章配置"
 
-#: options.php:252
-msgid "Multicheck description."
-msgstr ""
+#: options.php:41
+msgid "Page config"
+msgstr "页面配置"
 
-#: options.php:260
-msgid "Colorpicker"
-msgstr ""
+#: options.php:45
+msgid "Mail config"
+msgstr "邮件配置"
 
-#: options.php:261
-msgid "No color selected by default."
-msgstr ""
+#: options.php:49
+msgid "Donate config"
+msgstr "捐赠配置"
 
-#: options.php:267
-msgid "Typography"
-msgstr ""
-
-#: options.php:268
-msgid "Example typography."
-msgstr ""
-
-#: options.php:275
-msgid "Custom Typography"
-msgstr ""
-
-#: options.php:276
-msgid "Custom typography options."
-msgstr ""
-
-#: options.php:284
-msgid "Text Editor"
-msgstr ""
-
-#: options.php:303
-msgid "Default Text Editor"
-msgstr ""
-
-#: options.php:304
-#, php-format
-msgid ""
-"You can also pass settings to the editor.  Read more about wp_editor in <a "
-"href=\"%1$s\" target=\"_blank\">the WordPress codex</a>"
-msgstr ""
+#: options.php:53
+msgid "Social config"
+msgstr "社交配置"
 
 #. Theme Name of the plugin/theme
 msgid "Dobby"
@@ -839,3 +642,13 @@ msgstr "Vtrois"
 #. Author URI of the plugin/theme
 msgid "https://www.vtrois.com/"
 msgstr "https://www.vtrois.com/"
+
+#, fuzzy
+#~| msgid "Save Options"
+#~ msgid "Site Options"
+#~ msgstr "保存设置"
+
+#, fuzzy
+#~| msgid "Upload"
+#~ msgid "Uploader Test"
+#~ msgstr "上传文件"

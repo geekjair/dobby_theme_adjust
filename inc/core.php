@@ -258,10 +258,6 @@ function dobby_theme_scripts() {
     wp_enqueue_script( 'qrcode', $dir . '/js/jquery.qrcode.min.js', array(), DOBBY_VERSION);
   }
 
-  if(is_page()){
-    wp_enqueue_style( 'dobby-page', $dir . '/css/dobby.page.css', array(), DOBBY_VERSION);
-  }
-
   $dataToDobby = array(
     'site' => home_url(),
     'directory' => get_stylesheet_directory_uri(),

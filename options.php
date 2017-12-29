@@ -26,31 +26,19 @@ function optionsframework_options() {
 		'type' => 'heading');
 
 	$options[] = array(
-		'name' =>  __( 'Example Background', 'dobby' ),
+		'name' => __( 'Example Background', 'dobby' ),
 		'desc' => __( 'Change the background CSS.', 'dobby' ),
 		'id' => 'example_background',
 		'std' => $background_defaults,
 		'type' => 'background'
 	);
-
+	
 	$options[] = array(
-		'name' => __( 'Site Options' , 'dobby' ),
+		'name' => __( 'Single config' , 'dobby' ),
 		'type' => 'heading');
 
 	$options[] = array(
-		'name' => __( 'Banner config' , 'dobby' ),
-		'type' => 'heading');
-
-	$options[] = array(
-		'name' => __( 'Single' , 'dobby' ),
-		'type' => 'heading');
-
-	$options[] = array(
-		'name' => __( 'Page' , 'dobby' ),
-		'type' => 'heading');
-
-	$options[] = array(
-		'name' => __( 'Links config' , 'dobby' ),
+		'name' => __( 'Page config' , 'dobby' ),
 		'type' => 'heading');
 
 	$options[] = array(
@@ -58,15 +46,11 @@ function optionsframework_options() {
 		'type' => 'heading');
 
 	$options[] = array(
-		'name' => __( 'Footer configuration' , 'dobby' ),
+		'name' => __( 'Donate config' , 'dobby' ),
 		'type' => 'heading');
 
 	$options[] = array(
-		'name' => __( 'Donate Component' , 'dobby' ),
-		'type' => 'heading');
-
-	$options[] = array(
-		'name' => __( 'Social Component' , 'dobby' ),
+		'name' => __( 'Social config' , 'dobby' ),
 		'type' => 'heading');
 
 	return $options;
