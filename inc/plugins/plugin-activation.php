@@ -133,7 +133,7 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 		 *
 		 * @var string
 		 */
-		public $id = 'dobby';
+		public $id = 'tgmpa';
 
 		/**
 		 * Name of the query-string argument for the admin page.
@@ -142,7 +142,7 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 		 *
 		 * @var string
 		 */
-		protected $menu = 'dobby-install-plugins';
+		protected $menu = 'tgmpa-install-plugins';
 
 		/**
 		 * Parent menu file slug.
@@ -1157,7 +1157,6 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 				if ( ! $this->is_plugin_installed( $slug ) ) {
 					if ( current_user_can( 'install_plugins' ) ) {
 						$install_link_count++;
-
 						if ( true === $plugin['required'] ) {
 							$message['notice_can_install_required'][] = $slug;
 						} else {
@@ -1171,7 +1170,6 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 					if ( ! $this->is_plugin_active( $slug ) && $this->can_plugin_activate( $slug ) ) {
 						if ( current_user_can( 'activate_plugins' ) ) {
 							$activate_link_count++;
-
 							if ( true === $plugin['required'] ) {
 								$message['notice_can_activate_required'][] = $slug;
 							} else {
@@ -1205,7 +1203,7 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 			// If we have notices to display, we move forward.
 			if ( ! empty( $message ) || $total_required_action_count > 0 ) {
 				krsort( $message ); // Sort messages.
-				$rendered = '';
+				$rendered = __('Welcome to use Dobby theme to create, review the <a target="_blank" rel="nofollow" href="https://www.vtrois.com/theme-dobby.html">instructions</a> before using this theme, If you find BUG please submit <a target="_blank" rel="nofollow" href="https://github.com/Vtrois/Dobby/issues/new?title=Bug%20/%20Suggest%3A%20&body=**%E9%97%AE%E9%A2%98%E6%8F%8F%E8%BF%B0**%0A%0A%EF%BC%88%E7%AE%80%E6%98%8E%E6%89%BC%E8%A6%81%E7%9A%84%E6%8F%8F%E8%BF%B0%E4%B8%80%E4%B8%8B%E9%97%AE%E9%A2%98%EF%BC%89%0A%0A**%E4%BA%A7%E7%94%9F%E7%8E%AF%E5%A2%83**%0A%0A-%20%E8%AE%BE%E5%A4%87%EF%BC%9A%EF%BC%88%E6%89%8B%E6%9C%BA%E3%80%81%E5%B9%B3%E6%9D%BF%E7%AD%89%E7%A7%BB%E5%8A%A8%E8%AE%BE%E5%A4%87%E6%97%B6%E5%A1%AB%E5%86%99%E6%AD%A4%E9%A1%B9%EF%BC%89%0A-%20%E6%B5%8F%E8%A7%88%E5%99%A8%E5%8F%8A%E7%89%88%E6%9C%AC%EF%BC%9A%0A-%20%E6%BC%94%E7%A4%BA%E5%9C%B0%E5%9D%80%EF%BC%9A%0A%0A**%E5%A4%8D%E7%8E%B0%E6%AD%A5%E5%A5%8F**%0A%0A1.%20%0A2.%20%0A">feedback</a>, welcome to join the theme of exchange QQ group : <a target="_blank" rel="nofollow" href="http://shang.qq.com/wpa/qunwpa?idkey=182bd07a135c085c88ab7e3de38f2b2d9a86983292355a4708926b99dcd5b89f">51880737</a>', 'tgmpa' );
 
 				// As add_settings_error() wraps the final message in a <p> and as the final message can't be
 				// filtered, using <p>'s in our html would render invalid html output.
@@ -1335,7 +1333,7 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 				return sanitize_html_class( strtolower( $this->strings['nag_type'] ) );
 			} else {
 				if ( version_compare( $this->wp_version, '4.2', '>=' ) ) {
-					return 'notice-warning';
+					return 'notice-info';
 				} elseif ( version_compare( $this->wp_version, '4.1', '>=' ) ) {
 					return 'notice';
 				} else {
@@ -2619,7 +2617,7 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 				}
 
 				$output[] = sprintf(
-					'<p><span style="min-width: 32px; text-align: right; float: right;%1$s">%2$s</span>' . __( 'Installed version:', 'tgmpa' ) . '</p>',
+					'<p>' . __( 'Installed version:', 'tgmpa' ) . '%2$s</p>',
 					$color,
 					$installed
 				);
@@ -2627,7 +2625,7 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 
 			if ( ! empty( $item['minimum_version'] ) ) {
 				$output[] = sprintf(
-					'<p><span style="min-width: 32px; text-align: right; float: right;">%1$s</span>' . __( 'Minimum required version:', 'tgmpa' ) . '</p>',
+					'<p>' . __( 'Minimum required version:', 'tgmpa' ) . '%1$s</p>',
 					$item['minimum_version']
 				);
 			}
@@ -2637,12 +2635,6 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 				if ( ! empty( $item['minimum_version'] ) && version_compare( $item['available_version'], $item['minimum_version'], '>=' ) ) {
 					$color = ' color: #71C671; font-weight: bold;';
 				}
-
-				$output[] = sprintf(
-					'<p><span style="min-width: 32px; text-align: right; float: right;%1$s">%2$s</span>' . __( 'Available version:', 'tgmpa' ) . '</p>',
-					$color,
-					$item['available_version']
-				);
 			}
 
 			if ( empty( $output ) ) {

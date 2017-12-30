@@ -6,12 +6,12 @@
 * @author Vtrois <seaton@vtrois.com>
 * @license GPL-3.0
 * @since 0.1.2
-* @global dobby_option('global_avatar')
+* @global dobby_option('image_default_gravatar')
 */
 add_filter( 'avatar_defaults', 'dobby_gravatar' );
 
 function dobby_gravatar ($avatar_defaults) {
-    $azavatar = dobby_option('global_avatar');
+    $azavatar = dobby_option('image_default_gravatar');
     $myavatar = ($azavatar) ? $azavatar : get_template_directory_uri() . '/images/avatar.png' ;  
     $avatar_defaults[$myavatar] = "Dobby Gravatar";  
     return $avatar_defaults;  
@@ -128,4 +128,17 @@ function dobby_description(){
   }
   elseif( is_tag() ){  $description = strip_tags(tag_description());echo trim($description); }
   else{ $description = strip_tags(term_description());echo trim($description); }
+}
+
+/**
+* Current the page url
+*
+* @author Vtrois <seaton@vtrois.com>
+* @license GPL-3.0
+* @since 0.1.3
+* @return string url
+*/
+function dobby_current_url(){
+    global $wp;
+    return get_option( 'permalink_structure' ) == '' ? add_query_arg( $wp->query_string, '', home_url( $wp->request ) ) : home_url( add_query_arg( array(), $wp->request ) );
 }

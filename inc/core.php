@@ -63,6 +63,23 @@ function dobby_custom_sanitize_textarea($input) {
     return $output;
 }
 
+add_action( 'optionsframework_after', 'optionscheck_display_sidebar' );
+
+function optionscheck_display_sidebar() { ?>
+  <div id="optionsframework-sidebar">
+    <div class="metabox-holder">
+      <div class="postbox">
+        <h3>Options Panel Sidebar</h3>
+          <div class="inside">
+            <p>Here's where you could display some relevant information about the options panel.</p>
+            <p>For instance, you might want to add a donate button.</p>
+            <p>Or perhaps you want to let people know where to <a href="http://wptheming.com">go for support</a>.</p>
+          </div>
+      </div>
+    </div>
+  </div>
+<?php }
+
 /**
 * Initialization Plugins
 *
@@ -79,22 +96,66 @@ function dobby_register_required_plugins() {
   $plugins = array(
 
     array(
-      'name'               => __('Dobby - Html Compress' , 'dobby'),
+      'name'               => 'Html Compress',
       'slug'               => 'dobby-htmlcompress',
       'source'             => get_template_directory() . '/inc/plugins/dobby-htmlcompress.zip',
-      'required'           => false,
-      'version'            => '1.0',
+      'required'           => true,
+      'version'            => '1.0.3',
       'external_url'       => 'https://www.vtrois.com/theme-dobby.html',
     ),
     
     array(
-      'name'               => __('Dobby - Page Permalink' , 'dobby'),
+      'name'               => 'Page Permalink',
       'slug'               => 'dobby-pagepermalink',
       'source'             => get_template_directory() . '/inc/plugins/dobby-pagepermalink.zip',
-      'required'           => false,
-      'version'            => '1.0',
+      'required'           => true,
+      'version'            => '1.0.5',
       'external_url'       => 'https://www.vtrois.com/theme-dobby.html',
     ),
+
+    // array(
+    //   'name'               => 'Adminbar',
+    //   'slug'               => 'adminbar',
+    //   'source'             => 'https://github.com/jrfnl/WP-adminbar-comments-to-pending/archive/master.zip',
+    //   'version'            => '1.0.0',
+    //   'required'           => false,
+    //   'external_url'       => 'https://www.vtrois.com/theme-dobby.html',
+    // ),
+
+    array(
+      'name'      => 'Disable Embeds',
+      'slug'      => 'disable-embeds',
+      'required'  => false,
+      'version'   => '1.3.0',
+    ),
+
+    array(
+      'name'      => 'Wordpress Sweep',
+      'slug'      => 'wp-sweep',
+      'required'  => true,
+      'version'   => '1.0.12',
+    ),
+
+    array(
+      'name'      => 'No Category Base',
+      'slug'      => 'no-category-base-wpml',
+      'required'  => true,
+      'version'   => '1.3',
+    ),
+
+    array(
+      'name'      => 'Redis Object Cache',
+      'slug'      => 'redis-cache',
+      'required'  => false,
+      'version'   => '1.3.5',
+    ),
+
+    array(
+      'name'      => 'XML Sitemap',
+      'slug'      => 'xml-sitemap-feed',
+      'required'  => true,
+      'version'   => '4.7.5',
+    ),   
 
   );
 
@@ -104,7 +165,7 @@ function dobby_register_required_plugins() {
     'menu'         => 'dobby-plugins',
     'parent_slug'  => 'themes.php',
     'capability'   => 'edit_theme_options',
-    'has_notices'  => false,
+    'has_notices'  => true,
     'dismissable'  => true,
     'dismiss_msg'  => '',
     'is_automatic' => false,

@@ -10,7 +10,7 @@
 		<meta name="description" itemprop="description" content="<?php dobby_description(); ?>">
 		<meta name="keywords" content="<?php dobby_keywords(); ?>">
 		<meta itemprop="image" content="<?php echo dobby_share_image(); ?>" />
-		<link rel="canonical" href="<?php echo current_url(); ?>"/>
+		<link rel="canonical" href="<?php echo dobby_current_url(); ?>"/>
 		<link rel="icon" type="image/x-icon" href="<?php echo dobby_option('global_ico'); ?>">
 		<?php wp_head(); ?>
 		<?php wp_print_scripts('jquery'); ?>
