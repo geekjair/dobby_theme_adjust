@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Dobby\n"
-"POT-Creation-Date: 2017-12-30 12:21+0800\n"
-"PO-Revision-Date: 2017-12-30 12:21+0800\n"
+"POT-Creation-Date: 2018-01-07 20:33+0800\n"
+"PO-Revision-Date: 2018-01-07 20:36+0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.2\n"
+"X-Generator: Poedit 2.0.4\n"
 "X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
@@ -225,7 +225,7 @@ msgstr[0] "没有启用的可选插件：%1$s"
 #: inc/plugins/plugin-activation.php:383
 msgid "Begin installing plugin"
 msgid_plural "Begin installing plugins"
-msgstr[0] "查看插件清单"
+msgstr[0] "查看清单"
 
 #: inc/plugins/plugin-activation.php:388
 msgid "Begin updating plugin"
@@ -276,7 +276,7 @@ msgstr "所有插件已被成功安装并激活 %1$s"
 
 #: inc/plugins/plugin-activation.php:407
 msgid "Dismiss this notice"
-msgstr "不再显示提醒"
+msgstr "不再显示"
 
 #: inc/plugins/plugin-activation.php:408
 msgid ""
