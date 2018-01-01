@@ -1170,11 +1170,11 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 					if ( ! $this->is_plugin_active( $slug ) && $this->can_plugin_activate( $slug ) ) {
 						if ( current_user_can( 'activate_plugins' ) ) {
 							$activate_link_count++;
-							if ( true === $plugin['required'] ) {
-								$message['notice_can_activate_required'][] = $slug;
-							} else {
-								$message['notice_can_activate_recommended'][] = $slug;
-							}
+							// if ( true === $plugin['required'] ) {
+							// 	$message['notice_can_activate_required'][] = $slug;
+							// } else {
+							// 	$message['notice_can_activate_recommended'][] = $slug;
+							// }
 						}
 						if ( true === $plugin['required'] ) {
 							$total_required_action_count++;
@@ -1203,7 +1203,7 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 			// If we have notices to display, we move forward.
 			if ( ! empty( $message ) || $total_required_action_count > 0 ) {
 				krsort( $message ); // Sort messages.
-				$rendered = __('Welcome to use Dobby theme to create, review the <a target="_blank" rel="nofollow" href="https://www.vtrois.com/theme-dobby.html">instructions</a> before using this theme, If you find BUG please submit <a target="_blank" rel="nofollow" href="https://github.com/Vtrois/Dobby/issues/new?title=Bug%20/%20Suggest%3A%20&body=**%E9%97%AE%E9%A2%98%E6%8F%8F%E8%BF%B0**%0A%0A%EF%BC%88%E7%AE%80%E6%98%8E%E6%89%BC%E8%A6%81%E7%9A%84%E6%8F%8F%E8%BF%B0%E4%B8%80%E4%B8%8B%E9%97%AE%E9%A2%98%EF%BC%89%0A%0A**%E4%BA%A7%E7%94%9F%E7%8E%AF%E5%A2%83**%0A%0A-%20%E8%AE%BE%E5%A4%87%EF%BC%9A%EF%BC%88%E6%89%8B%E6%9C%BA%E3%80%81%E5%B9%B3%E6%9D%BF%E7%AD%89%E7%A7%BB%E5%8A%A8%E8%AE%BE%E5%A4%87%E6%97%B6%E5%A1%AB%E5%86%99%E6%AD%A4%E9%A1%B9%EF%BC%89%0A-%20%E6%B5%8F%E8%A7%88%E5%99%A8%E5%8F%8A%E7%89%88%E6%9C%AC%EF%BC%9A%0A-%20%E6%BC%94%E7%A4%BA%E5%9C%B0%E5%9D%80%EF%BC%9A%0A%0A**%E5%A4%8D%E7%8E%B0%E6%AD%A5%E5%A5%8F**%0A%0A1.%20%0A2.%20%0A">feedback</a>, welcome to join the theme of exchange QQ group : <a target="_blank" rel="nofollow" href="http://shang.qq.com/wpa/qunwpa?idkey=182bd07a135c085c88ab7e3de38f2b2d9a86983292355a4708926b99dcd5b89f">51880737</a>', 'tgmpa' );
+				$rendered = __('', 'tgmpa' );
 
 				// As add_settings_error() wraps the final message in a <p> and as the final message can't be
 				// filtered, using <p>'s in our html would render invalid html output.
@@ -1298,13 +1298,13 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 				}
 			}
 
-			if ( current_user_can( 'activate_plugins' ) && $activate_count > 0 ) {
-				$action_links['activate'] = sprintf(
-					$link_template,
-					translate_nooped_plural( $this->strings['activate_link'], $activate_count, 'tgmpa' ),
-					esc_url( $this->get_tgmpa_status_url( 'activate' ) )
-				);
-			}
+			// if ( current_user_can( 'activate_plugins' ) && $activate_count > 0 ) {
+			// 	$action_links['activate'] = sprintf(
+			// 		$link_template,
+			// 		translate_nooped_plural( $this->strings['activate_link'], $activate_count, 'tgmpa' ),
+			// 		esc_url( $this->get_tgmpa_status_url( 'activate' ) )
+			// 	);
+			// }
 
 			$action_links = apply_filters( 'tgmpa_notice_action_links', $action_links );
 
