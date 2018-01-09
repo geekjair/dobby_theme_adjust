@@ -87,7 +87,7 @@ function optionscheck_display_sidebar() { ?>
 * @license GPL-3.0
 * @since 0.1.2
 */
-require_once( get_template_directory() . '/inc/plugins/plugin-activation.php');
+require_once( get_template_directory() . '/inc/plugins.php');
 
 add_action( 'tgmpa_register', 'dobby_register_required_plugins' );
 
