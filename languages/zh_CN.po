@@ -1,19 +1,18 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Dobby\n"
-"POT-Creation-Date: 2018-01-07 20:33+0800\n"
-"PO-Revision-Date: 2018-01-07 20:36+0800\n"
-"Last-Translator: \n"
-"Language-Team: \n"
+"POT-Creation-Date: 2018-02-22 12:23+0800\n"
+"PO-Revision-Date: 2018-02-22 12:23+0800\n"
+"Last-Translator: Vtrois <seaton@vtrois.com>\n"
+"Language-Team: Vtrois <seaton@vtrois.com>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.4\n"
+"X-Generator: Poedit 1.8.7\n"
 "X-Poedit-Basepath: ..\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: style.css\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
 "esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
@@ -21,24 +20,168 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
+#: 404.php:11
+msgid "Sorry, that page you visited does not exist"
+msgstr "很抱歉，你访问的页面不存在"
+
+#: 404.php:12
+msgid "It may be the incorrect input address or the address has been deleted"
+msgstr "可能是输入地址有误或该地址已被删除"
+
+#: 404.php:14
+msgid "Return"
+msgstr "返回上页"
+
+#: 404.php:15
+msgid "Homepage"
+msgstr "返回主页"
+
+#: category.php:16 comments.php:10 inc/core.php:221 index.php:114 search.php:18
+#: tag.php:16
+msgid "Load More"
+msgstr "加载更多"
+
+#: comments.php:6
+msgid "Article Comments"
+msgstr "文章评论"
+
+#: comments.php:15
+#, php-format
+msgid "You must <a href=\"%s\">login</a> to comment"
+msgstr "你必须 <a href=\"%s\">登录</a> 才能发表评论"
+
+#: comments.php:44
+msgid "Cancel"
+msgstr "取消"
+
+#: comments.php:45
+msgid "Enter"
+msgstr "发表评论"
+
+#: inc/author.php:15
+msgid "The person is so lazy that he left nothing."
+msgstr "这个人太懒什么东西都没留下"
+
+#: inc/author.php:19
+msgid "Donate"
+msgstr "打赏"
+
+#: inc/author.php:21
+msgid "Thumbs"
+msgstr "点赞"
+
+#: inc/comments.php:76
+#, php-format
+msgid "<cite class=\"author_name\">%s</cite>"
+msgstr "<cite class=\"author_name\">%s</cite>"
+
+#: inc/content/content-category.php:12 inc/global.php:238
+msgid "Read More"
+msgstr "阅读全文"
+
+#: inc/content/content.php:8 inc/single/single-alpha.php:22
+#: inc/single/single-gamma.php:11
+msgid "Comments"
+msgstr "条评论"
+
+#: inc/content/content.php:9 inc/single/single-alpha.php:23
+#: inc/single/single-gamma.php:12
+msgid "Views"
+msgstr "次阅读"
+
+#: inc/content/content.php:10 inc/single/single-alpha.php:24
+#: inc/single/single-gamma.php:13
+msgid "Thumb"
+msgstr "人点赞"
+
 #: inc/core.php:38 inc/core.php:39
 #: inc/options/includes/class-options-framework-admin.php:91
 #: inc/options/includes/class-options-framework-admin.php:92
 msgid "Theme Options"
 msgstr "主题设置"
 
-#: inc/core.php:216
+#: inc/core.php:102
 msgid "Last login time"
 msgstr "最后登录"
 
-#: inc/core.php:227
+#: inc/core.php:113
 msgid "No record"
 msgstr "没有记录"
+
+#: inc/core.php:222
+msgid "You are already supported it"
+msgstr "您已经支持过了"
+
+#: inc/core.php:223
+msgid "Thank you for your support"
+msgstr "感谢您的支持"
+
+#: inc/core.php:224
+msgid "Donate to author"
+msgstr "打赏作者"
+
+#: inc/core.php:225
+msgid "Scan payment"
+msgstr "扫一扫支付"
+
+#: inc/core.php:344
+msgid ""
+"Welcome to use Dobby theme to create, review the <a target=\"_blank\" rel="
+"\"nofollow\" href=\"https://www.vtrois.com/theme-dobby.html\">instructions</"
+"a> before using this theme, If you find BUG please submit <a target=\"_blank"
+"\" rel=\"nofollow\" href=\"https://github.com/Vtrois/Dobby/issues/new?"
+"title=Bug%20/%20Suggest%3A%20&body=**%E9%97%AE%E9%A2%98%E6%8F%8F%E8%BF%B0**"
+"%0A%0A%EF%BC%88%E7%AE%80%E6%98%8E%E6%89%BC%E8%A6%81%E7%9A%84%E6%8F%8F%E8%BF"
+"%B0%E4%B8%80%E4%B8%8B%E9%97%AE%E9%A2%98%EF%BC%89%0A%0A**%E4%BA%A7%E7%94%9F"
+"%E7%8E%AF%E5%A2%83**%0A%0A-%20%E8%AE%BE%E5%A4%87%EF%BC%9A%EF%BC%88%E6%89%8B"
+"%E6%9C%BA%E3%80%81%E5%B9%B3%E6%9D%BF%E7%AD%89%E7%A7%BB%E5%8A%A8%E8%AE%BE"
+"%E5%A4%87%E6%97%B6%E5%A1%AB%E5%86%99%E6%AD%A4%E9%A1%B9%EF%BC%89%0A-"
+"%20%E6%B5%8F%E8%A7%88%E5%99%A8%E5%8F%8A%E7%89%88%E6%9C%AC%EF%BC%9A%0A-"
+"%20%E6%BC%94%E7%A4%BA%E5%9C%B0%E5%9D%80%EF%BC%9A%0A%0A**%E5%A4%8D%E7%8E"
+"%B0%E6%AD%A5%E5%A5%8F**%0A%0A1.%20%0A2.%20%0A\">feedback</a>, welcome to "
+"join the theme of exchange QQ group : <a target=\"_blank\" rel=\"nofollow\" "
+"href=\"http://shang.qq.com/wpa/qunwpa?"
+"idkey=182bd07a135c085c88ab7e3de38f2b2d9a86983292355a4708926b99dcd5b89f"
+"\">51880737</a>"
+msgstr ""
+"欢迎使用 Dobby 主题开始创作，在使用主题之前推荐查看<a target=\"_blank\" rel="
+"\"nofollow\" href=\"https://www.vtrois.com/theme-dobby.html\">使用说明</a>，"
+"如果发现 BUG 或者有 Suggest 请<a target=\"_blank\" rel=\"nofollow\" href="
+"\"https://github.com/Vtrois/Dobby/issues/new?title=Bug%20/%20Suggest%3A"
+"%20&body=**%E9%97%AE%E9%A2%98%E6%8F%8F%E8%BF%B0**%0A%0A%EF%BC%88%E7%AE"
+"%80%E6%98%8E%E6%89%BC%E8%A6%81%E7%9A%84%E6%8F%8F%E8%BF%B0%E4%B8%80%E4%B8%8B"
+"%E9%97%AE%E9%A2%98%EF%BC%89%0A%0A**%E4%BA%A7%E7%94%9F%E7%8E%AF%E5%A2%83**%0A"
+"%0A-%20%E8%AE%BE%E5%A4%87%EF%BC%9A%EF%BC%88%E6%89%8B%E6%9C%BA"
+"%E3%80%81%E5%B9%B3%E6%9D%BF%E7%AD%89%E7%A7%BB%E5%8A%A8%E8%AE%BE"
+"%E5%A4%87%E6%97%B6%E5%A1%AB%E5%86%99%E6%AD%A4%E9%A1%B9%EF%BC%89%0A-"
+"%20%E6%B5%8F%E8%A7%88%E5%99%A8%E5%8F%8A%E7%89%88%E6%9C%AC%EF%BC%9A%0A-"
+"%20%E6%BC%94%E7%A4%BA%E5%9C%B0%E5%9D%80%EF%BC%9A%0A%0A**%E5%A4%8D%E7%8E"
+"%B0%E6%AD%A5%E5%A5%8F**%0A%0A1.%20%0A2.%20%0A\">提交反馈</a>，同时欢迎加入主"
+"题交流群 <a target=\"_blank\" rel=\"nofollow\" href=\"http://shang.qq.com/"
+"wpa/qunwpa?"
+"idkey=182bd07a135c085c88ab7e3de38f2b2d9a86983292355a4708926b99dcd5b89f"
+"\">51880737</a>"
 
 #: inc/global.php:86
 #, php-format
 msgid "Page %s"
 msgstr "第 %s 页"
+
+#: inc/global.php:314
+msgid "Publish in:"
+msgstr "发表于："
+
+#: inc/navwalker.php:13
+msgid "Header Menu"
+msgstr "顶部导航"
+
+#: inc/navwalker.php:14
+msgid "Footer Menu"
+msgstr "底部导航"
+
+#: inc/navwalker.php:193
+msgid "Add a menu"
+msgstr "添加导航"
 
 #: inc/options/includes/class-options-framework-admin.php:203
 msgid "Save Options"
@@ -62,7 +205,7 @@ msgstr "保持成功"
 
 #: inc/options/includes/class-options-media-uploader.php:62
 msgid "No file chosen"
-msgstr " "
+msgstr "没有选择文件"
 
 #: inc/options/includes/class-options-media-uploader.php:65
 #: inc/options/includes/class-options-media-uploader.php:118
@@ -158,521 +301,358 @@ msgstr "Bold"
 msgid "Bold Italic"
 msgstr "Bold Italic"
 
-#: inc/plugins/plugin-activation.php:339
-msgid "Install Required Plugins"
-msgstr "插件清单"
-
-#: inc/plugins/plugin-activation.php:340
-msgid "Install Plugins"
-msgstr "插件清单"
-
-#. translators: %s: plugin name.
-#: inc/plugins/plugin-activation.php:342
-#, php-format
-msgid "Installing Plugin: %s"
-msgstr "正在安装插件：%s"
-
-#. translators: %s: plugin name.
-#: inc/plugins/plugin-activation.php:344
-#, php-format
-msgid "Updating Plugin: %s"
-msgstr "正在升级插件：%s"
-
-#: inc/plugins/plugin-activation.php:345
-msgid "Something went wrong with the plugin API."
-msgstr "插件API出现了一些问题。"
-
-#: inc/plugins/plugin-activation.php:348
-#, php-format
-msgid "This theme requires the following plugin: %1$s."
-msgid_plural "This theme requires the following plugins: %1$s."
-msgstr[0] "推荐的增强插件：%1$s"
-
-#: inc/plugins/plugin-activation.php:354
-#, php-format
-msgid "This theme recommends the following plugin: %1$s."
-msgid_plural "This theme recommends the following plugins: %1$s."
-msgstr[0] "可选的增强插件：%1$s"
-
-#: inc/plugins/plugin-activation.php:360
-#, php-format
-msgid ""
-"The following plugin needs to be updated to its latest version to ensure "
-"maximum compatibility with this theme: %1$s."
-msgid_plural ""
-"The following plugins need to be updated to their latest version to ensure "
-"maximum compatibility with this theme: %1$s."
-msgstr[0] "插件需要更新到最新版本，从而确保与主题的最大兼容性：%1$s"
-
-#: inc/plugins/plugin-activation.php:366
-#, php-format
-msgid "There is an update available for: %1$s."
-msgid_plural "There are updates available for the following plugins: %1$s."
-msgstr[0] "插件有可用更新：%1$s"
-
-#: inc/plugins/plugin-activation.php:372
-#, php-format
-msgid "The following required plugin is currently inactive: %1$s."
-msgid_plural "The following required plugins are currently inactive: %1$s."
-msgstr[0] "没有启用的推荐插件：%1$s"
-
-#: inc/plugins/plugin-activation.php:378
-#, php-format
-msgid "The following recommended plugin is currently inactive: %1$s."
-msgid_plural "The following recommended plugins are currently inactive: %1$s."
-msgstr[0] "没有启用的可选插件：%1$s"
-
-#: inc/plugins/plugin-activation.php:383
-msgid "Begin installing plugin"
-msgid_plural "Begin installing plugins"
-msgstr[0] "查看清单"
-
-#: inc/plugins/plugin-activation.php:388
-msgid "Begin updating plugin"
-msgid_plural "Begin updating plugins"
-msgstr[0] "开始升级插件"
-
-#: inc/plugins/plugin-activation.php:393
-msgid "Begin activating plugin"
-msgid_plural "Begin activating plugins"
-msgstr[0] "开始启用插件"
-
-#: inc/plugins/plugin-activation.php:397
-msgid "Return to Required Plugins Installer"
-msgstr "返回插件清单"
-
-#: inc/plugins/plugin-activation.php:398
-msgid "Return to the Dashboard"
-msgstr "返回仪表板"
-
-#: inc/plugins/plugin-activation.php:399 inc/plugins/plugin-activation.php:3286
-msgid "Plugin activated successfully."
-msgstr "插件启用成功"
-
-#: inc/plugins/plugin-activation.php:400 inc/plugins/plugin-activation.php:3079
-msgid "The following plugin was activated successfully:"
-msgid_plural "The following plugins were activated successfully:"
-msgstr[0] "成功启用插件："
-
-#. translators: 1: plugin name.
-#: inc/plugins/plugin-activation.php:402
-#, php-format
-msgid "No action taken. Plugin %1$s was already active."
-msgstr "插件 %1$s 运行中"
-
-#. translators: 1: plugin name.
-#: inc/plugins/plugin-activation.php:404
-#, php-format
-msgid ""
-"Plugin not activated. A higher version of %s is needed for this theme. "
-"Please update the plugin."
-msgstr "启用失败，需要更高版本的% s，请更新插件"
-
-#. translators: 1: dashboard link.
-#: inc/plugins/plugin-activation.php:406
-#, php-format
-msgid "All plugins installed and activated successfully. %1$s"
-msgstr "所有插件已被成功安装并激活 %1$s"
-
-#: inc/plugins/plugin-activation.php:407
-msgid "Dismiss this notice"
-msgstr "不再显示"
-
-#: inc/plugins/plugin-activation.php:408
-msgid ""
-"There are one or more required or recommended plugins to install, update or "
-"activate."
-msgstr "有一个或多个必须的插件或推荐的插件需要安装、更新或激活"
-
-#: inc/plugins/plugin-activation.php:409
-msgid "Please contact the administrator of this site for help."
-msgstr "请联系网站管理员寻求帮助"
-
-#: inc/plugins/plugin-activation.php:615
-msgid "This plugin needs to be updated to be compatible with your theme."
-msgstr "这个插件需要更新才能与你的主题相兼容"
-
-#: inc/plugins/plugin-activation.php:616
-msgid "Update Required"
-msgstr "需要更新"
-
-#: inc/plugins/plugin-activation.php:731
-msgid "Set the parent_slug config variable instead."
-msgstr "设置 parent_slug 配置变量"
-
-#: inc/plugins/plugin-activation.php:1038
-msgid ""
-"The remote plugin package does not contain a folder with the desired slug "
-"and renaming did not work."
-msgstr "远程插件包中没有包含所需的文件"
-
-#: inc/plugins/plugin-activation.php:1038
-#: inc/plugins/plugin-activation.php:1048
-msgid ""
-"Please contact the plugin provider and ask them to package their plugin "
-"according to the WordPress guidelines."
-msgstr "请联系插件提供商，并要求他们按照WordPress的指南来打包插件"
-
-#: inc/plugins/plugin-activation.php:1048
-msgid ""
-"The remote plugin package consists of more than one file, but the files are "
-"not packaged in a folder."
-msgstr "远程插件包由多个文件组成，但是文件并没有打包在一个文件夹中"
-
-#: inc/plugins/plugin-activation.php:1206
-msgid ""
-"Welcome to use Dobby theme to create, review the <a target=\"_blank\" rel="
-"\"nofollow\" href=\"https://www.vtrois.com/theme-dobby.html\">instructions</"
-"a> before using this theme, If you find BUG please submit <a target=\"_blank"
-"\" rel=\"nofollow\" href=\"https://github.com/Vtrois/Dobby/issues/new?"
-"title=Bug%20/%20Suggest%3A%20&body=**%E9%97%AE%E9%A2%98%E6%8F%8F%E8%BF%B0**"
-"%0A%0A%EF%BC%88%E7%AE%80%E6%98%8E%E6%89%BC%E8%A6%81%E7%9A%84%E6%8F%8F%E8%BF"
-"%B0%E4%B8%80%E4%B8%8B%E9%97%AE%E9%A2%98%EF%BC%89%0A%0A**%E4%BA%A7%E7%94%9F"
-"%E7%8E%AF%E5%A2%83**%0A%0A-%20%E8%AE%BE%E5%A4%87%EF%BC%9A%EF%BC%88%E6%89%8B"
-"%E6%9C%BA%E3%80%81%E5%B9%B3%E6%9D%BF%E7%AD%89%E7%A7%BB%E5%8A%A8%E8%AE%BE"
-"%E5%A4%87%E6%97%B6%E5%A1%AB%E5%86%99%E6%AD%A4%E9%A1%B9%EF%BC%89%0A-"
-"%20%E6%B5%8F%E8%A7%88%E5%99%A8%E5%8F%8A%E7%89%88%E6%9C%AC%EF%BC%9A%0A-"
-"%20%E6%BC%94%E7%A4%BA%E5%9C%B0%E5%9D%80%EF%BC%9A%0A%0A**%E5%A4%8D%E7%8E"
-"%B0%E6%AD%A5%E5%A5%8F**%0A%0A1.%20%0A2.%20%0A\">feedback</a>, welcome to "
-"join the theme of exchange QQ group : <a target=\"_blank\" rel=\"nofollow\" "
-"href=\"http://shang.qq.com/wpa/qunwpa?"
-"idkey=182bd07a135c085c88ab7e3de38f2b2d9a86983292355a4708926b99dcd5b89f"
-"\">51880737</a>"
-msgstr ""
-"欢迎使用 Dobby 主题开始创作，在使用主题之前推荐查看<a target=\"_blank\" rel="
-"\"nofollow\" href=\"https://www.vtrois.com/theme-dobby.html\">使用说明</a>，"
-"如果发现 BUG 或者有 Suggest 请<a target=\"_blank\" rel=\"nofollow\" href="
-"\"https://github.com/Vtrois/Dobby/issues/new?title=Bug%20/%20Suggest%3A"
-"%20&body=**%E9%97%AE%E9%A2%98%E6%8F%8F%E8%BF%B0**%0A%0A%EF%BC%88%E7%AE"
-"%80%E6%98%8E%E6%89%BC%E8%A6%81%E7%9A%84%E6%8F%8F%E8%BF%B0%E4%B8%80%E4%B8%8B"
-"%E9%97%AE%E9%A2%98%EF%BC%89%0A%0A**%E4%BA%A7%E7%94%9F%E7%8E%AF%E5%A2%83**%0A"
-"%0A-%20%E8%AE%BE%E5%A4%87%EF%BC%9A%EF%BC%88%E6%89%8B%E6%9C%BA"
-"%E3%80%81%E5%B9%B3%E6%9D%BF%E7%AD%89%E7%A7%BB%E5%8A%A8%E8%AE%BE"
-"%E5%A4%87%E6%97%B6%E5%A1%AB%E5%86%99%E6%AD%A4%E9%A1%B9%EF%BC%89%0A-"
-"%20%E6%B5%8F%E8%A7%88%E5%99%A8%E5%8F%8A%E7%89%88%E6%9C%AC%EF%BC%9A%0A-"
-"%20%E6%BC%94%E7%A4%BA%E5%9C%B0%E5%9D%80%EF%BC%9A%0A%0A**%E5%A4%8D%E7%8E"
-"%B0%E6%AD%A5%E5%A5%8F**%0A%0A1.%20%0A2.%20%0A\">提交反馈</a>，同时欢迎加入主"
-"题交流群：<a target=\"_blank\" rel=\"nofollow\" href=\"http://shang.qq.com/"
-"wpa/qunwpa?"
-"idkey=182bd07a135c085c88ab7e3de38f2b2d9a86983292355a4708926b99dcd5b89f"
-"\">51880737</a>"
-
-#: inc/plugins/plugin-activation.php:1235
-#: inc/plugins/plugin-activation.php:3075
-msgctxt "plugin A *and* plugin B"
-msgid "and"
-msgstr ","
-
-#: inc/plugins/plugin-activation.php:2403
-msgid "Required"
-msgstr "推荐"
-
-#: inc/plugins/plugin-activation.php:2406
-msgid "Recommended"
-msgstr "可选"
-
-#: inc/plugins/plugin-activation.php:2422
-msgid "WordPress Repository"
-msgstr "官方资源"
-
-#: inc/plugins/plugin-activation.php:2425
-msgid "External Source"
-msgstr "外部资源"
-
-#: inc/plugins/plugin-activation.php:2428
-msgid "Pre-Packaged"
-msgstr "预装资源"
-
-#: inc/plugins/plugin-activation.php:2445
-msgid "Not Installed"
-msgstr "未安装"
-
-#: inc/plugins/plugin-activation.php:2449
-msgid "Installed But Not Activated"
-msgstr "未启用"
-
-#: inc/plugins/plugin-activation.php:2451
-msgid "Active"
-msgstr "启用"
-
-#: inc/plugins/plugin-activation.php:2457
-msgid "Required Update not Available"
-msgstr "更新不可用"
-
-#: inc/plugins/plugin-activation.php:2460
-msgid "Requires Update"
-msgstr "需要更新"
-
-#: inc/plugins/plugin-activation.php:2463
-msgid "Update recommended"
-msgstr "建议更新"
-
-#. translators: 1: install status, 2: update status
-#: inc/plugins/plugin-activation.php:2472
-#, php-format
-msgctxt "Install/Update Status"
-msgid "%1$s, %2$s"
-msgstr "%1$s, %2$s"
-
-#. translators: 1: number of plugins.
-#: inc/plugins/plugin-activation.php:2518
-#, php-format
-msgctxt "plugins"
-msgid "All <span class=\"count\">(%s)</span>"
-msgid_plural "All <span class=\"count\">(%s)</span>"
-msgstr[0] "全部 <span class=\"count\">(%s)</span>"
-
-#. translators: 1: number of plugins.
-#: inc/plugins/plugin-activation.php:2522
-#, php-format
-msgid "To Install <span class=\"count\">(%s)</span>"
-msgid_plural "To Install <span class=\"count\">(%s)</span>"
-msgstr[0] "待安装 <span class=\"count\">(%s)</span>"
-
-#. translators: 1: number of plugins.
-#: inc/plugins/plugin-activation.php:2526
-#, php-format
-msgid "Update Available <span class=\"count\">(%s)</span>"
-msgid_plural "Update Available <span class=\"count\">(%s)</span>"
-msgstr[0] "待更新 <span class=\"count\">(%s)</span>"
-
-#. translators: 1: number of plugins.
-#: inc/plugins/plugin-activation.php:2530
-#, php-format
-msgid "To Activate <span class=\"count\">(%s)</span>"
-msgid_plural "To Activate <span class=\"count\">(%s)</span>"
-msgstr[0] "未启用 <span class=\"count\">(%s)</span>"
-
-#: inc/plugins/plugin-activation.php:2612
-msgctxt "as in: \"version nr unknown\""
-msgid "unknown"
-msgstr "unknown"
-
-#: inc/plugins/plugin-activation.php:2620
-msgid "Installed version:"
-msgstr "已经安装的版本："
-
-#: inc/plugins/plugin-activation.php:2628
-msgid "Minimum required version:"
-msgstr "所需的最低版本："
-
-#: inc/plugins/plugin-activation.php:2657
-msgid "No plugins to install, update or activate."
-msgstr "没有插件需要安装、更新或启用"
-
-#: inc/plugins/plugin-activation.php:2671
-msgid "Plugin"
-msgstr "插件"
-
-#: inc/plugins/plugin-activation.php:2672
-msgid "Source"
-msgstr "资源"
-
-#: inc/plugins/plugin-activation.php:2673
-msgid "Type"
-msgstr "类型"
-
-#: inc/plugins/plugin-activation.php:2677
-msgid "Version"
-msgstr "版本"
-
-#: inc/plugins/plugin-activation.php:2678
-msgid "Status"
-msgstr "状态"
-
-#. translators: %2$s: plugin name in screen reader markup
-#: inc/plugins/plugin-activation.php:2727
-#, php-format
-msgid "Install %2$s"
-msgstr "安装 %2$s"
-
-#. translators: %2$s: plugin name in screen reader markup
-#: inc/plugins/plugin-activation.php:2732
-#, php-format
-msgid "Update %2$s"
-msgstr "更新 %2$s"
-
-#. translators: %2$s: plugin name in screen reader markup
-#: inc/plugins/plugin-activation.php:2738
-#, php-format
-msgid "Activate %2$s"
-msgstr "启用 %2$s"
-
-#: inc/plugins/plugin-activation.php:2810
-msgid "Upgrade message from the plugin author:"
-msgstr "插件作者的升级信息："
-
-#: inc/plugins/plugin-activation.php:2843
-msgid "Install"
-msgstr "安装"
-
-#: inc/plugins/plugin-activation.php:2849
-msgid "Update"
-msgstr "更新"
-
-#: inc/plugins/plugin-activation.php:2852
-msgid "Activate"
-msgstr "启用"
-
-#: inc/plugins/plugin-activation.php:2883
-msgid "No plugins were selected to be installed. No action taken."
-msgstr "没有选择需要安装的插件"
-
-#: inc/plugins/plugin-activation.php:2885
-msgid "No plugins were selected to be updated. No action taken."
-msgstr "没有选择需要更新的插件"
-
-#: inc/plugins/plugin-activation.php:2926
-msgid "No plugins are available to be installed at this time."
-msgstr "目前还没有安装插件"
-
-#: inc/plugins/plugin-activation.php:2928
-msgid "No plugins are available to be updated at this time."
-msgstr "所选插件暂时没有新的版本"
-
-#: inc/plugins/plugin-activation.php:3035
-msgid "No plugins were selected to be activated. No action taken."
-msgstr "没有选择需要启用的插件"
-
-#: inc/plugins/plugin-activation.php:3061
-msgid "No plugins are available to be activated at this time."
-msgstr "没有可启用的插件"
-
-#: inc/plugins/plugin-activation.php:3285
-msgid "Plugin activation failed."
-msgstr "插件启用失败"
-
-#. translators: 1: plugin name, 2: action number 3: total number of actions.
-#: inc/plugins/plugin-activation.php:3629
-#, php-format
-msgid "Updating Plugin %1$s (%2$d/%3$d)"
-msgstr "正在升级插件 %1$s (%2$d/%3$d)"
-
-#. translators: 1: plugin name, 2: error message.
-#: inc/plugins/plugin-activation.php:3632
-#, php-format
-msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
-msgstr "安装 %1$s 时发生错误： <strong>%2$s</strong>"
-
-#. translators: 1: plugin name.
-#: inc/plugins/plugin-activation.php:3634
-#, php-format
-msgid "The installation of %1$s failed."
-msgstr "安装 %1$s 失败"
-
-#: inc/plugins/plugin-activation.php:3638
-msgid ""
-"The installation and activation process is starting. This process may take a "
-"while on some hosts, so please be patient."
-msgstr "安装已经开始了，这个过程可能要花上一段时间，所以请耐心等待"
-
-#. translators: 1: plugin name.
-#: inc/plugins/plugin-activation.php:3640
-#, php-format
-msgid "%1$s installed and activated successfully."
-msgstr "成功安装和激活 %1$s"
-
-#: inc/plugins/plugin-activation.php:3641
-msgid "All installations and activations have been completed."
-msgstr "所有的装置和激活都已完成"
-
-#. translators: 1: plugin name, 2: action number 3: total number of actions.
-#: inc/plugins/plugin-activation.php:3643
-#, php-format
-msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
-msgstr "安装和激活插件 %1$s (%2$d/%3$d)"
-
-#: inc/plugins/plugin-activation.php:3646
-msgid ""
-"The installation process is starting. This process may take a while on some "
-"hosts, so please be patient."
-msgstr "安装已经开始了，这个过程可能要花上一段时间，所以请耐心等待"
-
-#. translators: 1: plugin name.
-#: inc/plugins/plugin-activation.php:3648
-#, php-format
-msgid "%1$s installed successfully."
-msgstr "%1$s 安装完成"
-
-#: inc/plugins/plugin-activation.php:3649
-msgid "All installations have been completed."
-msgstr "所有的插件均已安装完成"
-
-#. translators: 1: plugin name, 2: action number 3: total number of actions.
-#: inc/plugins/plugin-activation.php:3651
-#, php-format
-msgid "Installing Plugin %1$s (%2$d/%3$d)"
-msgstr "正在安装插件 %1$s (%2$d/%3$d)"
-
-#: inc/plugins/plugin-activation.php:3656
-msgid "Show Details"
-msgstr "显示详细信息"
-
-#: inc/plugins/plugin-activation.php:3656
-msgid "Hide Details"
-msgstr "隐藏详细信息"
-
-#: options.php:25
-msgid "Global config"
+#: inc/shortcode.php:44
+msgid "Download"
+msgstr "下载"
+
+#: inc/shortcode.php:78 inc/shortcode.php:89 inc/shortcode.php:100
+#: inc/shortcode.php:111
+msgid "Title"
+msgstr "标题"
+
+#: inc/shortcode.php:149
+msgid "CID"
+msgstr "CID"
+
+#: inc/shortcode.php:246
+msgid "Add the expression"
+msgstr "添加表情"
+
+#: inc/single.php:304
+msgid "Reply"
+msgstr "回复"
+
+#: inc/single/single-alpha.php:8
+msgid "Home"
+msgstr "主页"
+
+#: inc/single/single-alpha.php:10
+msgid "Article"
+msgstr "正文"
+
+#: inc/single/single-alpha.php:57 inc/single/single-gamma.php:47
+msgid "None"
+msgstr "暂无"
+
+#: inc/single/single-alpha.php:60 inc/single/single-gamma.php:50
+msgid "© The copyright belongs to the author"
+msgstr "© 著作权归作者所有"
+
+#: inc/widget.php:13
+msgid "Single Widgets"
+msgstr "文章侧边栏"
+
+#: inc/widget.php:21
+msgid "Page Widgets"
+msgstr "页面侧边栏"
+
+#: inc/widget.php:29
+msgid "Index Widgets"
+msgstr "主页侧边栏"
+
+#: inc/widget.php:71
+msgid "Advertising"
+msgstr "广告版块"
+
+#: inc/widget.php:72
+msgid "Display picture ads at your site"
+msgstr "在您的网站上展示图片广告"
+
+#: inc/widget.php:131
+msgid "Tag Cloud"
+msgstr "标签聚合"
+
+#: inc/widget.php:132
+msgid "The tags of your site article is displayed"
+msgstr "展示您的站点文章的标签"
+
+#: inc/widget.php:218 inc/widget.php:251
+msgid "Recent Comments"
+msgstr "最近评论"
+
+#: inc/widget.php:219
+msgid "Your site recently commented on the presentation"
+msgstr "展示您的站点最近评论"
+
+#: inc/widget.php:270
+msgid "Thematic content"
+msgstr "专题栏目"
+
+#: inc/widget.php:271
+msgid "Display thematic content at your site"
+msgstr "展示您网站的专题栏目"
+
+#: options.php:18
+msgid "Global Config"
 msgstr "全局配置"
 
-#: options.php:29
-msgid "Example Background"
-msgstr ""
+#: options.php:22
+msgid "Navbar layout"
+msgstr "导航布局"
 
-#: options.php:30
-msgid "Change the background CSS."
-msgstr ""
+#: options.php:28 options.php:187
+msgid "Style 1"
+msgstr "样式一"
 
-#: options.php:37
+#: options.php:29 options.php:188
+msgid "Style 2"
+msgstr "样式二"
+
+#: options.php:33
 msgid "Favicon ico"
-msgstr ""
+msgstr "收藏夹图标"
 
-#: options.php:43
-msgid "Keywords"
-msgstr ""
-
-#: options.php:49
-msgid "Description"
-msgstr ""
-
-#: options.php:55
-#, fuzzy
-#| msgid "Page config"
-msgid "Image config"
-msgstr "页面配置"
-
-#: options.php:59
-msgid "Featured picture"
-msgstr ""
-
-#: options.php:66
+#: options.php:39
 msgid "Default gravatar"
-msgstr ""
+msgstr "默认头像"
 
-#: options.php:73
-msgid "Share picture"
-msgstr ""
+#: options.php:46
+msgid "Keywords"
+msgstr "关键词"
 
-#: options.php:80
-msgid "Single config"
+#: options.php:52
+msgid "Description"
+msgstr "站点描述"
+
+#: options.php:58
+msgid "Login page url"
+msgstr "登录页面地址"
+
+#: options.php:64
+msgid "ICP number"
+msgstr "工信部备案信息"
+
+#: options.php:70
+msgid "GA number"
+msgstr "公安网备案信息"
+
+#: options.php:76
+msgid "GA link"
+msgstr "公安网备案连接"
+
+#: options.php:82
+msgid "Index Config"
+msgstr "主页配置"
+
+#: options.php:86 options.php:264 options.php:390
+msgid "Function status"
+msgstr "功能状态"
+
+#: options.php:87
+msgid "Whether to enable the index page?"
+msgstr "是否开启特色主页？"
+
+#: options.php:93 options.php:108 options.php:123
+msgid "Project name"
+msgstr "专题名称"
+
+#: options.php:98 options.php:113 options.php:128
+msgid "Project meta"
+msgstr "专题简介"
+
+#: options.php:103
+msgid "Project single"
+msgstr "文章 ID"
+
+#: options.php:118 options.php:133
+msgid "Project category"
+msgstr "分类 ID"
+
+#: options.php:138
+msgid "Image Config"
+msgstr "图片配置"
+
+#: options.php:142
+msgid "Category banner"
+msgstr "分类头图"
+
+#: options.php:149
+msgid "Tag banner"
+msgstr "标签头图"
+
+#: options.php:156
+msgid "Search banner"
+msgstr "搜索头图"
+
+#: options.php:163
+msgid "Default share images"
+msgstr "默认分享图片"
+
+#: options.php:170
+msgid "404 images"
+msgstr "404图片"
+
+#: options.php:177
+msgid "Single Config"
 msgstr "文章配置"
 
-#: options.php:84
-msgid "Page config"
-msgstr "页面配置"
+#: options.php:181
+msgid "Single layout"
+msgstr "文章布局"
 
-#: options.php:88
-msgid "Mail config"
+#: options.php:192
+msgid "Index thumbnail"
+msgstr "主页特色图片"
+
+#: options.php:199
+msgid "Inside thumbnail"
+msgstr "内页特色图片"
+
+#: options.php:206
+msgid "Copyright content"
+msgstr "版权信息"
+
+#: options.php:211
+msgid "Mail Config"
 msgstr "邮件配置"
 
-#: options.php:92
-msgid "Donate config"
-msgstr "捐赠配置"
+#: options.php:215
+msgid "SMTP service"
+msgstr "SMTP服务"
 
-#: options.php:96
-msgid "Social config"
-msgstr "社交配置"
+#: options.php:216
+msgid "Whether to enable SMTP service?"
+msgstr "是否启用SMTP服务？"
+
+#: options.php:222
+msgid "Sender"
+msgstr "发信人"
+
+#: options.php:227
+msgid "Mail server"
+msgstr "邮箱服务器"
+
+#: options.php:232
+msgid "Server port"
+msgstr "服务器端口"
+
+#: options.php:237
+msgid "Mail account"
+msgstr "邮箱帐号"
+
+#: options.php:242
+msgid "Email password"
+msgstr "邮箱密码"
+
+#: options.php:247
+msgid "Enable SMTPAuth service"
+msgstr "启用SMTPAuth服务"
+
+#: options.php:248
+msgid "Whether to enable SMTPAuth service?"
+msgstr "是否启用SMTPAuth服务？"
+
+#: options.php:254
+msgid "SMTPSecure set"
+msgstr "SMTPSecure设置"
+
+#: options.php:260
+msgid "Carousel Config"
+msgstr "轮播配置"
+
+#: options.php:265
+msgid "Whether to enable the carousel?"
+msgstr "是否开启轮播功能？"
+
+#: options.php:271
+msgid "The first image"
+msgstr "第一张图片"
+
+#: options.php:276
+msgid "The first url"
+msgstr "第一个链接"
+
+#: options.php:282
+msgid "The first title"
+msgstr "第一个标题"
+
+#: options.php:288
+msgid "The first meta"
+msgstr "第一条简介"
+
+#: options.php:294
+msgid "The second image"
+msgstr "第二张图片"
+
+#: options.php:299
+msgid "The second url"
+msgstr "第二个链接"
+
+#: options.php:305
+msgid "The second title"
+msgstr "第二个标题"
+
+#: options.php:311
+msgid "The second meta"
+msgstr "第二条简介"
+
+#: options.php:317
+msgid "The third image"
+msgstr "第三张图片"
+
+#: options.php:322
+msgid "The third url"
+msgstr "第三个链接"
+
+#: options.php:328
+msgid "The third title"
+msgstr "第三个标题"
+
+#: options.php:334
+msgid "The third meta"
+msgstr "第三条简介"
+
+#: options.php:340
+msgid "The fourth image"
+msgstr "第四张图片"
+
+#: options.php:345
+msgid "The fourth url"
+msgstr "第四个链接"
+
+#: options.php:351
+msgid "The fourth title"
+msgstr "第四个标题"
+
+#: options.php:357
+msgid "The fourth meta"
+msgstr "第四条简介"
+
+#: options.php:363
+msgid "The fifth image"
+msgstr "第五张图片"
+
+#: options.php:368
+msgid "The fifth url"
+msgstr "第五个链接"
+
+#: options.php:374
+msgid "The fifth title"
+msgstr "第五个标题"
+
+#: options.php:380
+msgid "The fifth meta"
+msgstr "第五条简介"
+
+#: options.php:386
+msgid "Donate Config"
+msgstr "打赏配置"
+
+#: options.php:391
+msgid "Whether to enable the donate?"
+msgstr "是否开启打赏功能？"
+
+#: options.php:397
+msgid "Alipay QR Code"
+msgstr "支付宝收款码"
+
+#: options.php:403
+msgid "Wechat QR Code"
+msgstr "微信收款码"
+
+#: search.php:23
+msgid "There is nothing you need for the time being"
+msgstr "暂时没有你要找的内容"
 
 #. Theme Name of the plugin/theme
 msgid "Dobby"
@@ -698,22 +678,3 @@ msgstr "Vtrois"
 #. Author URI of the plugin/theme
 msgid "https://www.vtrois.com/"
 msgstr "https://www.vtrois.com/"
-
-#~ msgid "Dobby - Html Compress"
-#~ msgstr "页面压缩"
-
-#~ msgid "Dobby - Page Permalink"
-#~ msgstr "页面伪静态"
-
-#~ msgid "Available version:"
-#~ msgstr "当前的可用版本："
-
-#, fuzzy
-#~| msgid "Save Options"
-#~ msgid "Site Options"
-#~ msgstr "保存设置"
-
-#, fuzzy
-#~| msgid "Upload"
-#~ msgid "Uploader Test"
-#~ msgstr "上传文件"
