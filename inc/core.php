@@ -1,12 +1,12 @@
 <?php
 
 /**
-* Initialization Theme
-*
-* @author Vtrois <seaton@vtrois.com>
-* @license GPL-3.0
-* @since 0.1.1
-*/
+ * Initialization Theme
+ *
+ * @author Vtrois <seaton@vtrois.com>
+ * @license GPL-3.0
+ * @since 1.0
+ */
 add_action( 'load-themes.php', 'dobby_init_theme' );
 
 function dobby_init_theme(){
@@ -18,12 +18,25 @@ function dobby_init_theme(){
 }
 
 /**
-* Loads the Options Panel
-*
-* @author Vtrois <seaton@vtrois.com>
-* @license GPL-3.0
-* @since 0.1.1
-*/
+ * Theme updating
+ *
+ * @author Vtrois <seaton@vtrois.com>
+ * @license GPL-3.0
+ * @since 1.0
+ */
+require_once( get_template_directory() . '/inc/version.php' );
+$update_checker = new ThemeUpdateChecker(
+    'Dobby', 
+    'https://mirrors.vtrois.com/update/?action=get_metadata&slug=dobby'
+);
+
+/**
+ * Loads the Options Panel
+ *
+ * @author Vtrois <seaton@vtrois.com>
+ * @license GPL-3.0
+ * @since 1.0
+ */
 if (!function_exists('optionsframework_init')) {
   define('OPTIONS_FRAMEWORK_DIRECTORY', get_template_directory_uri() . '/inc/options/');
   require_once dirname(__FILE__) . '/options/options-framework.php';
@@ -63,126 +76,14 @@ function dobby_custom_sanitize_textarea($input) {
     return $output;
 }
 
-add_action( 'optionsframework_after', 'optionscheck_display_sidebar' );
-
-function optionscheck_display_sidebar() { ?>
-  <div id="optionsframework-sidebar">
-    <div class="metabox-holder">
-      <div class="postbox">
-        <h3>Options Panel Sidebar</h3>
-          <div class="inside">
-            <p>Here's where you could display some relevant information about the options panel.</p>
-            <p>For instance, you might want to add a donate button.</p>
-            <p>Or perhaps you want to let people know where to <a href="http://wptheming.com">go for support</a>.</p>
-          </div>
-      </div>
-    </div>
-  </div>
-<?php }
-
 /**
-* Initialization Plugins
-*
-* @author Vtrois <seaton@vtrois.com>
-* @license GPL-3.0
-* @since 0.1.2
-*/
-require_once( get_template_directory() . '/inc/plugins.php');
-
-add_action( 'tgmpa_register', 'dobby_register_required_plugins' );
-
-function dobby_register_required_plugins() {
-
-  $plugins = array(
-
-    array(
-      'name'               => 'Html Compress',
-      'slug'               => 'dobby-htmlcompress',
-      'source'             => get_template_directory() . '/inc/plugins/dobby-htmlcompress.zip',
-      'required'           => true,
-      'version'            => '1.0.3',
-      'external_url'       => 'https://www.vtrois.com/theme-dobby.html',
-    ),
-    
-    array(
-      'name'               => 'Page Permalink',
-      'slug'               => 'dobby-pagepermalink',
-      'source'             => get_template_directory() . '/inc/plugins/dobby-pagepermalink.zip',
-      'required'           => true,
-      'version'            => '1.0.5',
-      'external_url'       => 'https://www.vtrois.com/theme-dobby.html',
-    ),
-
-    // array(
-    //   'name'               => 'Adminbar',
-    //   'slug'               => 'adminbar',
-    //   'source'             => 'https://github.com/jrfnl/WP-adminbar-comments-to-pending/archive/master.zip',
-    //   'version'            => '1.0.0',
-    //   'required'           => false,
-    //   'external_url'       => 'https://www.vtrois.com/theme-dobby.html',
-    // ),
-
-    array(
-      'name'      => 'Disable Embeds',
-      'slug'      => 'disable-embeds',
-      'required'  => false,
-      'version'   => '1.3.0',
-    ),
-
-    array(
-      'name'      => 'Wordpress Sweep',
-      'slug'      => 'wp-sweep',
-      'required'  => true,
-      'version'   => '1.0.12',
-    ),
-
-    array(
-      'name'      => 'No Category Base',
-      'slug'      => 'no-category-base-wpml',
-      'required'  => true,
-      'version'   => '1.3',
-    ),
-
-    array(
-      'name'      => 'Redis Object Cache',
-      'slug'      => 'redis-cache',
-      'required'  => false,
-      'version'   => '1.3.5',
-    ),
-
-    array(
-      'name'      => 'XML Sitemap',
-      'slug'      => 'xml-sitemap-feed',
-      'required'  => true,
-      'version'   => '4.7.5',
-    ),   
-
-  );
-
-  $config = array(
-    'id'           => 'dobby',
-    'default_path' => '',
-    'menu'         => 'dobby-plugins',
-    'parent_slug'  => 'themes.php',
-    'capability'   => 'edit_theme_options',
-    'has_notices'  => false,
-    'dismissable'  => true,
-    'dismiss_msg'  => '',
-    'is_automatic' => false,
-    'message'      => '',
-  );
-
-  tgmpa( $plugins, $config );
-}
-
-/**
-* i18n theme languages
-*
-* @author Vtrois <seaton@vtrois.com>
-* @license GPL-3.0
-* @since 0.1.1
-* @todo Only Chinese and English are currently supported
-*/
+ * i18n theme languages
+ *
+ * @author Vtrois <seaton@vtrois.com>
+ * @license GPL-3.0
+ * @since 1.0
+ * @todo Only Chinese and English are currently supported
+ */
 add_action ('after_setup_theme', 'dobby_theme_languages');
 
 function dobby_theme_languages(){
@@ -190,18 +91,15 @@ function dobby_theme_languages(){
   load_theme_textdomain('dobby', get_template_directory() . '/languages');
   //theme option languages(inc/options)
   load_theme_textdomain('theme-textdomain', get_template_directory() . '/languages');
-  //plugin option languages(inc/plugins)
-  load_theme_textdomain('tgmpa', get_template_directory() . '/languages');
 }
 
 /**
-* User list show last login time
-*
-* @author Vtrois <seaton@vtrois.com>
-* @license GPL-3.0
-* @since 0.1.2
-*/
-
+ * User list show last login time
+ *
+ * @author Vtrois <seaton@vtrois.com>
+ * @license GPL-3.0
+ * @since 1.0
+ */
 add_action( 'wp_login', 'dobby_insert_last_login' );
 
 function dobby_insert_last_login( $login ) {
@@ -229,12 +127,12 @@ function dobby_add_last_login_column_value( $value, $column_name, $user_id ) {
 }
 
 /**
-* Show id for all thing
-*
-* @author Vtrois <seaton@vtrois.com>
-* @license GPL-3.0
-* @since 0.1.2
-*/
+ * Show id for all thing
+ *
+ * @author Vtrois <seaton@vtrois.com>
+ * @license GPL-3.0
+ * @since 1.0
+ */
 add_action('admin_init', 'dobby_ssid_add');
 
 function dobby_ssid_column($cols) {
@@ -292,48 +190,62 @@ function dobby_ssid_add() {
 }
 
 /**
-* Loading theme resources
-*
-* @author Vtrois <seaton@vtrois.com>
-* @license GPL-3.0
-* @since 0.1.2
-*/
+ * Loading theme resources
+ *
+ * @author Vtrois <seaton@vtrois.com>
+ * @license GPL-3.0
+ * @since 1.0
+ */
 add_action('wp_enqueue_scripts', 'dobby_theme_scripts');
 
 function dobby_theme_scripts() {  
   $dir = get_template_directory_uri();
 
   //css
-  wp_enqueue_style( 'bootstrap', $dir . '/css/bootstrap.min.css', array(), DOBBY_VERSION);
-  wp_enqueue_style( 'animate', $dir . '/css/animate.min.css', array(), DOBBY_VERSION);
-  wp_enqueue_style( 'layer', $dir . '/css/layer.min.css', array(), DOBBY_VERSION);
+  wp_enqueue_style( 'bootstrap', $dir . '/static/css/bootstrap.min.css', array(), DOBBY_VERSION);
+  wp_enqueue_style( 'animate', $dir . '/static/css/animate.min.css', array(), DOBBY_VERSION);
+  wp_enqueue_style( 'layer', $dir . '/static/css/layer.min.css', array(), DOBBY_VERSION);
+  wp_enqueue_style( 'flexslider', $dir . '/static/css/flexslider.min.css', array(), DOBBY_VERSION);
+  wp_enqueue_style( 'dobby', $dir . '/static/css/dobby.css', array(), DOBBY_VERSION);
 
   //javascript
-  wp_enqueue_script( 'jquery', $dir . '/js/jquery.min.js' , array(), DOBBY_VERSION);
-  wp_enqueue_script( 'easing', $dir . '/js/jquery.easing.min.js', array(), DOBBY_VERSION);
-  wp_enqueue_script( 'sticky', $dir . '/js/sticky.min.js', array(), DOBBY_VERSION);
-  wp_enqueue_script( 'wow', $dir . '/js/wow.min.js', array(), DOBBY_VERSION);
-  wp_enqueue_script( 'layer', $dir . '/js/layer.min.js', array(), DOBBY_VERSION);
+  wp_enqueue_script( 'jquery', $dir . '/static/js/jquery.min.js' , array(), DOBBY_VERSION);
+  wp_enqueue_script( 'easing', $dir . '/static/js/jquery.easing.min.js', array(), DOBBY_VERSION);
+  wp_enqueue_script( 'flexslider', $dir . '/static/js/jquery.flexslider.min.js', array(), DOBBY_VERSION);
+  wp_enqueue_script( 'sticky', $dir . '/static/js/sticky.min.js', array(), DOBBY_VERSION);
+  wp_enqueue_script( 'wow', $dir . '/static/js/wow.min.js', array(), DOBBY_VERSION);
+  wp_enqueue_script( 'layer', $dir . '/static/js/layer.min.js', array(), DOBBY_VERSION);
+  wp_enqueue_script( 'main', $dir . '/static/js/main.js', array(), DOBBY_VERSION);
 
   if (is_singular()) {
-    wp_enqueue_script( 'qrcode', $dir . '/js/jquery.qrcode.min.js', array(), DOBBY_VERSION);
+    wp_enqueue_style( 'highlight', $dir . '/static/css/highlight.min.css', array(), DOBBY_VERSION);
+    wp_enqueue_script( 'qrcode', $dir . '/static/js/jquery.qrcode.min.js', array(), DOBBY_VERSION);
+    wp_enqueue_script( 'highlight', $dir . '/static/js/highlight.min.js', array(), DOBBY_VERSION);
+    wp_enqueue_script( 'share', $dir . '/static/js/share.min.js', array(), DOBBY_VERSION);
   }
 
-  $dataToDobby = array(
+  $datatoDobby = array(
     'site' => home_url(),
     'directory' => get_stylesheet_directory_uri(),
+    'alipay' => dobby_option('donate_alipay_qr'),
+    'wechat' => dobby_option('donate_wechat_qr'),
+    'copyright' => dobby_option('single_copyright'),
+    'more' => __('Load More' , 'dobby'),
+    'repeat' => __('You are already supported it' , 'dobby'),
+    'thanks' => __('Thank you for your support' , 'dobby'),
+    'donate' => __('Donate to author' , 'dobby'),
+    'scan' => __('Scan payment' , 'dobby'),
   );
-  wp_localize_script( 'dobby', 'db', $dataToDobby );
-
+  wp_localize_script( 'main', 'v3', $datatoDobby );
 }
 
 /**
-* Replace the jquery resources
-*
-* @author Vtrois <seaton@vtrois.com>
-* @license GPL-3.0
-* @since 0.1.2
-*/
+ * Replace the jquery resources
+ *
+ * @author Vtrois <seaton@vtrois.com>
+ * @license GPL-3.0
+ * @since 1.0
+ */
 add_action( 'wp_enqueue_scripts', 'dobby_enqueue_scripts', 1 );
 
 function dobby_enqueue_scripts() {
@@ -341,24 +253,23 @@ function dobby_enqueue_scripts() {
 }
 
 /**
-* Enable links
-*
-* @author Vtrois <seaton@vtrois.com>
-* @license GPL-3.0
-* @since 0.1.2
-*/
+ * Enable links
+ *
+ * @author Vtrois <seaton@vtrois.com>
+ * @license GPL-3.0
+ * @since 1.0
+ */
 add_filter( 'pre_option_link_manager_enabled', '__return_true' );
 
 /**
-* Optimized built-in functions
-*
-* @author Vtrois <seaton@vtrois.com>
-* @license GPL-3.0
-* @since 0.1.2
-*/
+ * Optimized built-in functions
+ *
+ * @author Vtrois <seaton@vtrois.com>
+ * @license GPL-3.0
+ * @since 1.0
+ */
 add_filter( 'emoji_svg_url', '__return_false' );
 add_filter( 'show_admin_bar', '__return_false' );
-
 remove_action( 'wp_head', 'wp_print_head_scripts', 9 );
 remove_action( 'wp_head', 'wp_generator' );
 remove_action( 'wp_head', 'rsd_link' );
@@ -381,12 +292,12 @@ remove_filter('comment_text_rss', 'wp_staticize_emoji');
 remove_filter('wp_mail', 'wp_staticize_emoji_for_email');
 
 /**
-* Disable open sans
-*
-* @author Vtrois <seaton@vtrois.com>
-* @license GPL-3.0
-* @since 0.1.2
-*/
+ * Disable open sans
+ *
+ * @author Vtrois <seaton@vtrois.com>
+ * @license GPL-3.0
+ * @since 1.0
+ */
 add_filter('gettext_with_context', 'dobby_disable_open_sans', 888, 4 );
 
 function dobby_disable_open_sans( $translations, $text, $context, $domain )
@@ -398,12 +309,12 @@ function dobby_disable_open_sans( $translations, $text, $context, $domain )
 }
 
 /**
-* Replace the default avatar server
-*
-* @author Vtrois <seaton@vtrois.com>
-* @license GPL-3.0
-* @since 0.1.2
-*/
+ * Replace the default avatar server
+ *
+ * @author Vtrois <seaton@vtrois.com>
+ * @license GPL-3.0
+ * @since 1.0
+ */
 add_filter( 'get_avatar', 'dobby_get_avatar' );
 
 function dobby_get_avatar( $avatar ) {
@@ -412,12 +323,12 @@ function dobby_get_avatar( $avatar ) {
 }
 
 /**
-* Support webP file upload
-*
-* @author Vtrois <seaton@vtrois.com>
-* @license GPL-3.0
-* @since 0.1.2
-*/
+ * Support webP file upload
+ *
+ * @author Vtrois <seaton@vtrois.com>
+ * @license GPL-3.0
+ * @since 1.0
+ */
 add_filter('upload_mimes','dobby_upload_webp');
 
 function dobby_upload_webp ( $existing_mimes=array() ) {
@@ -426,12 +337,12 @@ function dobby_upload_webp ( $existing_mimes=array() ) {
 }
 
 /**
-* The welcome panel notice
-*
-* @author Vtrois <seaton@vtrois.com>
-* @license GPL-3.0
-* @since 0.1.4
-*/
+ * The welcome panel notice
+ *
+ * @author Vtrois <seaton@vtrois.com>
+ * @license GPL-3.0
+ * @since 1.0
+ */
 add_action( 'welcome_panel', 'dobby_welcome_notice' );
 
 function dobby_welcome_notice() {
