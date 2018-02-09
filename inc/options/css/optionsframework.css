@@ -1,7 +1,6 @@
 /* Options Framework Admin Styles */
 
 #optionsframework {
-    max-width:840px;
     background:#fff;
 }
 #optionsframework h3 {
@@ -223,4 +222,12 @@
 }
 #optionsframework .section:after {
 	clear: both;
+}
+
+#optionsframework-wrap .nav-tab-wrapper, .wrap h2.nav-tab-wrapper, h1.nav-tab-wrapper {
+	border: none;
+}
+#optionsframework-wrap .nav-tab{
+	margin: 4px;
+	border-bottom: 1px solid #ccc;
 }
