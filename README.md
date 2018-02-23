@@ -18,20 +18,7 @@ Dobby
 ├── inc
 │   ├── author.php
 │   ├── buttons
-│   │   ├── images
-│   │   │   ├── bilibili.png
-│   │   │   ├── danger.png
-│   │   │   ├── download.png
-│   │   │   ├── info.png
-│   │   │   ├── kbd.png
-│   │   │   ├── mark.png
-│   │   │   ├── music.png
-│   │   │   ├── striped.png
-│   │   │   ├── success.png
-│   │   │   ├── vqq.png
-│   │   │   ├── warning.png
-│   │   │   ├── youku.png
-│   │   │   └── youtube.png
+│   │   ├── images(has some button pic)
 │   │   └── more.js
 │   ├── comments.php
 │   ├── content
@@ -41,24 +28,7 @@ Dobby
 │   ├── global.php
 │   ├── images.php
 │   ├── navwalker.php
-│   ├── options
-│   │   ├── css
-│   │   │   └── optionsframework.css
-│   │   ├── images
-│   │   │   ├── col-left.png
-│   │   │   ├── col-right.png
-│   │   │   ├── ico-delete.png
-│   │   │   └── single.png
-│   │   ├── includes
-│   │   │   ├── class-options-framework-admin.php
-│   │   │   ├── class-options-framework.php
-│   │   │   ├── class-options-interface.php
-│   │   │   ├── class-options-media-uploader.php
-│   │   │   └── class-options-sanitization.php
-│   │   ├── js
-│   │   │   ├── media-uploader.js
-│   │   │   └── options-custom.js
-│   │   └── options-framework.php
+│   ├── options(theme options)
 │   ├── shortcode.php
 │   ├── single
 │   │   ├── single-alpha.php
@@ -99,45 +69,14 @@ Dobby
 │   ├── images
 │   │   ├── 404.svg
 │   │   ├── arrow.png
-│   │   ├── default
-│   │   │   ├── 404.png
-│   │   │   ├── banner.png
-│   │   │   ├── gravatar.png
-│   │   │   ├── qr.png
-│   │   │   └── thumbnail.png
+│   │   ├── default(has some default pic)
 │   │   ├── layer
 │   │   │   ├── icon-ext.png
 │   │   │   └── icon.png
 │   │   ├── loader.gif
-│   │   ├── payment
-│   │   │   ├── alipay.png
-│   │   │   └── wechat.png
+│   │   ├── payment(has the payment pic)
 │   │   ├── search.svg
-│   │   └── smilies
-│   │       ├── arrow.png
-│   │       ├── biggrin.png
-│   │       ├── confused.png
-│   │       ├── cool.png
-│   │       ├── cry.png
-│   │       ├── drooling.png
-│   │       ├── eek.png
-│   │       ├── evil.png
-│   │       ├── exclaim.png
-│   │       ├── idea.png
-│   │       ├── lol.png
-│   │       ├── mad.png
-│   │       ├── mrgreen.png
-│   │       ├── neutral.png
-│   │       ├── persevering.png
-│   │       ├── question.png
-│   │       ├── razz.png
-│   │       ├── redface.png
-│   │       ├── rolleyes.png
-│   │       ├── shit.png
-│   │       ├── smile.png
-│   │       ├── symbols.png
-│   │       ├── twisted.png
-│   │       └── wink.png
+│   │   └── smilies(has some smilie pic)
 │   └── js
 │       ├── comments.min.js
 │       ├── highlight.min.js
