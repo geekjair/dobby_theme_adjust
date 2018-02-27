@@ -51,14 +51,22 @@ function download($atts, $content=null, $code="") {
 }
 add_shortcode('download' , 'download' );
 
+function img($atts, $content=null, $code="") {
+    $return = '<img class="alignnone" src="';
+    $return .= htmlspecialchars($content);
+    $return .= '" alt="" width="100%" height="auto" />';
+    return $return;
+}
+add_shortcode('img' , 'img' );
 
-function pre($atts, $content=null, $code="") {
+function code($atts, $content=null, $code="") {
+    $content = htmlspecialchars($content);
     $return = '<div class="code-highlight"><pre><code class="hljs">';
     $return .= ltrim($content, '\n');
     $return .= '</code></pre></div>';
     return $return;
 }
-add_shortcode('pre' , 'pre' );
+add_shortcode('code' , 'code' );
 
 function kbd($atts, $content=null, $code="") {
     $return = '<kbd>';
@@ -242,7 +250,9 @@ add_action('after_wp_tiny_mce', 'add_button_pre');
 function add_button_pre($mce_settings) {
     ?>
     <script type="text/javascript">    
-      QTags.addButton( 'pre', 'pre', "[pre]\n", "\n[/pre]\n" );
+      QTags.addButton( 'pre', 'pre', "<pre>\n", "\n</pre>\n" );
     </script>
     <?php
 }
+
+add_filter('comment_text', 'do_shortcode');

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Dobby\n"
-"POT-Creation-Date: 2018-02-27 13:02+0800\n"
-"PO-Revision-Date: 2018-02-27 13:03+0800\n"
+"POT-Creation-Date: 2018-02-27 14:59+0800\n"
+"PO-Revision-Date: 2018-02-27 14:59+0800\n"
 "Last-Translator: Vtrois <seaton@vtrois.com>\n"
 "Language-Team: Vtrois <seaton@vtrois.com>\n"
 "Language: zh_CN\n"
@@ -49,6 +49,14 @@ msgstr "文章评论"
 #, php-format
 msgid "You must <a href=\"%s\">login</a> to comment"
 msgstr "你必须 <a href=\"%s\">登录</a> 才能发表评论"
+
+#: comments.php:43
+msgid "[img]Image URL[/img]"
+msgstr "[img]这里填写图片地址[/img]"
+
+#: comments.php:44
+msgid "[code]Code[/code]"
+msgstr "[code]这里填写代码[/code]"
 
 #: comments.php:53
 msgid "Cancel"
@@ -124,7 +132,7 @@ msgstr "打赏作者"
 msgid "Scan payment"
 msgstr "扫一扫支付"
 
-#: inc/core.php:357
+#: inc/core.php:358
 msgid ""
 "Welcome to use Dobby theme to create, review the <a target=\"_blank\" rel="
 "\"nofollow\" href=\"https://www.vtrois.com/theme-dobby.html\">instructions</"
@@ -309,12 +317,12 @@ msgstr "Bold Italic"
 msgid "Download"
 msgstr "下载"
 
-#: inc/shortcode.php:87 inc/shortcode.php:98 inc/shortcode.php:109
-#: inc/shortcode.php:120
+#: inc/shortcode.php:95 inc/shortcode.php:106 inc/shortcode.php:117
+#: inc/shortcode.php:128
 msgid "Title"
 msgstr "标题"
 
-#: inc/shortcode.php:158
+#: inc/shortcode.php:166
 msgid "CID"
 msgstr "CID"
 
@@ -690,3 +698,6 @@ msgstr "Vtrois"
 #. Author URI of the plugin/theme
 msgid "https://www.vtrois.com/"
 msgstr "https://www.vtrois.com/"
+
+#~ msgid "[pre]Code[/pre]"
+#~ msgstr "[pre]代码段[/pre]"

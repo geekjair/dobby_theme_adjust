@@ -11,8 +11,8 @@ if (isset($_SERVER['SCRIPT_FILENAME']) && 'comments.php' == basename($_SERVER['S
 <?php require_once( get_template_directory() . '/inc/smilies.php'); ?>
 <?php if ( comments_open() ) { ?>
 <div class="comments-alpha mt-3">
+	<h3 class="title mb-3"><?php _e('Article Comments','dobby') ?>（<?php comments_number('0', '1', '%'); ?>）</h3>
 	<div class="list">
-		<h3 class="title mb-3"><?php _e('Article Comments','dobby') ?>（<?php comments_number('0', '1', '%'); ?>）</h3>
 		<?php  wp_list_comments('type=comment&callback=comment_alpha'); ?>
 	</div>
 	<div id="commentpage" class="nav text-center my-3">
@@ -40,8 +40,8 @@ if (isset($_SERVER['SCRIPT_FILENAME']) && 'comments.php' == basename($_SERVER['S
 					<textarea class="form-control" id="comment" name="comment" rows="7" required="required"></textarea>
 					<div class="text-bar clearfix">
 						<div class="tool float-left">
-							<a class="addbtn" href="javascript:grin('etst')"><i class="dobby v3-picture"></i></a>
-							<a class="addbtn" href="javascript:grin('etst')"><i class="dobby v3-code"></i></a>
+							<a class="addbtn" href="javascript:grin('<?php _e('[img]Image URL[/img]','dobby'); ?>')"><i class="dobby v3-picture"></i></a>
+							<a class="addbtn" href="javascript:grin('<?php _e('[code]Code[/code]','dobby'); ?>')"><i class="dobby v3-code"></i></a>
 							<a class="addbtn" href="#" id="addsmile"><i class="dobby v3-smile"></i></a>
 							<div class="smile">
 								<div class="clearfix">
