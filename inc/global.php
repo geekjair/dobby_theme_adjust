@@ -202,14 +202,14 @@ function dobby_unCompress($content) {
  * @since 1.0
  */
 add_action('init', 'dobby_page_permalink', -1);
-
 function dobby_page_permalink() {
-  global $wp_rewrite;
-  if ( !strpos($wp_rewrite->get_page_permastruct(), '.html')){
-      $wp_rewrite->page_structure = $wp_rewrite->page_structure . '.html';
-  }
+    if (dobby_option('page_html')){
+        global $wp_rewrite;
+        if ( !strpos($wp_rewrite->get_page_permastruct(), '.html')){
+            $wp_rewrite->page_structure = $wp_rewrite->page_structure . '.html';
+        }
+    }
 }
-
 /**
  * Carousel
  *

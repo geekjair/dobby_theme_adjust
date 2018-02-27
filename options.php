@@ -213,7 +213,18 @@ function optionsframework_options() {
 		'name' => __( 'Copyright content' , 'dobby' ),
 		'id' => 'single_copyright',
 		'type' => 'text');
-	
+
+	$options[] = array(
+		'name' => __( 'Page Config' , 'dobby' ),
+		'type' => 'heading');
+			
+	$options[] = array(
+		'name' => __( 'Page permalink' , 'dobby' ),
+		'desc' => __( 'Whether to enable Page permalink?' , 'dobby' ),
+		'id' => 'page_html',
+		'std' => '0',
+		'type' => 'checkbox');
+
 	$options[] = array(
 		'name' => __( 'Mail Config' , 'dobby' ),
 		'type' => 'heading');
