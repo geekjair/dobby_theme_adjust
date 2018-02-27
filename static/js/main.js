@@ -10,24 +10,11 @@
 			$('.nav-list').toggleClass('nav-close');
 		};
 
-		function dropdownConf(){
-			$('.dropdown,.dropdown-menu').toggleClass('show');
-		};
-
 		$('[data-toggle="menu"]').on('click', function (e) {
 			// TODO: add .collapsing
 			menuConf();
 			$(document).one("click", function() {
 				menuConf();
-			});
-			e.stopPropagation();
-			return false;
-		});
-
-		$('[data-toggle="dropdown"]').on("click", function(e) {
-			dropdownConf();
-			$(document).one("click", function() {
-				dropdownConf();
 			});
 			e.stopPropagation();
 			return false;

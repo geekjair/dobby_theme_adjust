@@ -210,6 +210,7 @@ function dobby_theme_scripts() {
 
   //javascript
   wp_enqueue_script( 'jquery', $dir . '/static/js/jquery.min.js' , array(), DOBBY_VERSION);
+  wp_enqueue_script( 'bootstrap', $dir . '/static/js/bootstrap.min.js' , array(), DOBBY_VERSION);  
   wp_enqueue_script( 'easing', $dir . '/static/js/jquery.easing.min.js', array(), DOBBY_VERSION);
   wp_enqueue_script( 'flexslider', $dir . '/static/js/jquery.flexslider.min.js', array(), DOBBY_VERSION);
   wp_enqueue_script( 'sticky', $dir . '/static/js/sticky.min.js', array(), DOBBY_VERSION);
