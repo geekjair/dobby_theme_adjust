@@ -10,6 +10,7 @@ Within the download you'll find the following directories and files. You'll see 
 ```
 Dobby
 ├── 404.php
+├── LICENSE
 ├── category.php
 ├── comments.php
 ├── footer.php
@@ -28,7 +29,24 @@ Dobby
 │   ├── global.php
 │   ├── images.php
 │   ├── navwalker.php
-│   ├── options(theme options)
+│   ├── options
+│   │   ├── css
+│   │   │   └── optionsframework.css
+│   │   ├── images
+│   │   │   ├── col-left.png
+│   │   │   ├── col-right.png
+│   │   │   ├── ico-delete.png
+│   │   │   └── single.png
+│   │   ├── includes
+│   │   │   ├── class-options-framework-admin.php
+│   │   │   ├── class-options-framework.php
+│   │   │   ├── class-options-interface.php
+│   │   │   ├── class-options-media-uploader.php
+│   │   │   └── class-options-sanitization.php
+│   │   ├── js
+│   │   │   ├── media-uploader.js
+│   │   │   └── options-custom.js
+│   │   └── options-framework.php
 │   ├── shortcode.php
 │   ├── single
 │   │   ├── single-alpha.php
@@ -78,6 +96,7 @@ Dobby
 │   │   ├── search.svg
 │   │   └── smilies(has some smilie pic)
 │   └── js
+│       ├── bootstrap.min.js
 │       ├── comments.min.js
 │       ├── highlight.min.js
 │       ├── jquery.easing.min.js
