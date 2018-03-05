@@ -307,3 +307,12 @@ function comment_alpha($comment, $args, $depth) { $GLOBALS['comment'] = $comment
     </div>
   </div>
 <?php }
+
+/**
+ * theme support
+ *
+ * @author Vtrois <seaton@vtrois.com>
+ * @license GPL-3.0
+ * @since 1.0
+ */
+add_theme_support( 'post-formats', array('aside') );
