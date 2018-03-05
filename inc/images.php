@@ -62,3 +62,25 @@ function dobby_thumbnail() {
     }
   }  
 }
+
+function dobby_thumbnail_aside() {
+  global $post;
+  $img_id = get_post_thumbnail_id();
+  $img_url = wp_get_attachment_image_src($img_id,'dobby-entry-thumb');
+  $img_url = $img_url[0];
+  if ( has_post_thumbnail() ) {
+    echo '<a href="'.get_permalink().'"><img class="img-thumbnail" src="'.$img_url.'" alt="'.get_the_title().'" /></a>';
+  } else {
+    $content = $post->post_content;
+    $img_preg = "/<img (.*?) src=\"(.+?)\".*?>/";
+    preg_match($img_preg,$content,$img_src);
+    $img_count=count($img_src) - 1;
+    if (isset($img_src[$img_count]))
+      $img_val = $img_src[$img_count];
+    if(!empty($img_val)){
+      echo '<a href="'.get_permalink().'"><img class="img-thumbnail" src="'.$img_val.'" alt="'.get_the_title().'" /></a>';
+    } else {
+      echo '<a href="'.get_permalink().'"><img class="img-thumbnail" src="'. dobby_option('image_thumbnail_index') .'" alt="'.get_the_title().'" /></a>';
+    }
+  }  
+}
