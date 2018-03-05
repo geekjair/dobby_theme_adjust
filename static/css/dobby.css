@@ -66,14 +66,14 @@ a:hover {
 }
 
 pre {
-	padding: 0.6rem 1rem;
-	font-size: 0.75rem;
-	line-height: 4;
-	word-break: break-all;
-	word-wrap: break-word;
-	color: #999999;
-	background-color: #f8f8f8;
-	border-radius: 0.25rem;
+    padding: 1.5rem 1rem;
+    font-size: 0.75rem;
+    line-height: 1.7;
+    word-break: break-all;
+    word-wrap: break-word;
+    color: #999999;
+    background-color: #f8f8f8;
+    border-radius: 0.25rem;
 }
 
 code {
