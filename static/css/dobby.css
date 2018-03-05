@@ -389,6 +389,10 @@ kbd {
 	height: 11rem;
 	color: #fff;
 	background: center top no-repeat #eee;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 	width: 100%;
 }
 
@@ -974,7 +978,10 @@ kbd {
 	top: 0;
 	bottom: 0;
 	width: 100%;
-	background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
 }
@@ -986,8 +993,8 @@ kbd {
 	top: 0;
 	right: 0;
 	bottom: 0;
-	background: rgba(0,0,0,.9);
-	opacity: .8
+	background: #000;
+	opacity: .3
 }
 
 .alpha-content .post-bar .meta {
