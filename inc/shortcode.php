@@ -59,6 +59,15 @@ function img($atts, $content=null, $code="") {
 }
 add_shortcode('img' , 'img' );
 
+function pre($atts, $content=null, $code="") {
+    $content = htmlspecialchars($content);
+    $return = '<div class="code-highlight"><pre><code class="hljs">';
+    $return .= ltrim($content, '\n');
+    $return .= '</code></pre></div>';
+    return $return;
+}
+add_shortcode('pre' , 'pre' );
+
 function code($atts, $content=null, $code="") {
     $content = htmlspecialchars($content);
     $return = '<div class="code-highlight"><pre><code class="hljs">';
@@ -250,7 +259,7 @@ add_action('after_wp_tiny_mce', 'add_button_pre');
 function add_button_pre($mce_settings) {
     ?>
     <script type="text/javascript">    
-      QTags.addButton( 'pre', 'pre', "<pre>\n", "\n</pre>\n" );
+      QTags.addButton( 'pre', 'pre', "[pre]\n", "\n[/pre]\n" );
     </script>
     <?php
 }
