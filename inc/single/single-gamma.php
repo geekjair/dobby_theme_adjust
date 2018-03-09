@@ -9,7 +9,7 @@
  */
 ?>
 <main class="main alpha-content bg-white pb-4">
-<?php if (have_posts()) : the_post(); update_post_caches($posts);$shareData = array( 'url' => get_permalink(), 'title' => $post->post_name, 'excerpt' => get_the_excerpt(), 'img' => dobby_thumbnail_url(), ); wp_localize_script( 'share', 'sr', $shareData );?>
+<?php if (have_posts()) : the_post(); update_post_caches($posts);$shareData = array( 'url' => get_permalink(), 'title' => $post->post_title, 'excerpt' => get_the_excerpt(), 'img' => dobby_thumbnail_url(), ); wp_localize_script( 'share', 'sr', $shareData );?>
 	<div class="container-fluid">
 		<div class="post-bar row">
 			<div class="bg-thumbnail" style="background-image:url(<?php echo dobby_thumbnail_url(); ?>)">
