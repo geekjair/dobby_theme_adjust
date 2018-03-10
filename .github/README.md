@@ -114,7 +114,7 @@ Dobby
 
 ## License
 
-- The Lobby Html,CSS,JavaScript,and PHP files are licensed under the GNU General Public License v3:
+- The Dobby Html, CSS, JavaScript and PHP files are licensed under the GNU General Public License v3:
   - http://www.gnu.org/licenses/gpl-3.0.html
 
 - The Dobby documentation is licensed under the CC BY 4.0 License:
