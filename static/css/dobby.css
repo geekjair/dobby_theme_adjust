@@ -1302,7 +1302,8 @@ kbd {
 	text-overflow: ellipsis;
 	font-size: .95rem;
 	-webkit-box-orient: vertical;
-	-webkit-line-clamp: 4;
+	-webkit-line-clamp: 4; 
+	max-height: 5.5rem;
 }
 
 .aside-item .card-footer {
