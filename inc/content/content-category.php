@@ -10,9 +10,7 @@
 ?>
 <article class="col-md-6 col-xl-4 category-item">
 	<div class="alpha-item globe-block">
-		<div class="thumbnail">
-			<img class="img" src="<?php echo dobby_thumbnail_url(); ?>">
-		</div>
+		<?php dobby_thumbnail(); ?>
 		<div class="text p-3">
 			<h3 class="text-center"><a href="<?php the_permalink(); ?>" class="text-dark"><?php the_title(); ?></a></h3>
 			<p class="text-secondary"><?php echo wp_trim_words(get_the_excerpt(),150); ?></p>

@@ -954,10 +954,48 @@ kbd {
 	animation-fill-mode: both
 }
 
+.category-item .thumbnail {
+	min-height: 12rem;
+    position: relative;
+    display: block;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+@media screen and (max-width: 1199px) {
+	.category-item .thumbnail {
+		min-height: 15rem;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.category-item .thumbnail {
+		min-height: 12rem;
+	}
+}
+
 @media screen and (max-width: 768px) {
-	.alpha-item .text h3 {
+	.category-item .text h3 {
 		font-size: 1.125rem;
 		font-weight: 700;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.category-item .thumbnail {
+		min-height: 13rem;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.category-item .thumbnail {
+		min-height: 11rem;
+	}
+}
+
+@media screen and (max-width: 440px) {
+	.category-item .thumbnail {
+		min-height: 8.75rem;
 	}
 }
 
@@ -1265,7 +1303,6 @@ kbd {
 	font-size: .95rem;
 	-webkit-box-orient: vertical;
 	-webkit-line-clamp: 4;
-	-o-text-overflow: ellipsis
 }
 
 .aside-item .card-footer {
