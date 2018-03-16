@@ -32,6 +32,14 @@ function danger($atts, $content=null, $code="") {
 }
 add_shortcode('danger' , 'danger' );
 
+function title($atts, $content=null, $code="") {
+    $return = '<h2>';
+    $return .= $content;
+    $return .= '</h2>';
+    return $return;
+}
+add_shortcode('title' , 'title' );
+
 function wymusic($atts, $content=null, $code="") {
     $return = '<iframe style="width:100%" frameborder="no" border="0" marginwidth="0" marginheight="0" height=86 src="//music.163.com/outchain/player?type=2&id=';
     $return .= $content;
