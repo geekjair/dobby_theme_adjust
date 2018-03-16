@@ -22,7 +22,7 @@ msgstr ""
 
 #: 404.php:20
 msgid "Sorry, that page you visited does not exist"
-msgstr "很抱歉，你造訪的頁面不存在"
+msgstr "很抱歉，您造訪的頁面不存在"
 
 #: 404.php:21
 msgid "It may be the incorrect input address or the address has been deleted"
@@ -48,7 +48,7 @@ msgstr "文章評論"
 #: comments.php:24
 #, php-format
 msgid "You must <a href=\"%s\">login</a> to comment"
-msgstr "你必須 <a href=\"%s\">登入</a> 才能發表評論"
+msgstr "您必須 <a href=\"%s\">登入</a> 才能發表評論"
 
 #: comments.php:43
 msgid "[img]Image URL[/img]"
@@ -223,7 +223,7 @@ msgstr "移除檔案"
 
 #: inc/options/includes/class-options-media-uploader.php:70
 msgid "Upgrade your version of WordPress for full media support."
-msgstr "升級你的 WordPress 版本以獲得完整的媒體支援"
+msgstr "升級您的 WordPress 版本以獲得完整的媒體支援"
 
 #: inc/options/includes/class-options-media-uploader.php:94
 msgid "View File"
@@ -664,7 +664,7 @@ msgstr "微信收款碼"
 
 #: search.php:32
 msgid "There is nothing you need for the time being"
-msgstr "暫時沒有你要找的內容"
+msgstr "暫時沒有您要找的內容"
 
 #. Theme Name of the plugin/theme
 msgid "Dobby"
