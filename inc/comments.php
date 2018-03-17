@@ -91,3 +91,18 @@ function dobby_comment_callback(){
 add_action('wp_enqueue_scripts', 'dobby_comment_scripts');
 add_action('wp_ajax_nopriv_ajax_comment', 'dobby_comment_callback');
 add_action('wp_ajax_ajax_comment', 'dobby_comment_callback');
+
+function plc_comment_post( $incoming_comment ) { 
+    $incoming_comment['comment_content'] = htmlspecialchars($incoming_comment['comment_content']); 
+    $incoming_comment['comment_content'] = str_replace( "'", '&apos;', $incoming_comment['comment_content'] ); 
+    return( $incoming_comment ); 
+} 
+function plc_comment_display( $comment_to_display ) { 
+    $comment_to_display = str_replace( '&apos;', "'", $comment_to_display ); 
+    return $comment_to_display; 
+} 
+
+add_filter( 'preprocess_comment', 'plc_comment_post', '', 1); 
+add_filter( 'comment_text', 'plc_comment_display', '', 1); 
+add_filter( 'comment_text_rss', 'plc_comment_display', '', 1); 
+add_filter( 'comment_excerpt', 'plc_comment_display', '', 1);

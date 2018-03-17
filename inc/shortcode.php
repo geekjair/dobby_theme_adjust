@@ -272,4 +272,4 @@ function add_button_pre($mce_settings) {
     <?php
 }
 
-add_filter('comment_text', 'do_shortcode');
+// add_filter('comment_text', 'do_shortcode');

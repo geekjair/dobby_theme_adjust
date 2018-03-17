@@ -40,8 +40,6 @@ if (isset($_SERVER['SCRIPT_FILENAME']) && 'comments.php' == basename($_SERVER['S
 					<textarea class="form-control" id="comment" name="comment" rows="7" required="required"></textarea>
 					<div class="text-bar clearfix">
 						<div class="tool float-left">
-							<a class="addbtn" href="javascript:grin('<?php _e('[img]Image URL[/img]','dobby'); ?>')"><i class="dobby v3-picture"></i></a>
-							<a class="addbtn" href="javascript:grin('<?php _e('[code]Code[/code]','dobby'); ?>')"><i class="dobby v3-code"></i></a>
 							<a class="addbtn" href="#" id="addsmile"><i class="dobby v3-smile"></i></a>
 							<div class="smile">
 								<div class="clearfix">
