@@ -58,6 +58,8 @@ Dobby
 │   └── widget.php
 ├── index.php
 ├── languages
+│   ├── zh_TW.mo
+│   ├── zh_TW.po
 │   ├── zh_CN.mo
 │   └── zh_CN.po
 ├── options.php
