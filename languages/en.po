@@ -1,18 +1,18 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Dobby\n"
-"POT-Creation-Date: 2018-03-18 08:09+0800\n"
-"PO-Revision-Date: 2018-03-18 08:09+0800\n"
+"POT-Creation-Date: 2018-03-18 08:05+0800\n"
+"PO-Revision-Date: 2018-03-18 08:06+0800\n"
 "Last-Translator: Vtrois <seaton@vtrois.com>\n"
 "Language-Team: Vtrois <seaton@vtrois.com>\n"
-"Language: zh_TW\n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.8.7\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-WPHeader: style.css\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
 "esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
@@ -22,53 +22,53 @@ msgstr ""
 
 #: 404.php:20
 msgid "Sorry, that page you visited does not exist"
-msgstr "很抱歉，您造訪的頁面不存在"
+msgstr "Sorry, that page you visited does not exist"
 
 #: 404.php:21
 msgid "It may be the incorrect input address or the address has been deleted"
-msgstr "可能是輸入的位址有誤或該位址已被移除"
+msgstr "It may be the incorrect input address or the address has been deleted"
 
 #: 404.php:23
 msgid "Return"
-msgstr "返回上一頁"
+msgstr "Return"
 
 #: 404.php:24
 msgid "Homepage"
-msgstr "返回首頁"
+msgstr "Homepage"
 
 #: category.php:25 comments.php:19 inc/core.php:234 index.php:123 search.php:27
 #: tag.php:25
 msgid "Load More"
-msgstr "載入更多"
+msgstr "Load More"
 
 #: comments.php:14
 msgid "Article Comments"
-msgstr "文章評論"
+msgstr "Article Comments"
 
 #: comments.php:24
 #, php-format
 msgid "You must <a href=\"%s\">login</a> to comment"
-msgstr "您必須 <a href=\"%s\">登入</a> 才能發表評論"
+msgstr "You must <a href=\"%s\">login</a> to comment"
 
 #: comments.php:51
 msgid "Cancel"
-msgstr "取消"
+msgstr "Cancel"
 
 #: comments.php:52
 msgid "Enter"
-msgstr "發表評論"
+msgstr "Enter"
 
 #: inc/author.php:15
 msgid "The person is so lazy that he left nothing."
-msgstr "這個人很懶，什麼東西都沒留下"
+msgstr "The person is so lazy that he left nothing."
 
 #: inc/author.php:19
 msgid "Donate"
-msgstr "贊助"
+msgstr "Donate"
 
 #: inc/author.php:21
 msgid "Thumbs"
-msgstr "點讚"
+msgstr "Thumbs"
 
 #: inc/comments.php:76
 #, php-format
@@ -78,52 +78,52 @@ msgstr "<cite class=\"author_name\">%s</cite>"
 #: inc/content/content-aside.php:25 inc/content/content.php:19
 #: inc/single/single-alpha.php:33 inc/single/single-gamma.php:22
 msgid "Views"
-msgstr "次閱讀"
+msgstr "Views"
 
 #: inc/content/content-aside.php:28 inc/content/content.php:18
 #: inc/single/single-alpha.php:32 inc/single/single-gamma.php:21
 msgid "Comments"
-msgstr "條評論"
+msgstr "Comments"
 
 #: inc/content/content-aside.php:29 inc/content/content.php:20
 #: inc/single/single-alpha.php:34 inc/single/single-gamma.php:23
 msgid "Thumb"
-msgstr "人點讚"
+msgstr "Thumb"
 
 #: inc/content/content-aside.php:32 inc/content/content-category.php:20
 #: inc/global.php:238
 msgid "Read More"
-msgstr "閱讀全文"
+msgstr "Read More"
 
 #: inc/core.php:51 inc/core.php:52
 #: inc/options/includes/class-options-framework-admin.php:91
 #: inc/options/includes/class-options-framework-admin.php:92
 msgid "Theme Options"
-msgstr "主題設定"
+msgstr "Theme Options"
 
 #: inc/core.php:114
 msgid "Last login time"
-msgstr "最後登入"
+msgstr "Last login time"
 
 #: inc/core.php:125
 msgid "No record"
-msgstr "沒有記錄"
+msgstr "No record"
 
 #: inc/core.php:235
 msgid "You are already supported it"
-msgstr "您已經支持過了"
+msgstr "You are already supported it"
 
 #: inc/core.php:236
 msgid "Thank you for your support"
-msgstr "感謝您的支持"
+msgstr "Thank you for your support"
 
 #: inc/core.php:237
 msgid "Donate to author"
-msgstr "贊助作者"
+msgstr "Donate to author"
 
 #: inc/core.php:238
 msgid "Scan payment"
-msgstr "掃一掃支付"
+msgstr "Scan payment"
 
 #: inc/core.php:358
 msgid ""
@@ -133,77 +133,78 @@ msgid ""
 "\" rel=\"nofollow\" href=\"https://github.com/Vtrois/Dobby/issues/new"
 "\">feedback</a>."
 msgstr ""
-"歡迎使用 Dobby 主題開始創作，在使用主題之前推薦檢視<a target=\"_blank\" rel="
-"\"nofollow\" href=\"https://www.vtrois.com/theme-dobby.html\">使用說明</a>，"
-"如果發現 BUG 或是有任何建議請<a target=\"_blank\" rel=\"nofollow\" href="
-"\"https://github.com/Vtrois/Dobby/issues/new\">提交回報</a>。"
+"Welcome to use Dobby theme to create, review the <a target=\"_blank\" rel="
+"\"nofollow\" href=\"https://www.vtrois.com/theme-dobby.html\">instructions</"
+"a> before using this theme, If you find BUG please submit <a target=\"_blank"
+"\" rel=\"nofollow\" href=\"https://github.com/Vtrois/Dobby/issues/new"
+"\">feedback</a>."
 
 #: inc/global.php:86
 #, php-format
 msgid "Page %s"
-msgstr "第 %s 頁"
+msgstr "Page %s"
 
 #: inc/global.php:314
 msgid "Publish in:"
-msgstr "發表於："
+msgstr "Publish in:"
 
 #: inc/global.php:328
 msgid "Add the expression"
-msgstr "新增表情"
+msgstr "Add the expression"
 
 #: inc/navwalker.php:13
 msgid "Header Menu"
-msgstr "頂部導覽"
+msgstr "Header Menu"
 
 #: inc/navwalker.php:14
 msgid "Footer Menu"
-msgstr "底部導覽"
+msgstr "Footer Menu"
 
 #: inc/navwalker.php:193
 msgid "Add a menu"
-msgstr "新增導覽"
+msgstr "Add a menu"
 
 #: inc/options/includes/class-options-framework-admin.php:203
 msgid "Save Options"
-msgstr "儲存設定"
+msgstr "Save Options"
 
 #: inc/options/includes/class-options-framework-admin.php:204
 msgid "Restore Defaults"
-msgstr "還原預設"
+msgstr "Restore Defaults"
 
 #: inc/options/includes/class-options-framework-admin.php:204
 msgid "Click OK to reset. Any theme settings will be lost!"
-msgstr "是否還原預設設定（任何設定資料都將會遺失）？"
+msgstr "Click OK to reset. Any theme settings will be lost!"
 
 #: inc/options/includes/class-options-framework-admin.php:235
 msgid "Default options restored."
-msgstr "還原成功"
+msgstr "Default options restored."
 
 #: inc/options/includes/class-options-framework-admin.php:289
 msgid "Options saved."
-msgstr "儲存成功"
+msgstr "Options saved."
 
 #: inc/options/includes/class-options-media-uploader.php:62
 msgid "No file chosen"
-msgstr "沒有選擇檔案"
+msgstr "No file chosen"
 
 #: inc/options/includes/class-options-media-uploader.php:65
 #: inc/options/includes/class-options-media-uploader.php:118
 msgid "Upload"
-msgstr "上傳檔案"
+msgstr "Upload"
 
 #: inc/options/includes/class-options-media-uploader.php:67
 #: inc/options/includes/class-options-media-uploader.php:119
 msgid "Remove"
-msgstr "移除檔案"
+msgstr "Remove"
 
 #: inc/options/includes/class-options-media-uploader.php:70
 msgid "Upgrade your version of WordPress for full media support."
-msgstr "升級您的 WordPress 版本以獲得完整的媒體支援"
+msgstr "Upgrade your version of WordPress for full media support."
 
 #: inc/options/includes/class-options-media-uploader.php:94
 msgid "View File"
-msgstr "檢視檔案"
+msgstr "View File"
 
 #: inc/options/includes/class-options-sanitization.php:316
 msgid "No Repeat"
@@ -283,12 +284,12 @@ msgstr "Bold Italic"
 
 #: inc/shortcode.php:52
 msgid "Download"
-msgstr "下載"
+msgstr "Download"
 
 #: inc/shortcode.php:112 inc/shortcode.php:123 inc/shortcode.php:134
 #: inc/shortcode.php:145
 msgid "Title"
-msgstr "標題"
+msgstr "Title"
 
 #: inc/shortcode.php:183
 msgid "CID"
@@ -296,355 +297,355 @@ msgstr "CID"
 
 #: inc/single.php:304
 msgid "Reply"
-msgstr "回覆"
+msgstr "Reply"
 
 #: inc/single/single-alpha.php:18
 msgid "Home"
-msgstr "首頁"
+msgstr "Home"
 
 #: inc/single/single-alpha.php:20
 msgid "Article"
-msgstr "正文"
+msgstr "Article"
 
 #: inc/single/single-alpha.php:67 inc/single/single-gamma.php:57
 msgid "None"
-msgstr "暫無"
+msgstr "None"
 
 #: inc/single/single-alpha.php:70 inc/single/single-gamma.php:60
 msgid "© The copyright belongs to the author"
-msgstr "© 著作權歸作者所有"
+msgstr "© The copyright belongs to the author"
 
 #: inc/widget.php:13
 msgid "Single Widgets"
-msgstr "文章側邊欄"
+msgstr "Single Widgets"
 
 #: inc/widget.php:21
 msgid "Page Widgets"
-msgstr "頁面側邊欄"
+msgstr "Page Widgets"
 
 #: inc/widget.php:29
 msgid "Index Widgets"
-msgstr "首頁側邊欄"
+msgstr "Index Widgets"
 
 #: inc/widget.php:71
 msgid "Advertising"
-msgstr "廣告版塊"
+msgstr "Advertising"
 
 #: inc/widget.php:72
 msgid "Display picture ads at your site"
-msgstr "在您的網站上展示圖片廣告"
+msgstr "Display picture ads at your site"
 
 #: inc/widget.php:131
 msgid "Tag Cloud"
-msgstr "標籤雲"
+msgstr "Tag Cloud"
 
 #: inc/widget.php:132
 msgid "The tags of your site article is displayed"
-msgstr "展示您網站的文章標籤"
+msgstr "The tags of your site article is displayed"
 
 #: inc/widget.php:218 inc/widget.php:251
 msgid "Recent Comments"
-msgstr "最近評論"
+msgstr "Recent Comments"
 
 #: inc/widget.php:219
 msgid "Your site recently commented on the presentation"
-msgstr "展示您網站的最近評論"
+msgstr "Your site recently commented on the presentation"
 
 #: inc/widget.php:270
 msgid "Thematic content"
-msgstr "專題內容"
+msgstr "Thematic content"
 
 #: inc/widget.php:271
 msgid "Display thematic content at your site"
-msgstr "展示您網站的專題內容"
+msgstr "Display thematic content at your site"
 
 #: options.php:25
 msgid "Global Config"
-msgstr "全域設定"
+msgstr "Global Config "
 
 #: options.php:29
 msgid "Navbar layout"
-msgstr "導覽配置"
+msgstr "Navbar layout"
 
 #: options.php:35 options.php:194
 msgid "Style 1"
-msgstr "樣式一"
+msgstr "Style 1"
 
 #: options.php:36 options.php:195
 msgid "Style 2"
-msgstr "樣式二"
+msgstr "Style 2"
 
 #: options.php:40
 msgid "Favicon ico"
-msgstr "我的最愛圖示"
+msgstr "Favicon ico"
 
 #: options.php:46
 msgid "Default gravatar"
-msgstr "預設頭像"
+msgstr "Default gravatar"
 
 #: options.php:53
 msgid "Keywords"
-msgstr "關鍵字"
+msgstr "Keywords"
 
 #: options.php:59
 msgid "Description"
-msgstr "網站描述"
+msgstr "Description"
 
 #: options.php:65
 msgid "Login page url"
-msgstr "登入頁面位址"
+msgstr "Login page url"
 
 #: options.php:71
 msgid "ICP number"
-msgstr "工信部備案資訊"
+msgstr "ICP number"
 
 #: options.php:77
 msgid "GA number"
-msgstr "公安網備案資訊"
+msgstr "GA number"
 
 #: options.php:83
 msgid "GA link"
-msgstr "公安網備案連結"
+msgstr "GA link"
 
 #: options.php:89
 msgid "Index Config"
-msgstr "首頁設定"
+msgstr "Index Config"
 
 #: options.php:93 options.php:282 options.php:408
 msgid "Function status"
-msgstr "功能狀態"
+msgstr "Function status"
 
 #: options.php:94
 msgid "Whether to enable the index page?"
-msgstr "是否開啟特色首頁？"
+msgstr "Whether to enable the index page?"
 
 #: options.php:100 options.php:115 options.php:130
 msgid "Project name"
-msgstr "專題名稱"
+msgstr "Project name"
 
 #: options.php:105 options.php:120 options.php:135
 msgid "Project meta"
-msgstr "專題簡介"
+msgstr "Project meta"
 
 #: options.php:110
 msgid "Project single"
-msgstr "文章 ID"
+msgstr "Project single"
 
 #: options.php:125 options.php:140
 msgid "Project category"
-msgstr "分類 ID"
+msgstr "Project category"
 
 #: options.php:145
 msgid "Image Config"
-msgstr "圖片設定"
+msgstr "Image Config"
 
 #: options.php:149
 msgid "Category banner"
-msgstr "分類橫幅"
+msgstr "Category banner"
 
 #: options.php:156
 msgid "Tag banner"
-msgstr "標籤橫幅"
+msgstr "Tag banner"
 
 #: options.php:163
 msgid "Search banner"
-msgstr "搜尋橫幅"
+msgstr "Search banner"
 
 #: options.php:170
 msgid "Default share images"
-msgstr "預設分享圖片"
+msgstr "Default share images"
 
 #: options.php:177
 msgid "404 images"
-msgstr "404 圖片"
+msgstr "404 images"
 
 #: options.php:184
 msgid "Single Config"
-msgstr "文章設定"
+msgstr "Single Config"
 
 #: options.php:188
 msgid "Single layout"
-msgstr "文章配置"
+msgstr "Single layout"
 
 #: options.php:199
 msgid "Index thumbnail"
-msgstr "首頁特色圖片"
+msgstr "Index thumbnail"
 
 #: options.php:206
 msgid "Inside thumbnail"
-msgstr "內頁特色圖片"
+msgstr "Inside thumbnail"
 
 #: options.php:213
 msgid "Copyright content"
-msgstr "著作權資訊"
+msgstr "Copyright content"
 
 #: options.php:218
 msgid "Page Config"
-msgstr "頁面設定"
+msgstr "Page Config"
 
 #: options.php:222
 msgid "Page permalink"
-msgstr "頁面永久連結設定"
+msgstr "Page permalink"
 
 #: options.php:223
 msgid "Whether to enable Page permalink?"
-msgstr "是否開啟頁面永久連結設定？"
+msgstr "Whether to enable Page permalink?"
 
 #: options.php:229
 msgid "Mail Config"
-msgstr "郵件設定"
+msgstr "Mail Config"
 
 #: options.php:233
 msgid "SMTP service"
-msgstr "SMTP 服務"
+msgstr "SMTP service"
 
 #: options.php:234
 msgid "Whether to enable SMTP service?"
-msgstr "是否啟用 SMTP 服務？"
+msgstr "Whether to enable SMTP service?"
 
 #: options.php:240
 msgid "Sender"
-msgstr "寄件者"
+msgstr "Sender"
 
 #: options.php:245
 msgid "Mail server"
-msgstr "郵件伺服器"
+msgstr "Mail server"
 
 #: options.php:250
 msgid "Server port"
-msgstr "伺服器連接埠"
+msgstr "Server port"
 
 #: options.php:255
 msgid "Mail account"
-msgstr "信箱帳號"
+msgstr "Mail account"
 
 #: options.php:260
 msgid "Email password"
-msgstr "信箱密碼"
+msgstr "Email password"
 
 #: options.php:265
 msgid "Enable SMTPAuth service"
-msgstr "啟用 SMTPAuth 服務"
+msgstr "Enable SMTPAuth service"
 
 #: options.php:266
 msgid "Whether to enable SMTPAuth service?"
-msgstr "是否啟用 SMTPAuth 服務？"
+msgstr "Whether to enable SMTPAuth service?"
 
 #: options.php:272
 msgid "SMTPSecure set"
-msgstr "SMTPSecure 設定"
+msgstr "SMTPSecure set"
 
 #: options.php:278
 msgid "Carousel Config"
-msgstr "輪播設定"
+msgstr "Carousel Config"
 
 #: options.php:283
 msgid "Whether to enable the carousel?"
-msgstr "是否開啟輪播功能？"
+msgstr "Whether to enable the carousel?"
 
 #: options.php:289
 msgid "The first image"
-msgstr "第一張圖片"
+msgstr "The first image"
 
 #: options.php:294
 msgid "The first url"
-msgstr "第一個連結"
+msgstr "The first url"
 
 #: options.php:300
 msgid "The first title"
-msgstr "第一個標題"
+msgstr "The first title"
 
 #: options.php:306
 msgid "The first meta"
-msgstr "第一條簡介"
+msgstr "The first meta"
 
 #: options.php:312
 msgid "The second image"
-msgstr "第二張圖片"
+msgstr "The second image"
 
 #: options.php:317
 msgid "The second url"
-msgstr "第二個連結"
+msgstr "The second url"
 
 #: options.php:323
 msgid "The second title"
-msgstr "第二個標題"
+msgstr "The second title"
 
 #: options.php:329
 msgid "The second meta"
-msgstr "第二條簡介"
+msgstr "The second meta"
 
 #: options.php:335
 msgid "The third image"
-msgstr "第三張圖片"
+msgstr "The third image"
 
 #: options.php:340
 msgid "The third url"
-msgstr "第三個連結"
+msgstr "The third url"
 
 #: options.php:346
 msgid "The third title"
-msgstr "第三個標題"
+msgstr "The third title"
 
 #: options.php:352
 msgid "The third meta"
-msgstr "第三條簡介"
+msgstr "The third meta"
 
 #: options.php:358
 msgid "The fourth image"
-msgstr "第四張圖片"
+msgstr "The fourth image"
 
 #: options.php:363
 msgid "The fourth url"
-msgstr "第四個連結"
+msgstr "The fourth url"
 
 #: options.php:369
 msgid "The fourth title"
-msgstr "第四個標題"
+msgstr "The fourth title"
 
 #: options.php:375
 msgid "The fourth meta"
-msgstr "第四條簡介"
+msgstr "The fourth meta"
 
 #: options.php:381
 msgid "The fifth image"
-msgstr "第五張圖片"
+msgstr "The fifth image"
 
 #: options.php:386
 msgid "The fifth url"
-msgstr "第五個連結"
+msgstr "The fifth url"
 
 #: options.php:392
 msgid "The fifth title"
-msgstr "第五個標題"
+msgstr "The fifth title"
 
 #: options.php:398
 msgid "The fifth meta"
-msgstr "第五條簡介"
+msgstr "The fifth meta"
 
 #: options.php:404
 msgid "Donate Config"
-msgstr "贊助設定"
+msgstr "Donate Config"
 
 #: options.php:409
 msgid "Whether to enable the donate?"
-msgstr "是否開啟贊助功能？"
+msgstr "Whether to enable the donate?"
 
 #: options.php:415
 msgid "Alipay QR Code"
-msgstr "支付寶收款碼"
+msgstr "Alipay QR Code"
 
 #: options.php:421
 msgid "Wechat QR Code"
-msgstr "微信收款碼"
+msgstr "Wechat QR Code"
 
 #: search.php:32
 msgid "There is nothing you need for the time being"
-msgstr "暫時沒有您要找的內容"
+msgstr "There is nothing you need for the time being"
 
 #. Theme Name of the plugin/theme
 msgid "Dobby"
-msgstr "Dobby"
+msgstr "Article Comments"
 
 #. Theme URI of the plugin/theme
 msgid "https://github.com/Vtrois/Dobby"
@@ -656,8 +657,9 @@ msgid ""
 "minimalist style with elegance and sentiment to create a user experience "
 "first responsive theme which meets the ultimate quest for single page."
 msgstr ""
-"Dobby 被賦予了完美主義的工匠精神，使用充滿優雅與情懷的簡約風格，打造出的一款"
-"使用者體驗優先的回應式主題，滿足人們對每一張頁面的極致追求。"
+"Dobby is given a perfectionist craftsman spirit, and Dobby use the "
+"minimalist style with elegance and sentiment to create a user experience "
+"first responsive theme which meets the ultimate quest for single page."
 
 #. Author of the plugin/theme
 msgid "Vtrois"

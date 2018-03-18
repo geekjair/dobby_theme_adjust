@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Dobby\n"
-"POT-Creation-Date: 2018-03-05 11:03+0800\n"
-"PO-Revision-Date: 2018-03-05 11:03+0800\n"
+"POT-Creation-Date: 2018-03-18 08:08+0800\n"
+"PO-Revision-Date: 2018-03-18 08:09+0800\n"
 "Last-Translator: Vtrois <seaton@vtrois.com>\n"
 "Language-Team: Vtrois <seaton@vtrois.com>\n"
 "Language: zh_CN\n"
@@ -50,19 +50,11 @@ msgstr "文章评论"
 msgid "You must <a href=\"%s\">login</a> to comment"
 msgstr "你必须 <a href=\"%s\">登录</a> 才能发表评论"
 
-#: comments.php:43
-msgid "[img]Image URL[/img]"
-msgstr "[img]这里填写图片地址[/img]"
-
-#: comments.php:44
-msgid "[code]Code[/code]"
-msgstr "[code]这里填写代码[/code]"
-
-#: comments.php:53
+#: comments.php:51
 msgid "Cancel"
 msgstr "取消"
 
-#: comments.php:54
+#: comments.php:52
 msgid "Enter"
 msgstr "发表评论"
 
@@ -83,24 +75,25 @@ msgstr "点赞"
 msgid "<cite class=\"author_name\">%s</cite>"
 msgstr "<cite class=\"author_name\">%s</cite>"
 
-#: inc/content/content-category.php:22 inc/global.php:238
-msgid "Read More"
-msgstr "阅读全文"
-
-#: inc/content/content.php:18 inc/single/single-alpha.php:32
-#: inc/single/single-gamma.php:21
-msgid "Comments"
-msgstr "条评论"
-
-#: inc/content/content.php:19 inc/single/single-alpha.php:33
-#: inc/single/single-gamma.php:22
+#: inc/content/content-aside.php:25 inc/content/content.php:19
+#: inc/single/single-alpha.php:33 inc/single/single-gamma.php:22
 msgid "Views"
 msgstr "次阅读"
 
-#: inc/content/content.php:20 inc/single/single-alpha.php:34
-#: inc/single/single-gamma.php:23
+#: inc/content/content-aside.php:28 inc/content/content.php:18
+#: inc/single/single-alpha.php:32 inc/single/single-gamma.php:21
+msgid "Comments"
+msgstr "条评论"
+
+#: inc/content/content-aside.php:29 inc/content/content.php:20
+#: inc/single/single-alpha.php:34 inc/single/single-gamma.php:23
 msgid "Thumb"
 msgstr "人点赞"
+
+#: inc/content/content-aside.php:32 inc/content/content-category.php:20
+#: inc/global.php:238
+msgid "Read More"
+msgstr "阅读全文"
 
 #: inc/core.php:51 inc/core.php:52
 #: inc/options/includes/class-options-framework-admin.php:91
@@ -137,30 +130,13 @@ msgid ""
 "Welcome to use Dobby theme to create, review the <a target=\"_blank\" rel="
 "\"nofollow\" href=\"https://www.vtrois.com/theme-dobby.html\">instructions</"
 "a> before using this theme, If you find BUG please submit <a target=\"_blank"
-"\" rel=\"nofollow\" href=\"https://github.com/Vtrois/Dobby/issues/new?"
-"title=Bug%20/%20Suggest%3A%20&body=**%E9%97%AE%E9%A2%98%E6%8F%8F%E8%BF%B0**"
-"%0A%0A%EF%BC%88%E7%AE%80%E6%98%8E%E6%89%BC%E8%A6%81%E7%9A%84%E6%8F%8F%E8%BF"
-"%B0%E4%B8%80%E4%B8%8B%E9%97%AE%E9%A2%98%EF%BC%89%0A%0A**%E4%BA%A7%E7%94%9F"
-"%E7%8E%AF%E5%A2%83**%0A%0A-%20%E8%AE%BE%E5%A4%87%EF%BC%9A%EF%BC%88%E6%89%8B"
-"%E6%9C%BA%E3%80%81%E5%B9%B3%E6%9D%BF%E7%AD%89%E7%A7%BB%E5%8A%A8%E8%AE%BE"
-"%E5%A4%87%E6%97%B6%E5%A1%AB%E5%86%99%E6%AD%A4%E9%A1%B9%EF%BC%89%0A-"
-"%20%E6%B5%8F%E8%A7%88%E5%99%A8%E5%8F%8A%E7%89%88%E6%9C%AC%EF%BC%9A%0A-"
-"%20%E6%BC%94%E7%A4%BA%E5%9C%B0%E5%9D%80%EF%BC%9A%0A%0A**%E5%A4%8D%E7%8E"
-"%B0%E6%AD%A5%E5%A5%8F**%0A%0A1.%20%0A2.%20%0A\">feedback</a>."
+"\" rel=\"nofollow\" href=\"https://github.com/Vtrois/Dobby/issues/new"
+"\">feedback</a>."
 msgstr ""
 "欢迎使用 Dobby 主题开始创作，在使用主题之前推荐查看<a target=\"_blank\" rel="
 "\"nofollow\" href=\"https://www.vtrois.com/theme-dobby.html\">使用说明</a>，"
 "如果发现 BUG 或者有 Suggest 请<a target=\"_blank\" rel=\"nofollow\" href="
-"\"https://github.com/Vtrois/Dobby/issues/new?title=Bug%20/%20Suggest%3A"
-"%20&body=**%E9%97%AE%E9%A2%98%E6%8F%8F%E8%BF%B0**%0A%0A%EF%BC%88%E7%AE"
-"%80%E6%98%8E%E6%89%BC%E8%A6%81%E7%9A%84%E6%8F%8F%E8%BF%B0%E4%B8%80%E4%B8%8B"
-"%E9%97%AE%E9%A2%98%EF%BC%89%0A%0A**%E4%BA%A7%E7%94%9F%E7%8E%AF%E5%A2%83**%0A"
-"%0A-%20%E8%AE%BE%E5%A4%87%EF%BC%9A%EF%BC%88%E6%89%8B%E6%9C%BA"
-"%E3%80%81%E5%B9%B3%E6%9D%BF%E7%AD%89%E7%A7%BB%E5%8A%A8%E8%AE%BE"
-"%E5%A4%87%E6%97%B6%E5%A1%AB%E5%86%99%E6%AD%A4%E9%A1%B9%EF%BC%89%0A-"
-"%20%E6%B5%8F%E8%A7%88%E5%99%A8%E5%8F%8A%E7%89%88%E6%9C%AC%EF%BC%9A%0A-"
-"%20%E6%BC%94%E7%A4%BA%E5%9C%B0%E5%9D%80%EF%BC%9A%0A%0A**%E5%A4%8D%E7%8E"
-"%B0%E6%AD%A5%E5%A5%8F**%0A%0A1.%20%0A2.%20%0A\">提交反馈</a>。"
+"\"https://github.com/Vtrois/Dobby/issues/new\">提交反馈</a>."
 
 #: inc/global.php:86
 #, php-format
@@ -305,16 +281,16 @@ msgstr "Bold"
 msgid "Bold Italic"
 msgstr "Bold Italic"
 
-#: inc/shortcode.php:44
+#: inc/shortcode.php:52
 msgid "Download"
 msgstr "下载"
 
-#: inc/shortcode.php:95 inc/shortcode.php:106 inc/shortcode.php:117
-#: inc/shortcode.php:128
+#: inc/shortcode.php:112 inc/shortcode.php:123 inc/shortcode.php:134
+#: inc/shortcode.php:145
 msgid "Title"
 msgstr "标题"
 
-#: inc/shortcode.php:166
+#: inc/shortcode.php:183
 msgid "CID"
 msgstr "CID"
 
@@ -691,6 +667,12 @@ msgstr "Vtrois"
 msgid "https://www.vtrois.com/"
 msgstr "https://www.vtrois.com/"
 
+#~ msgid "[img]Image URL[/img]"
+#~ msgstr "[img]这里填写图片地址[/img]"
+
+#~ msgid "[code]Code[/code]"
+#~ msgstr "[code]这里填写代码[/code]"
+
 #~ msgid ""
 #~ "Welcome to use Dobby theme to create, review the <a target=\"_blank\" rel="
 #~ "\"nofollow\" href=\"https://www.vtrois.com/theme-dobby.html"
@@ -705,11 +687,7 @@ msgstr "https://www.vtrois.com/"
 #~ "%E5%A4%87%E6%97%B6%E5%A1%AB%E5%86%99%E6%AD%A4%E9%A1%B9%EF%BC%89%0A-"
 #~ "%20%E6%B5%8F%E8%A7%88%E5%99%A8%E5%8F%8A%E7%89%88%E6%9C%AC%EF%BC%9A%0A-"
 #~ "%20%E6%BC%94%E7%A4%BA%E5%9C%B0%E5%9D%80%EF%BC%9A%0A%0A**%E5%A4%8D%E7%8E"
-#~ "%B0%E6%AD%A5%E5%A5%8F**%0A%0A1.%20%0A2.%20%0A\">feedback</a>, welcome to "
-#~ "join the theme of exchange QQ group : <a target=\"_blank\" rel=\"nofollow"
-#~ "\" href=\"http://shang.qq.com/wpa/qunwpa?"
-#~ "idkey=182bd07a135c085c88ab7e3de38f2b2d9a86983292355a4708926b99dcd5b89f"
-#~ "\">51880737</a>"
+#~ "%B0%E6%AD%A5%E5%A5%8F**%0A%0A1.%20%0A2.%20%0A\">feedback</a>."
 #~ msgstr ""
 #~ "欢迎使用 Dobby 主题开始创作，在使用主题之前推荐查看<a target=\"_blank\" "
 #~ "rel=\"nofollow\" href=\"https://www.vtrois.com/theme-dobby.html\">使用说明"
@@ -723,11 +701,4 @@ msgstr "https://www.vtrois.com/"
 #~ "%A8%E8%AE%BE%E5%A4%87%E6%97%B6%E5%A1%AB%E5%86%99%E6%AD%A4%E9%A1%B9%EF%BC"
 #~ "%89%0A-%20%E6%B5%8F%E8%A7%88%E5%99%A8%E5%8F%8A%E7%89%88%E6%9C%AC%EF%BC%9A"
 #~ "%0A-%20%E6%BC%94%E7%A4%BA%E5%9C%B0%E5%9D%80%EF%BC%9A%0A%0A**%E5%A4%8D"
-#~ "%E7%8E%B0%E6%AD%A5%E5%A5%8F**%0A%0A1.%20%0A2.%20%0A\">提交反馈</a>，同时欢"
-#~ "迎加入主题交流群 <a target=\"_blank\" rel=\"nofollow\" href=\"http://"
-#~ "shang.qq.com/wpa/qunwpa?"
-#~ "idkey=182bd07a135c085c88ab7e3de38f2b2d9a86983292355a4708926b99dcd5b89f"
-#~ "\">51880737</a>"
-
-#~ msgid "[pre]Code[/pre]"
-#~ msgstr "[pre]代码段[/pre]"
+#~ "%E7%8E%B0%E6%AD%A5%E5%A5%8F**%0A%0A1.%20%0A2.%20%0A\">提交反馈</a>。"
