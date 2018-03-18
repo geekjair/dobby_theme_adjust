@@ -26,6 +26,13 @@ function optionsframework_options() {
 		'type' => 'heading');
 
 	$options[] = array(
+		'name' => __( 'Function status' , 'dobby' ),
+		'desc' => __( 'Whether to enable the web compression?' , 'dobby' ),
+		'id' => 'global_html',
+		'std' => '0',
+		'type' => 'checkbox');
+
+	$options[] = array(
 		'name' => __( 'Navbar layout' , 'dobby' ),
 		'id' => "global_nav_layout",
 		'std' => "alpha",

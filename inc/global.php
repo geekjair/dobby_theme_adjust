@@ -152,37 +152,38 @@ function dobby_current_url(){
  * @license GPL-3.0
  * @since 1.0
  */
-add_action('get_header', 'dobby_compress_html');
+if (dobby_option('global_html')) {
+  add_action('get_header', 'dobby_compress_html');
+  add_filter( "the_content", "dobby_unCompress");
+}
 
 function dobby_compress_html(){
-    function dobby_compress_html_main ($buffer){
-        $initial=strlen($buffer);
-        $buffer=explode("<!--Dobby-Compress-html-->", $buffer);
-        $count=count ($buffer);
-        for ($i = 0; $i <= $count; $i++){
-            if (stristr($buffer[$i], '<!--Dobby-Compress-html-no-compression-->')) {
-                $buffer[$i]=(str_replace("<!--Dobby-Compress-html-no-compression-->", " ", $buffer[$i]));
-            } else {
-                $buffer[$i]=(str_replace("\t", " ", $buffer[$i]));
-                $buffer[$i]=(str_replace("\n\n", "\n", $buffer[$i]));
-                $buffer[$i]=(str_replace("\n", "", $buffer[$i]));
-                $buffer[$i]=(str_replace("\r", "", $buffer[$i]));
-                while (stristr($buffer[$i], '  ')) {
-                    $buffer[$i]=(str_replace("  ", " ", $buffer[$i]));
-                }
+  function dobby_compress_html_main ($buffer){
+    $initial=strlen($buffer);
+    $buffer=explode("<!--Dobby-Compress-html-->", $buffer);
+    $count=count ($buffer);
+    for ($i = 0; $i <= $count; $i++){
+        if (stristr($buffer[$i], '<!--Dobby-Compress-html-no-compression-->')) {
+            $buffer[$i]=(str_replace("<!--Dobby-Compress-html-no-compression-->", " ", $buffer[$i]));
+        } else {
+            $buffer[$i]=(str_replace("\t", " ", $buffer[$i]));
+            $buffer[$i]=(str_replace("\n\n", "\n", $buffer[$i]));
+            $buffer[$i]=(str_replace("\n", "", $buffer[$i]));
+            $buffer[$i]=(str_replace("\r", "", $buffer[$i]));
+            while (stristr($buffer[$i], '  ')) {
+                $buffer[$i]=(str_replace("  ", " ", $buffer[$i]));
             }
-            $buffer_out.=$buffer[$i];
         }
-        $final=strlen($buffer_out);   
-        $savings=($initial-$final)/$initial*100;   
-        $savings=round($savings, 2);   
-        $buffer_out.="\n<!-- Initial: $initial bytes; Final: $final bytes; Reduce：$savings% :D -->";   
+        $buffer_out.=$buffer[$i];
+    }
+    $final=strlen($buffer_out);   
+    $savings=($initial-$final)/$initial*100;   
+    $savings=round($savings, 2);   
+    $buffer_out.="\n<!-- Initial: $initial bytes; Final: $final bytes; Reduce：$savings% :D -->";   
     return $buffer_out;
-}
+  }
   ob_start("dobby_compress_html_main");
 }
-
-add_filter( "the_content", "dobby_unCompress");
 
 function dobby_unCompress($content) {
     if(preg_match_all('/(crayon-|<\/pre>)/i', $content, $matches)) {

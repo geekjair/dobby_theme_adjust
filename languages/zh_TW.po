@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Dobby\n"
-"POT-Creation-Date: 2018-03-18 08:09+0800\n"
-"PO-Revision-Date: 2018-03-18 08:09+0800\n"
+"POT-Creation-Date: 2018-03-18 08:27+0800\n"
+"PO-Revision-Date: 2018-03-18 08:28+0800\n"
 "Last-Translator: Vtrois <seaton@vtrois.com>\n"
 "Language-Team: Vtrois <seaton@vtrois.com>\n"
 "Language: zh_TW\n"
@@ -91,7 +91,7 @@ msgid "Thumb"
 msgstr "人點讚"
 
 #: inc/content/content-aside.php:32 inc/content/content-category.php:20
-#: inc/global.php:238
+#: inc/global.php:239
 msgid "Read More"
 msgstr "閱讀全文"
 
@@ -143,11 +143,11 @@ msgstr ""
 msgid "Page %s"
 msgstr "第 %s 頁"
 
-#: inc/global.php:314
+#: inc/global.php:315
 msgid "Publish in:"
 msgstr "發表於："
 
-#: inc/global.php:328
+#: inc/global.php:329
 msgid "Add the expression"
 msgstr "新增表情"
 
@@ -362,279 +362,283 @@ msgstr "展示您網站的專題內容"
 msgid "Global Config"
 msgstr "全域設定"
 
-#: options.php:29
-msgid "Navbar layout"
-msgstr "導覽配置"
-
-#: options.php:35 options.php:194
-msgid "Style 1"
-msgstr "樣式一"
-
-#: options.php:36 options.php:195
-msgid "Style 2"
-msgstr "樣式二"
-
-#: options.php:40
-msgid "Favicon ico"
-msgstr "我的最愛圖示"
-
-#: options.php:46
-msgid "Default gravatar"
-msgstr "預設頭像"
-
-#: options.php:53
-msgid "Keywords"
-msgstr "關鍵字"
-
-#: options.php:59
-msgid "Description"
-msgstr "網站描述"
-
-#: options.php:65
-msgid "Login page url"
-msgstr "登入頁面位址"
-
-#: options.php:71
-msgid "ICP number"
-msgstr "工信部備案資訊"
-
-#: options.php:77
-msgid "GA number"
-msgstr "公安網備案資訊"
-
-#: options.php:83
-msgid "GA link"
-msgstr "公安網備案連結"
-
-#: options.php:89
-msgid "Index Config"
-msgstr "首頁設定"
-
-#: options.php:93 options.php:282 options.php:408
+#: options.php:29 options.php:100 options.php:289 options.php:415
 msgid "Function status"
 msgstr "功能狀態"
 
-#: options.php:94
+#: options.php:30
+msgid "Whether to enable the web compression?"
+msgstr "是否開啟網頁壓縮？"
+
+#: options.php:36
+msgid "Navbar layout"
+msgstr "導覽配置"
+
+#: options.php:42 options.php:201
+msgid "Style 1"
+msgstr "樣式一"
+
+#: options.php:43 options.php:202
+msgid "Style 2"
+msgstr "樣式二"
+
+#: options.php:47
+msgid "Favicon ico"
+msgstr "我的最愛圖示"
+
+#: options.php:53
+msgid "Default gravatar"
+msgstr "預設頭像"
+
+#: options.php:60
+msgid "Keywords"
+msgstr "關鍵字"
+
+#: options.php:66
+msgid "Description"
+msgstr "網站描述"
+
+#: options.php:72
+msgid "Login page url"
+msgstr "登入頁面位址"
+
+#: options.php:78
+msgid "ICP number"
+msgstr "工信部備案資訊"
+
+#: options.php:84
+msgid "GA number"
+msgstr "公安網備案資訊"
+
+#: options.php:90
+msgid "GA link"
+msgstr "公安網備案連結"
+
+#: options.php:96
+msgid "Index Config"
+msgstr "首頁設定"
+
+#: options.php:101
 msgid "Whether to enable the index page?"
 msgstr "是否開啟特色首頁？"
 
-#: options.php:100 options.php:115 options.php:130
+#: options.php:107 options.php:122 options.php:137
 msgid "Project name"
 msgstr "專題名稱"
 
-#: options.php:105 options.php:120 options.php:135
+#: options.php:112 options.php:127 options.php:142
 msgid "Project meta"
 msgstr "專題簡介"
 
-#: options.php:110
+#: options.php:117
 msgid "Project single"
 msgstr "文章 ID"
 
-#: options.php:125 options.php:140
+#: options.php:132 options.php:147
 msgid "Project category"
 msgstr "分類 ID"
 
-#: options.php:145
+#: options.php:152
 msgid "Image Config"
 msgstr "圖片設定"
 
-#: options.php:149
+#: options.php:156
 msgid "Category banner"
 msgstr "分類橫幅"
 
-#: options.php:156
+#: options.php:163
 msgid "Tag banner"
 msgstr "標籤橫幅"
 
-#: options.php:163
+#: options.php:170
 msgid "Search banner"
 msgstr "搜尋橫幅"
 
-#: options.php:170
+#: options.php:177
 msgid "Default share images"
 msgstr "預設分享圖片"
 
-#: options.php:177
+#: options.php:184
 msgid "404 images"
 msgstr "404 圖片"
 
-#: options.php:184
+#: options.php:191
 msgid "Single Config"
 msgstr "文章設定"
 
-#: options.php:188
+#: options.php:195
 msgid "Single layout"
 msgstr "文章配置"
 
-#: options.php:199
+#: options.php:206
 msgid "Index thumbnail"
 msgstr "首頁特色圖片"
 
-#: options.php:206
+#: options.php:213
 msgid "Inside thumbnail"
 msgstr "內頁特色圖片"
 
-#: options.php:213
+#: options.php:220
 msgid "Copyright content"
 msgstr "著作權資訊"
 
-#: options.php:218
+#: options.php:225
 msgid "Page Config"
 msgstr "頁面設定"
 
-#: options.php:222
+#: options.php:229
 msgid "Page permalink"
 msgstr "頁面永久連結設定"
 
-#: options.php:223
+#: options.php:230
 msgid "Whether to enable Page permalink?"
 msgstr "是否開啟頁面永久連結設定？"
 
-#: options.php:229
+#: options.php:236
 msgid "Mail Config"
 msgstr "郵件設定"
 
-#: options.php:233
+#: options.php:240
 msgid "SMTP service"
 msgstr "SMTP 服務"
 
-#: options.php:234
+#: options.php:241
 msgid "Whether to enable SMTP service?"
 msgstr "是否啟用 SMTP 服務？"
 
-#: options.php:240
+#: options.php:247
 msgid "Sender"
 msgstr "寄件者"
 
-#: options.php:245
+#: options.php:252
 msgid "Mail server"
 msgstr "郵件伺服器"
 
-#: options.php:250
+#: options.php:257
 msgid "Server port"
 msgstr "伺服器連接埠"
 
-#: options.php:255
+#: options.php:262
 msgid "Mail account"
 msgstr "信箱帳號"
 
-#: options.php:260
+#: options.php:267
 msgid "Email password"
 msgstr "信箱密碼"
 
-#: options.php:265
+#: options.php:272
 msgid "Enable SMTPAuth service"
 msgstr "啟用 SMTPAuth 服務"
 
-#: options.php:266
+#: options.php:273
 msgid "Whether to enable SMTPAuth service?"
 msgstr "是否啟用 SMTPAuth 服務？"
 
-#: options.php:272
+#: options.php:279
 msgid "SMTPSecure set"
 msgstr "SMTPSecure 設定"
 
-#: options.php:278
+#: options.php:285
 msgid "Carousel Config"
 msgstr "輪播設定"
 
-#: options.php:283
+#: options.php:290
 msgid "Whether to enable the carousel?"
 msgstr "是否開啟輪播功能？"
 
-#: options.php:289
+#: options.php:296
 msgid "The first image"
 msgstr "第一張圖片"
 
-#: options.php:294
+#: options.php:301
 msgid "The first url"
 msgstr "第一個連結"
 
-#: options.php:300
+#: options.php:307
 msgid "The first title"
 msgstr "第一個標題"
 
-#: options.php:306
+#: options.php:313
 msgid "The first meta"
 msgstr "第一條簡介"
 
-#: options.php:312
+#: options.php:319
 msgid "The second image"
 msgstr "第二張圖片"
 
-#: options.php:317
+#: options.php:324
 msgid "The second url"
 msgstr "第二個連結"
 
-#: options.php:323
+#: options.php:330
 msgid "The second title"
 msgstr "第二個標題"
 
-#: options.php:329
+#: options.php:336
 msgid "The second meta"
 msgstr "第二條簡介"
 
-#: options.php:335
+#: options.php:342
 msgid "The third image"
 msgstr "第三張圖片"
 
-#: options.php:340
+#: options.php:347
 msgid "The third url"
 msgstr "第三個連結"
 
-#: options.php:346
+#: options.php:353
 msgid "The third title"
 msgstr "第三個標題"
 
-#: options.php:352
+#: options.php:359
 msgid "The third meta"
 msgstr "第三條簡介"
 
-#: options.php:358
+#: options.php:365
 msgid "The fourth image"
 msgstr "第四張圖片"
 
-#: options.php:363
+#: options.php:370
 msgid "The fourth url"
 msgstr "第四個連結"
 
-#: options.php:369
+#: options.php:376
 msgid "The fourth title"
 msgstr "第四個標題"
 
-#: options.php:375
+#: options.php:382
 msgid "The fourth meta"
 msgstr "第四條簡介"
 
-#: options.php:381
+#: options.php:388
 msgid "The fifth image"
 msgstr "第五張圖片"
 
-#: options.php:386
+#: options.php:393
 msgid "The fifth url"
 msgstr "第五個連結"
 
-#: options.php:392
+#: options.php:399
 msgid "The fifth title"
 msgstr "第五個標題"
 
-#: options.php:398
+#: options.php:405
 msgid "The fifth meta"
 msgstr "第五條簡介"
 
-#: options.php:404
+#: options.php:411
 msgid "Donate Config"
 msgstr "贊助設定"
 
-#: options.php:409
+#: options.php:416
 msgid "Whether to enable the donate?"
 msgstr "是否開啟贊助功能？"
 
-#: options.php:415
+#: options.php:422
 msgid "Alipay QR Code"
 msgstr "支付寶收款碼"
 
-#: options.php:421
+#: options.php:428
 msgid "Wechat QR Code"
 msgstr "微信收款碼"
 
