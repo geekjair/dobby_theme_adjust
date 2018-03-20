@@ -203,6 +203,18 @@ function optionsframework_options() {
 	));	
 
 	$options[] = array(
+		'name' => __( 'WeChat push' , 'dobby' ),
+		'desc' => __( 'Whether to enable Server Chan?' , 'dobby' ),
+		'id' => 'single_comment_sc',
+		'std' => '0',
+		'type' => 'checkbox');
+
+	$options[] = array(
+		'name' => __( 'SCKEY' , 'dobby' ),
+		'id' => 'single_comment_key',
+		'type' => 'text');
+
+	$options[] = array(
 		'name' => __( 'Index thumbnail' , 'dobby' ),
 		'id' => 'image_thumbnail_index',
 		'std' => get_template_directory_uri() . '/static/images/default/thumbnail.png',

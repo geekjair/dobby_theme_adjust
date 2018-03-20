@@ -1,6 +1,36 @@
 <?php
 
 /**
+ * Add the reply WeChat push
+ *
+ * @author Vtrois <seaton@vtrois.com>
+ * @license GPL-3.0
+ * @since 1.0
+ */
+if (dobby_option('single_comment_sc')) {
+    add_action('comment_post', 'sc_send', 19, 2);
+    function sc_send($comment_id) {
+        $comment = get_comment($comment_id);
+        $key = dobby_option('single_comment_key');
+        $postdata = http_build_query(  
+            array(  
+            'text' => __('You have a new review','dobby'),  
+            'desp' => $comment->comment_content
+            )
+        );
+        $opts = array('http' =>  
+            array(
+            'method'  => 'POST',  
+            'header'  => 'Content-type: application/x-www-form-urlencoded',  
+            'content' => $postdata  
+            )  
+        );
+        $context = stream_context_create($opts);
+        return $result = file_get_contents('https://sc.ftqq.com/'.$key.'.send', false, $context);  
+    }
+}
+
+/**
  * Add @ for reply
  *
  * @author Vtrois <seaton@vtrois.com>

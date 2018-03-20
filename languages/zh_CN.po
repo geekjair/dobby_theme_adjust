@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Dobby\n"
-"POT-Creation-Date: 2018-03-18 08:27+0800\n"
-"PO-Revision-Date: 2018-03-18 08:27+0800\n"
+"POT-Creation-Date: 2018-03-20 09:24+0800\n"
+"PO-Revision-Date: 2018-03-20 09:24+0800\n"
 "Last-Translator: Vtrois <seaton@vtrois.com>\n"
 "Language-Team: Vtrois <seaton@vtrois.com>\n"
 "Language: zh_CN\n"
@@ -36,7 +36,7 @@ msgstr "返回上页"
 msgid "Homepage"
 msgstr "返回主页"
 
-#: category.php:25 comments.php:19 inc/core.php:234 index.php:123 search.php:27
+#: category.php:25 comments.php:19 inc/core.php:221 index.php:123 search.php:27
 #: tag.php:25
 msgid "Load More"
 msgstr "加载更多"
@@ -70,7 +70,11 @@ msgstr "打赏"
 msgid "Thumbs"
 msgstr "点赞"
 
-#: inc/comments.php:76
+#: inc/comments.php:17
+msgid "You have a new review"
+msgstr "您有新的留言"
+
+#: inc/comments.php:106
 #, php-format
 msgid "<cite class=\"author_name\">%s</cite>"
 msgstr "<cite class=\"author_name\">%s</cite>"
@@ -95,37 +99,37 @@ msgstr "人点赞"
 msgid "Read More"
 msgstr "阅读全文"
 
-#: inc/core.php:51 inc/core.php:52
+#: inc/core.php:38 inc/core.php:39
 #: inc/options/includes/class-options-framework-admin.php:91
 #: inc/options/includes/class-options-framework-admin.php:92
 msgid "Theme Options"
 msgstr "主题设置"
 
-#: inc/core.php:114
+#: inc/core.php:101
 msgid "Last login time"
 msgstr "最后登录"
 
-#: inc/core.php:125
+#: inc/core.php:112
 msgid "No record"
 msgstr "没有记录"
 
-#: inc/core.php:235
+#: inc/core.php:222
 msgid "You are already supported it"
 msgstr "您已经支持过了"
 
-#: inc/core.php:236
+#: inc/core.php:223
 msgid "Thank you for your support"
 msgstr "感谢您的支持"
 
-#: inc/core.php:237
+#: inc/core.php:224
 msgid "Donate to author"
 msgstr "打赏作者"
 
-#: inc/core.php:238
+#: inc/core.php:225
 msgid "Scan payment"
 msgstr "扫一扫支付"
 
-#: inc/core.php:358
+#: inc/core.php:345
 msgid ""
 "Welcome to use Dobby theme to create, review the <a target=\"_blank\" rel="
 "\"nofollow\" href=\"https://www.vtrois.com/theme-dobby.html\">instructions</"
@@ -362,7 +366,7 @@ msgstr "展示您网站的专题栏目"
 msgid "Global Config"
 msgstr "全局配置"
 
-#: options.php:29 options.php:100 options.php:289 options.php:415
+#: options.php:29 options.php:100 options.php:301 options.php:427
 msgid "Function status"
 msgstr "功能状态"
 
@@ -471,174 +475,186 @@ msgid "Single layout"
 msgstr "文章布局"
 
 #: options.php:206
+msgid "WeChat push"
+msgstr "微信推送"
+
+#: options.php:207
+msgid "Whether to enable Server Chan?"
+msgstr "是否开启Server酱微信推送？"
+
+#: options.php:213
+msgid "SCKEY"
+msgstr "SCKEY"
+
+#: options.php:218
 msgid "Index thumbnail"
 msgstr "主页特色图片"
 
-#: options.php:213
+#: options.php:225
 msgid "Inside thumbnail"
 msgstr "内页特色图片"
 
-#: options.php:220
+#: options.php:232
 msgid "Copyright content"
 msgstr "版权信息"
 
-#: options.php:225
+#: options.php:237
 msgid "Page Config"
 msgstr "页面配置"
 
-#: options.php:229
+#: options.php:241
 msgid "Page permalink"
 msgstr "页面伪静态配置"
 
-#: options.php:230
+#: options.php:242
 msgid "Whether to enable Page permalink?"
 msgstr "是否开启页面伪静态配置？"
 
-#: options.php:236
+#: options.php:248
 msgid "Mail Config"
 msgstr "邮件配置"
 
-#: options.php:240
+#: options.php:252
 msgid "SMTP service"
 msgstr "SMTP服务"
 
-#: options.php:241
+#: options.php:253
 msgid "Whether to enable SMTP service?"
 msgstr "是否启用SMTP服务？"
 
-#: options.php:247
+#: options.php:259
 msgid "Sender"
 msgstr "发信人"
 
-#: options.php:252
+#: options.php:264
 msgid "Mail server"
 msgstr "邮箱服务器"
 
-#: options.php:257
+#: options.php:269
 msgid "Server port"
 msgstr "服务器端口"
 
-#: options.php:262
+#: options.php:274
 msgid "Mail account"
 msgstr "邮箱帐号"
 
-#: options.php:267
+#: options.php:279
 msgid "Email password"
 msgstr "邮箱密码"
 
-#: options.php:272
+#: options.php:284
 msgid "Enable SMTPAuth service"
 msgstr "启用SMTPAuth服务"
 
-#: options.php:273
+#: options.php:285
 msgid "Whether to enable SMTPAuth service?"
 msgstr "是否启用SMTPAuth服务？"
 
-#: options.php:279
+#: options.php:291
 msgid "SMTPSecure set"
 msgstr "SMTPSecure设置"
 
-#: options.php:285
+#: options.php:297
 msgid "Carousel Config"
 msgstr "轮播配置"
 
-#: options.php:290
+#: options.php:302
 msgid "Whether to enable the carousel?"
 msgstr "是否开启轮播功能？"
 
-#: options.php:296
+#: options.php:308
 msgid "The first image"
 msgstr "第一张图片"
 
-#: options.php:301
+#: options.php:313
 msgid "The first url"
 msgstr "第一个链接"
 
-#: options.php:307
+#: options.php:319
 msgid "The first title"
 msgstr "第一个标题"
 
-#: options.php:313
+#: options.php:325
 msgid "The first meta"
 msgstr "第一条简介"
 
-#: options.php:319
+#: options.php:331
 msgid "The second image"
 msgstr "第二张图片"
 
-#: options.php:324
+#: options.php:336
 msgid "The second url"
 msgstr "第二个链接"
 
-#: options.php:330
+#: options.php:342
 msgid "The second title"
 msgstr "第二个标题"
 
-#: options.php:336
+#: options.php:348
 msgid "The second meta"
 msgstr "第二条简介"
 
-#: options.php:342
+#: options.php:354
 msgid "The third image"
 msgstr "第三张图片"
 
-#: options.php:347
+#: options.php:359
 msgid "The third url"
 msgstr "第三个链接"
 
-#: options.php:353
+#: options.php:365
 msgid "The third title"
 msgstr "第三个标题"
 
-#: options.php:359
+#: options.php:371
 msgid "The third meta"
 msgstr "第三条简介"
 
-#: options.php:365
+#: options.php:377
 msgid "The fourth image"
 msgstr "第四张图片"
 
-#: options.php:370
+#: options.php:382
 msgid "The fourth url"
 msgstr "第四个链接"
 
-#: options.php:376
+#: options.php:388
 msgid "The fourth title"
 msgstr "第四个标题"
 
-#: options.php:382
+#: options.php:394
 msgid "The fourth meta"
 msgstr "第四条简介"
 
-#: options.php:388
+#: options.php:400
 msgid "The fifth image"
 msgstr "第五张图片"
 
-#: options.php:393
+#: options.php:405
 msgid "The fifth url"
 msgstr "第五个链接"
 
-#: options.php:399
+#: options.php:411
 msgid "The fifth title"
 msgstr "第五个标题"
 
-#: options.php:405
+#: options.php:417
 msgid "The fifth meta"
 msgstr "第五条简介"
 
-#: options.php:411
+#: options.php:423
 msgid "Donate Config"
 msgstr "打赏配置"
 
-#: options.php:416
+#: options.php:428
 msgid "Whether to enable the donate?"
 msgstr "是否开启打赏功能？"
 
-#: options.php:422
+#: options.php:434
 msgid "Alipay QR Code"
 msgstr "支付宝收款码"
 
-#: options.php:428
+#: options.php:440
 msgid "Wechat QR Code"
 msgstr "微信收款码"
 
