@@ -11,6 +11,7 @@ Within the download you'll find the following directories and files. You'll see 
 Dobby
 ├── 404.php
 ├── LICENSE
+├── author.php
 ├── category.php
 ├── comments.php
 ├── footer.php
