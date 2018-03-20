@@ -18,19 +18,6 @@ function dobby_init_theme(){
 }
 
 /**
- * Theme updating
- *
- * @author Vtrois <seaton@vtrois.com>
- * @license GPL-3.0
- * @since 1.0
- */
-require_once( get_template_directory() . '/inc/version.php' );
-$update_checker = new ThemeUpdateChecker(
-    'Dobby', 
-    'https://mirrors.vtrois.com/update/?action=get_metadata&slug=dobby'
-);
-
-/**
  * Loads the Options Panel
  *
  * @author Vtrois <seaton@vtrois.com>
