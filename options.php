@@ -181,6 +181,13 @@ function optionsframework_options() {
 	);
 
 	$options[] = array(
+		'name' => __( 'Default author images' , 'dobby' ),
+		'id' => 'image_default_author',
+		'std' => get_template_directory_uri() . '/static/images/default/author.png',
+		'type' => 'upload'
+	);
+
+	$options[] = array(
 		'name' => __( '404 images' , 'dobby' ),
 		'id' => 'image_default_404',
 		'std' => get_template_directory_uri() . '/static/images/default/404.png',

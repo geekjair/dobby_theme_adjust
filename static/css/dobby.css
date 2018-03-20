@@ -22,7 +22,9 @@
 11.0 Login
 12.0 Comments
 13.0 Widgets
-14.0 Footer
+14.0 Page
+	14.1 Author
+15.0 Footer
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
@@ -2856,7 +2858,47 @@ kbd {
 }
 
 /*--------------------------------------------------------------
-14.0 Footer
+14.1 Author page
+--------------------------------------------------------------*/
+
+.banner-panel {
+	height: 19rem;
+}
+
+.author-page .author {
+	margin: 0 auto;
+    position: relative;
+    left: inherit;
+    transform: inherit;
+}
+
+.author-page .author .authorimg {
+	width: 120px;
+    height: 120px;
+    border: 4px solid #ffffff;
+    background-color: #ffffff;
+    position: absolute;
+    left: 50%;
+    margin-left: -64px;
+    top: -65px;
+    overflow: hidden;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+}
+
+.author-page .content .name{
+	font-size: 24px;
+    color: #444444;
+}
+
+.author-page .content .motto{
+    font-size: 14px;
+    color: #666666;
+}
+
+/*--------------------------------------------------------------
+15.0 Footer
 --------------------------------------------------------------*/
 
 .footer {
