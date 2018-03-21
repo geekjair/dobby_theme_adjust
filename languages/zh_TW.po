@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Dobby\n"
-"POT-Creation-Date: 2018-03-18 08:27+0800\n"
-"PO-Revision-Date: 2018-03-18 08:28+0800\n"
-"Last-Translator: Vtrois <seaton@vtrois.com>\n"
+"POT-Creation-Date: 2018-03-20 10:19+0800\n"
+"PO-Revision-Date: 2018-03-20 22:48+0800\n"
+"Last-Translator: zhtw <zhtw2013@gmail.com>\n"
 "Language-Team: Vtrois <seaton@vtrois.com>\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.7\n"
+"X-Generator: Poedit 1.8.8\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-WPHeader: style.css\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
@@ -36,8 +36,12 @@ msgstr "返回上一頁"
 msgid "Homepage"
 msgstr "返回首頁"
 
-#: category.php:25 comments.php:19 inc/core.php:234 index.php:123 search.php:27
-#: tag.php:25
+#: author.php:25 inc/author.php:15
+msgid "The person is so lazy that he left nothing."
+msgstr "這個人很懶，什麼東西都沒留下"
+
+#: author.php:36 category.php:25 comments.php:19 inc/core.php:221 index.php:123
+#: search.php:27 tag.php:25
 msgid "Load More"
 msgstr "載入更多"
 
@@ -58,10 +62,6 @@ msgstr "取消"
 msgid "Enter"
 msgstr "發表評論"
 
-#: inc/author.php:15
-msgid "The person is so lazy that he left nothing."
-msgstr "這個人很懶，什麼東西都沒留下"
-
 #: inc/author.php:19
 msgid "Donate"
 msgstr "贊助"
@@ -70,7 +70,11 @@ msgstr "贊助"
 msgid "Thumbs"
 msgstr "點讚"
 
-#: inc/comments.php:76
+#: inc/comments.php:17
+msgid "You have a new review"
+msgstr "您有新的留言"
+
+#: inc/comments.php:106
 #, php-format
 msgid "<cite class=\"author_name\">%s</cite>"
 msgstr "<cite class=\"author_name\">%s</cite>"
@@ -95,37 +99,37 @@ msgstr "人點讚"
 msgid "Read More"
 msgstr "閱讀全文"
 
-#: inc/core.php:51 inc/core.php:52
+#: inc/core.php:38 inc/core.php:39
 #: inc/options/includes/class-options-framework-admin.php:91
 #: inc/options/includes/class-options-framework-admin.php:92
 msgid "Theme Options"
 msgstr "主題設定"
 
-#: inc/core.php:114
+#: inc/core.php:101
 msgid "Last login time"
 msgstr "最後登入"
 
-#: inc/core.php:125
+#: inc/core.php:112
 msgid "No record"
 msgstr "沒有記錄"
 
-#: inc/core.php:235
+#: inc/core.php:222
 msgid "You are already supported it"
 msgstr "您已經支持過了"
 
-#: inc/core.php:236
+#: inc/core.php:223
 msgid "Thank you for your support"
 msgstr "感謝您的支持"
 
-#: inc/core.php:237
+#: inc/core.php:224
 msgid "Donate to author"
 msgstr "贊助作者"
 
-#: inc/core.php:238
+#: inc/core.php:225
 msgid "Scan payment"
 msgstr "掃一掃支付"
 
-#: inc/core.php:358
+#: inc/core.php:345
 msgid ""
 "Welcome to use Dobby theme to create, review the <a target=\"_blank\" rel="
 "\"nofollow\" href=\"https://www.vtrois.com/theme-dobby.html\">instructions</"
@@ -136,7 +140,7 @@ msgstr ""
 "歡迎使用 Dobby 主題開始創作，在使用主題之前推薦檢視<a target=\"_blank\" rel="
 "\"nofollow\" href=\"https://www.vtrois.com/theme-dobby.html\">使用說明</a>，"
 "如果發現 BUG 或是有任何建議請<a target=\"_blank\" rel=\"nofollow\" href="
-"\"https://github.com/Vtrois/Dobby/issues/new\">提交回報</a>。"
+"\"https://github.com/Vtrois/Dobby/issues/new\">提交回報</a>."
 
 #: inc/global.php:86
 #, php-format
@@ -362,23 +366,23 @@ msgstr "展示您網站的專題內容"
 msgid "Global Config"
 msgstr "全域設定"
 
-#: options.php:29 options.php:100 options.php:289 options.php:415
+#: options.php:29 options.php:100 options.php:308 options.php:434
 msgid "Function status"
 msgstr "功能狀態"
 
 #: options.php:30
 msgid "Whether to enable the web compression?"
-msgstr "是否開啟網頁壓縮？"
+msgstr "是否開啟網頁壓縮功能？"
 
 #: options.php:36
 msgid "Navbar layout"
 msgstr "導覽配置"
 
-#: options.php:42 options.php:201
+#: options.php:42 options.php:208
 msgid "Style 1"
 msgstr "樣式一"
 
-#: options.php:43 options.php:202
+#: options.php:43 options.php:209
 msgid "Style 2"
 msgstr "樣式二"
 
@@ -459,186 +463,202 @@ msgid "Default share images"
 msgstr "預設分享圖片"
 
 #: options.php:184
+msgid "Default author images"
+msgstr "預設作者圖片"
+
+#: options.php:191
 msgid "404 images"
 msgstr "404 圖片"
 
-#: options.php:191
+#: options.php:198
 msgid "Single Config"
 msgstr "文章設定"
 
-#: options.php:195
+#: options.php:202
 msgid "Single layout"
 msgstr "文章配置"
 
-#: options.php:206
+#: options.php:213
+msgid "WeChat push"
+msgstr "微信推送"
+
+#: options.php:214
+msgid "Whether to enable Server Chan?"
+msgstr "是否開啟 Server 醬微信推送？"
+
+#: options.php:220
+msgid "SCKEY"
+msgstr "SCKEY"
+
+#: options.php:225
 msgid "Index thumbnail"
 msgstr "首頁特色圖片"
 
-#: options.php:213
+#: options.php:232
 msgid "Inside thumbnail"
 msgstr "內頁特色圖片"
 
-#: options.php:220
+#: options.php:239
 msgid "Copyright content"
 msgstr "著作權資訊"
 
-#: options.php:225
+#: options.php:244
 msgid "Page Config"
 msgstr "頁面設定"
 
-#: options.php:229
+#: options.php:248
 msgid "Page permalink"
 msgstr "頁面永久連結設定"
 
-#: options.php:230
+#: options.php:249
 msgid "Whether to enable Page permalink?"
 msgstr "是否開啟頁面永久連結設定？"
 
-#: options.php:236
+#: options.php:255
 msgid "Mail Config"
 msgstr "郵件設定"
 
-#: options.php:240
+#: options.php:259
 msgid "SMTP service"
 msgstr "SMTP 服務"
 
-#: options.php:241
+#: options.php:260
 msgid "Whether to enable SMTP service?"
 msgstr "是否啟用 SMTP 服務？"
 
-#: options.php:247
+#: options.php:266
 msgid "Sender"
 msgstr "寄件者"
 
-#: options.php:252
+#: options.php:271
 msgid "Mail server"
 msgstr "郵件伺服器"
 
-#: options.php:257
+#: options.php:276
 msgid "Server port"
 msgstr "伺服器連接埠"
 
-#: options.php:262
+#: options.php:281
 msgid "Mail account"
 msgstr "信箱帳號"
 
-#: options.php:267
+#: options.php:286
 msgid "Email password"
 msgstr "信箱密碼"
 
-#: options.php:272
+#: options.php:291
 msgid "Enable SMTPAuth service"
 msgstr "啟用 SMTPAuth 服務"
 
-#: options.php:273
+#: options.php:292
 msgid "Whether to enable SMTPAuth service?"
 msgstr "是否啟用 SMTPAuth 服務？"
 
-#: options.php:279
+#: options.php:298
 msgid "SMTPSecure set"
 msgstr "SMTPSecure 設定"
 
-#: options.php:285
+#: options.php:304
 msgid "Carousel Config"
 msgstr "輪播設定"
 
-#: options.php:290
+#: options.php:309
 msgid "Whether to enable the carousel?"
 msgstr "是否開啟輪播功能？"
 
-#: options.php:296
+#: options.php:315
 msgid "The first image"
 msgstr "第一張圖片"
 
-#: options.php:301
+#: options.php:320
 msgid "The first url"
 msgstr "第一個連結"
 
-#: options.php:307
+#: options.php:326
 msgid "The first title"
 msgstr "第一個標題"
 
-#: options.php:313
+#: options.php:332
 msgid "The first meta"
 msgstr "第一條簡介"
 
-#: options.php:319
+#: options.php:338
 msgid "The second image"
 msgstr "第二張圖片"
 
-#: options.php:324
+#: options.php:343
 msgid "The second url"
 msgstr "第二個連結"
 
-#: options.php:330
+#: options.php:349
 msgid "The second title"
 msgstr "第二個標題"
 
-#: options.php:336
+#: options.php:355
 msgid "The second meta"
 msgstr "第二條簡介"
 
-#: options.php:342
+#: options.php:361
 msgid "The third image"
 msgstr "第三張圖片"
 
-#: options.php:347
+#: options.php:366
 msgid "The third url"
 msgstr "第三個連結"
 
-#: options.php:353
+#: options.php:372
 msgid "The third title"
 msgstr "第三個標題"
 
-#: options.php:359
+#: options.php:378
 msgid "The third meta"
 msgstr "第三條簡介"
 
-#: options.php:365
+#: options.php:384
 msgid "The fourth image"
 msgstr "第四張圖片"
 
-#: options.php:370
+#: options.php:389
 msgid "The fourth url"
 msgstr "第四個連結"
 
-#: options.php:376
+#: options.php:395
 msgid "The fourth title"
 msgstr "第四個標題"
 
-#: options.php:382
+#: options.php:401
 msgid "The fourth meta"
 msgstr "第四條簡介"
 
-#: options.php:388
+#: options.php:407
 msgid "The fifth image"
 msgstr "第五張圖片"
 
-#: options.php:393
+#: options.php:412
 msgid "The fifth url"
 msgstr "第五個連結"
 
-#: options.php:399
+#: options.php:418
 msgid "The fifth title"
 msgstr "第五個標題"
 
-#: options.php:405
+#: options.php:424
 msgid "The fifth meta"
 msgstr "第五條簡介"
 
-#: options.php:411
+#: options.php:430
 msgid "Donate Config"
 msgstr "贊助設定"
 
-#: options.php:416
+#: options.php:435
 msgid "Whether to enable the donate?"
 msgstr "是否開啟贊助功能？"
 
-#: options.php:422
+#: options.php:441
 msgid "Alipay QR Code"
 msgstr "支付寶收款碼"
 
-#: options.php:428
+#: options.php:447
 msgid "Wechat QR Code"
 msgstr "微信收款碼"
 
